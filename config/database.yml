@@ -30,8 +30,3 @@ production:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: patria_production
-  username: patria
-  password: <%= ENV['PATRIA_DATABASE_PASSWORD'] %>
