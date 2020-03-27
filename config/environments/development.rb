@@ -36,6 +36,20 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # Setup the mailer config
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+      :user_name => 'apikey', #ENV['SENDGRID_USERNAME'] || Rails.application.credentials.dig(:sendgrid, :username),
+      :password => ENV['SENDGRID_API_KEY'] || Rails.application.credentials.dig(:sendgrid, :api_key),
+      :domain => 'alxx.se',
+      :address => 'smtp.sendgrid.net',
+      :port => 25,
+      :authentication => :login,
+      :enable_starttls_auto => true
+  }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
