@@ -1,25 +1,16 @@
-default: &default
+development:
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: 11111111
   socket: /tmp/mysql.sock
-
-development:
-  <<: *default
   database: patria_development
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: patria_test
 
 production:
   adapter: mysql2
-  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  encoding: utf8mb4
+  url: <%= ENV['DATABASE_URL'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -40,8 +31,3 @@ production:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: patria_production
-  username: patria
-  password: <%= ENV['PATRIA_DATABASE_PASSWORD'] %>
