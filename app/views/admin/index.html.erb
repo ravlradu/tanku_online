@@ -1,0 +1,17 @@
+<h1>Interfața de administrare</h1>
+
+<p id="notice"><%= notice %></p>
+
+<%= form_tag action: 'login', controller: 'authentication' do %>
+  <p>
+    <label>Email: </label>
+    <%= email_field_tag :email %>
+
+    <label>Password: </label>
+    <%= password_field_tag :password %>
+  </p>
+
+  <p>
+    <%= submit_tag 'Login' %>
+  </p>
+<% end %>

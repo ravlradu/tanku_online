@@ -1,5 +1,11 @@
 class ProductsController < ApplicationController
+  before_action :get_user
+  before_action :check_authentication
+  before_action :check_admin
+
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+
+  layout 'admin'
 
   # GET /products
   # GET /products.json
