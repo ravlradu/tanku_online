@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nume:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Descriere:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Categorie:</strong>
+  <%= @product.category.name %>
+</p>
+
+<p>
+  <strong>Disponibil la vânzare:</strong>
+  <%= @product.is_visible ? 'da' : 'nu' %>
+</p>
+
+<p>
+  <strong>Preț:</strong>
+  <%= price @product.price %>
+</p>
+
+<p>
+  <strong>Bucăți disponibile:</strong>
+  <%= @product.available_count %>
+</p>
+
+<%= link_to 'Modifică', edit_product_path(@product) %> |
+<%= link_to 'Înapoi', products_path %>

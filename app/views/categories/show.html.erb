@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nume:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Disponibil la vânzare:</strong>
+  <%= @category.is_visible ? 'da' : 'nu' %>
+</p>
+
+<%= link_to 'Modificare', edit_category_path(@category) %> |
+<%= link_to 'Înapoi', categories_path %>
