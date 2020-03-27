@@ -12,7 +12,7 @@
   </thead>
 
   <tbody>
-    <% @categories.each do |category| %>
+    <% @categories.where(parent_id: nil).each do |category| %>
       <tr>
         <td><%= category.name %></td>
         <td><%= category.is_visible ? 'da' : 'nu' %></td>
@@ -26,5 +26,5 @@
 
 <br>
 
-<%= link_to 'Crează o categorie nouă', new_category_path %>
+<%= link_to 'Crează o categorie nouă', new_category_path %> |
 <%= link_to 'Înapoi la pagina de administrare', admin_private_path %>

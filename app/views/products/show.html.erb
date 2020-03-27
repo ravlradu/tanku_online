@@ -16,6 +16,10 @@
 </p>
 
 <p>
+  <%= image_tag @product.image.variant(resize_to_limit: [300, 300]) %>
+</p>
+
+<p>
   <strong>Disponibil la vânzare:</strong>
   <%= @product.is_visible ? 'da' : 'nu' %>
 </p>
@@ -31,6 +35,6 @@
 </p>
 
 <%= link_to 'Modifică', edit_product_path(@product) %> |
-<%= link_to 'Înapoi la lista de produse', products_path %>
+<%= link_to 'Înapoi la lista de produse', products_path %> |
 <%= link_to 'Înapoi la pagina de administrare', admin_private_path %>
 

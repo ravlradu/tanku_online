@@ -21,6 +21,8 @@
     <%= form.check_box :is_visible %>
   </div>
 
+  <%= form.hidden_field :parent_id, value: params[:parent_id] %>
+
   <div class="actions">
     <%= form.submit 'Salvează' %>
   </div>
