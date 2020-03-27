@@ -9,6 +9,7 @@ development:
 
 production:
   adapter: mysql2
+  encoding: utf8mb4
   url: <%= ENV['DATABASE_URL'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
