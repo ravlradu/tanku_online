@@ -1,13 +1,10 @@
-default: &default
+development:
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: 11111111
   socket: /tmp/mysql.sock
-
-development:
-  <<: *default
   database: patria_development
 
 # Warning: The database defined as "test" will be erased and
