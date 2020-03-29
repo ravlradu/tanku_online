@@ -2,9 +2,9 @@ development:
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: 11111111
-  socket: /tmp/mysql.sock
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  socket: <%= ENV['DB_SOCKET'] %>
   database: patria_development
 
 production:

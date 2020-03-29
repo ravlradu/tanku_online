@@ -5,14 +5,14 @@
     01. header css here
     02. slider area css here
     03. product section css here
-    04. banner section css here 
+    04. banner section css here
     05. blog area css here
     06. newsletter area css here
     07. footer area css here
     08. shop page css here
-    09. error page css heer 
+    09. error page css heer
     10. about page css here
-    11. blog page css here 
+    11. blog page css here
     12. blog details css here
     13. cart page css here
     14. checkout page css here
@@ -146,7 +146,7 @@ figure {
   margin: 0;
 }
 
-/*-- 
+/*--
     - Common Classes
 -----------------------------------------*/
 .fix {
@@ -189,7 +189,7 @@ figure {
   margin: 0;
 }
 
-/*-- 
+/*--
     - Background color
 -----------------------------------------*/
 .bg-white {
@@ -235,10 +235,10 @@ figure {
   height: 100%;
 }
 
-/*-- 
+/*--
     - color
 -----------------------------------------*/
-/*-- 
+/*--
     - Input Placeholder
 -----------------------------------------*/
 input:-moz-placeholder, textarea:-moz-placeholder {
@@ -261,8 +261,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/*-- 
-    Scroll Up 
+/*--
+    Scroll Up
 -----------------------------------------*/
 #scrollUp {
   background: #40A944 none repeat scroll 0 0;
@@ -290,7 +290,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   animation-iteration-count: infinite;
 }
 
-/*-- 
+/*--
     - Main Wrapper
 -----------------------------------------*/
 .main-wrapper.header-transparent {
@@ -2028,7 +2028,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .call-support p::before {
   content: '';
   position: absolute;
-  background: url("../img/icon/icon-phone.png") no-repeat 0 0;
+  background: asset-url("icon/icon-phone.png") no-repeat 0 0;
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -2313,7 +2313,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #FC8A35;
 }
 .color_three .call-support p::before {
-  background: url("../img/icon/icon-phone2.png") no-repeat 0 0;
+  background: asset-url("icon/icon-phone2.png") no-repeat 0 0;
 }
 .color_three .call-support p a:hover {
   color: #FC8A35;
@@ -2401,7 +2401,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #CF1F1F;
 }
 .color_four .call-support p::before {
-  background: url("../img/icon/icon-phone3.png") no-repeat 0 0;
+  background: asset-url("icon/icon-phone3.png") no-repeat 0 0;
 }
 .color_four .call-support p a:hover {
   color: #CF1F1F;
@@ -2881,7 +2881,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .banner_fullwidth {
-  background: url(../img/bg/banner3.jpg);
+  background: asset-url(bg/banner3.jpg);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -5373,7 +5373,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .breadcrumbs_area {
-  background: url(../img/bg/banner18.jpg) no-repeat 0 0;
+  background: asset-url(bg/banner18.jpg) no-repeat 0 0;
   background-size: cover;
   height: 200px;
   display: flex;
@@ -5837,15 +5837,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: inherit;
 }
 .shop_toolbar_btn > button.btn-grid-3 {
-  background: url(../img/icon/bkg_grid.png) no-repeat scroll center center;
+  background: asset-url(icon/bkg_grid.png) no-repeat scroll center center;
   width: 20px;
   height: 20px;
 }
 .shop_toolbar_btn > button.btn-grid-3.active {
-  background: url(../img/icon/bkg_grid_hover.png) no-repeat scroll center center !important;
+  background: asset-url(icon/bkg_grid_hover.png) no-repeat scroll center center !important;
 }
 .shop_toolbar_btn > button.btn-grid-4 {
-  background: url(../img/icon/bkg_grid4.png) no-repeat scroll center center;
+  background: asset-url(icon/bkg_grid4.png) no-repeat scroll center center;
   width: 26px;
   height: 22px;
 }
@@ -5860,15 +5860,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .shop_toolbar_btn > button.btn-grid-4.active {
-  background: url(../img/icon/bkg_grid4_hover.png) no-repeat scroll center center !important;
+  background: asset-url(icon/bkg_grid4_hover.png) no-repeat scroll center center !important;
 }
 .shop_toolbar_btn > button.btn-list {
-  background: url(../img/icon/bkg_list.png) no-repeat scroll center center;
+  background: asset-url(icon/bkg_list.png) no-repeat scroll center center;
   width: 20px;
   height: 20px;
 }
 .shop_toolbar_btn > button.btn-list.active {
-  background: url(../img/icon/bkg_list_hover.png) no-repeat scroll center center !important;
+  background: asset-url(icon/bkg_list_hover.png) no-repeat scroll center center !important;
 }
 
 .product_content.list_content {
