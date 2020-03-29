@@ -4364,13 +4364,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   border: 0;
   background: inherit; }
   .shop_toolbar_btn > button.btn-grid-3 {
-    background: asset-url(icon/bkg_grid.png) no-repeat scroll center center;
+    background: asset-url("icon/bkg_grid.png") no-repeat scroll center center;
     width: 20px;
     height: 20px; }
     .shop_toolbar_btn > button.btn-grid-3.active {
-      background: asset-url(icon/bkg_grid_hover.png) no-repeat scroll center center !important; }
+      background: asset-url("icon/bkg_grid_hover.png") no-repeat scroll center center !important; }
   .shop_toolbar_btn > button.btn-grid-4 {
-    background: asset-url(icon/bkg_grid4.png) no-repeat scroll center center;
+    background: asset-url("icon/bkg_grid4.png") no-repeat scroll center center;
     width: 26px;
     height: 22px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4380,13 +4380,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       .shop_toolbar_btn > button.btn-grid-4 {
         display: none; } }
     .shop_toolbar_btn > button.btn-grid-4.active {
-      background: asset-url(icon/bkg_grid4_hover.png) no-repeat scroll center center !important; }
+      background: asset-url("icon/bkg_grid4_hover.png") no-repeat scroll center center !important; }
   .shop_toolbar_btn > button.btn-list {
-    background: asset-url(icon/bkg_list.png) no-repeat scroll center center;
+    background: asset-url("icon/bkg_list.png") no-repeat scroll center center;
     width: 20px;
     height: 20px; }
     .shop_toolbar_btn > button.btn-list.active {
-      background: asset-url(icon/bkg_list_hover.png) no-repeat scroll center center !important; }
+      background: asset-url("icon/bkg_list_hover.png") no-repeat scroll center center !important; }
 
 .product_content.list_content {
   display: none; }
