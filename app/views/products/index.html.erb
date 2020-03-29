@@ -11,7 +11,7 @@
       <th>Vizibil</th>
       <th>Preț</th>
       <th>Bucăți disponibile</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -27,6 +27,12 @@
         <td><%= link_to 'Arată', product %></td>
         <td><%= link_to 'Modifică', edit_product_path(product) %></td>
         <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
+        <td>
+          <%= form_with(model: product) do |f| %>
+            <%= f.select :category_id, Category.all.map { |c| [c.name, c.id] } %>
+            <%= f.submit 'Salvează categoria' %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
