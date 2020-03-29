@@ -1,0 +1,14 @@
+//= require vendor/jquery-3.4.1.min
+//= require popper
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require slick.min
+//= require jquery.magnific-popup.min
+//= require jquery.counterup.min
+//= require jquery.countdown
+//= require jquery.ui
+//= require jquery.elevatezoom
+//= require isotope.pkgd.min
+//= require slinky.menu
+//= require plugins
+//= require main.js
