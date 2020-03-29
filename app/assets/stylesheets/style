@@ -2187,7 +2187,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     transition: .3s; }
 
 .banner_fullwidth {
-  background: asset-url(bg/banner3.jpg);
+  background: asset-url("bg/banner3.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;

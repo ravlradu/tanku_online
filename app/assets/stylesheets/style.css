@@ -2881,7 +2881,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .banner_fullwidth {
-  background: asset-url(bg/banner3.jpg);
+  background: asset-url("bg/banner3.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -5373,7 +5373,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .breadcrumbs_area {
-  background: asset-url(bg/banner18.jpg) no-repeat 0 0;
+  background: asset-url("bg/banner18.jpg") no-repeat 0 0;
   background-size: cover;
   height: 200px;
   display: flex;
