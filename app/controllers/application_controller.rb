@@ -31,6 +31,7 @@ class ApplicationController < ActionController::Base
       total: 0,
       items:[]
     }
+    return unless session[:basket]
     session[:basket].each do |prod_id, prod_qty|
       product = Product.where(id:prod_id).first
       next unless product
