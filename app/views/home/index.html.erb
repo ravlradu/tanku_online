@@ -14,6 +14,22 @@
     <!-- CSS
     ========================= -->
     <!--modernizr min js here-->
+    <script type="text/javascript">
+
+      function addToCart(productId) {
+        $.ajax({
+          url: "public/add_to_basket/"+productId+"/1"
+        }).done(function() {
+        });
+      }
+
+      function removeFromCart(productId) {
+        $.ajax({
+          url: "public/remove_from_basket/"+productId
+        }).done(function() {
+        });
+      }
+    </script>
 </head>
 
 <body>

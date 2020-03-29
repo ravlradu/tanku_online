@@ -1,44 +1,34 @@
-<div class="header_account_list  mini_cart_wrapper">
-   <a href="javascript:void(0)"><span class="lnr lnr-cart"></span><span class="item_count">2</span></a>
+<div class="header_account_list mini_cart_wrapper">
+   <a href="javascript:void(0)"><span class="lnr lnr-cart"></span><span class="item_count"><%=@basket_data[:items].size%></span></a>
     <!--mini cart-->
     <div class="mini_cart">
         <div class="cart_gallery">
-            <div class="cart_item">
-               <div class="cart_img">
-                   <a href="#">
-                     <%= image_tag("s-product/product.jpg") %>
-                   </a>
-               </div>
-                <div class="cart_info">
-                    <a href="#">Primis In Faucibus</a>
-                    <p>1 x <span> $65.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="icon-x"></i></a>
-                </div>
-            </div>
-            <div class="cart_item">
-               <div class="cart_img">
-                   <a href="#"><%= image_tag("s-product/product2.jpg") %></a>
-               </div>
-                <div class="cart_info">
-                    <a href="#">Letraset Sheets</a>
-                    <p>1 x <span> $60.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="icon-x"></i></a>
-                </div>
-            </div>
+            <% @basket_data[:items].each do |item| %>
+              <div class="cart_item">
+                 <div class="cart_img">
+                     <a href="#">
+                       <%= image_tag item[:image_url]%>
+                     </a>
+                 </div>
+                  <div class="cart_info">
+                      <a > <%= item[:name] %></a>
+                      <p> <%= item[:quantity] %> x <span> <%= item[:unit_price] %> </span></p>
+                  </div>
+                  <div class="cart_remove">
+                      <a onclick="removeFromCart(<%= item[:id] %>)"><i class="icon-x"></i></a>
+                  </div>
+              </div>
+            <% end %>
         </div>
         <div class="mini_cart_table">
             <div class="cart_table_border">
-                <div class="cart_total">
+                <!-- <div class="cart_total">
                     <span>Sub total:</span>
                     <span class="price">$125.00</span>
-                </div>
+                </div> -->
                 <div class="cart_total mt-10">
                     <span>total:</span>
-                    <span class="price">$125.00</span>
+                    <span class="price"> Lei: <%= @basket_data[:total] %></span>
                 </div>
             </div>
         </div>

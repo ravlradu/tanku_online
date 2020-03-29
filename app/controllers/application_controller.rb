@@ -26,4 +26,23 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def set_basket_data
+    @basket_data = {
+      total: 0,
+      items:[]
+    }
+    session[:basket].each do |prod_id, prod_qty|
+      product = Product.where(id:prod_id).first
+      next unless product
+      @basket_data[:items] << { name: product.name,
+                                quantity: prod_qty,
+                                unit_price: product.price,
+                                total_price: (product.price * prod_qty),
+                                image_url: product.image_url([83,83]),
+                                id: product.id
+                              }
+      @basket_data[:total] += product.price * prod_qty
+    end
+  end
+
 end

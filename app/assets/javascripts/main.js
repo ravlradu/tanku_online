@@ -49,7 +49,7 @@
         $porductColumn5.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
             autoplay: true,
-            loop: true,
+            loop: false,
             nav: true,
             autoplay: false,
             autoplayTimeout: 8000,
@@ -85,7 +85,7 @@
            $productColumn4.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
             autoplay: true,
-            loop: true,
+            loop: false,
             nav: true,
             autoplay: false,
             autoplayTimeout: 8000,
@@ -118,7 +118,7 @@
         $productPageColumn4.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
             autoplay: true,
-            loop: true,
+            loop: false,
             nav: true,
             autoplay: false,
             autoplayTimeout: 8000,
