@@ -6,7 +6,7 @@ class AuthenticationController < ApplicationController
 
   def login
     u = User.where(email: params[:email]).first.try(:authenticate, params[:password])
-
+    Rails.logger.info "#{u.inspect}"
     if u.nil?
       logger.error "Login failed"
       flash[:notice] = 'Autentificare nereușită'
