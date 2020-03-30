@@ -1,0 +1,25 @@
+<div class="col-lg-3">
+
+    <div class="categories_menu categories_three">
+        <div class="categories_title">
+            <h2 class="categori_toggle">Categorii Produse</h2>
+        </div>
+        <div class="categories_menu_toggle">
+            <ul>
+                <% @main_categories.each do |category| %>
+                <li class="menu_item_children"><a href="#"> <%= category.name %><i class="fa fa-angle-right"></i></a>
+                    <ul class="categories_mega_menu">
+                        <li class="menu_item_children">
+                            <ul class="categorie_sub_menu">
+                                <% category.subcategories.each do |subcategory| %>
+                                  <li> <%= link_to subcategory.name, {categorie:subcategory.id} %></li>
+                                <% end %>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>

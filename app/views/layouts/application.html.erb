@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Patria</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Marion Trade – Online </title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <!-- Favicon -->
+      <%= favicon_link_tag asset_path('favicon.ico') %>
+      <%= javascript_include_tag "application" %>
+      <%= stylesheet_link_tag "application" %>
+      <!-- CSS
+      ========================= -->
+      <!--modernizr min js here-->
+      <script type="text/javascript">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+        function addToCart(productId) {
+          $.ajax({
+            url: "public/add_to_basket/"+productId+"/1"
+          }).done(function() {
+          });
+        }
+
+        function removeFromCart(productId) {
+          $.ajax({
+            url: "public/remove_from_basket/"+productId
+          }).done(function() {
+          });
+        }
+      </script>
   </head>
 
   <body>
@@ -14,6 +38,5 @@
 
     <%= yield %>
 
-    <%= render partial: 'layouts/basket' %>
   </body>
 </html>
