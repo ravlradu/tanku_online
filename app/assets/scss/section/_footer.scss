@@ -64,9 +64,9 @@
                     color: $secondary_color;
                 }
             }
-        } 
+        }
     }
-  
+
 }
 .footer_logo{
     margin-bottom: 24px;
@@ -163,7 +163,7 @@
 
 .footer_bottom{
     padding: 29px 0;
-    background: $secondary_color;
+    background: #F58220;
     @media #{$large-mobile}{
        padding: 24px 0 25px;
     }
@@ -240,11 +240,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-

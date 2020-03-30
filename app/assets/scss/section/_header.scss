@@ -502,7 +502,7 @@
     border-radius: 25px 0 0 25px;
     & .select_option{
         border: 0;
-        background: #f5f5f5;
+        background: #F58220;
         padding-left: 25px;
         padding-right: 35px;
         font-size: 13px;
@@ -648,7 +648,7 @@
         font-size: 20px;
         border-radius: 0 30px 30px 0;
         @include transition(.3s);
-        background: $secondary_color;
+        background: #F58220;
         color: #fff;
         &:hover{
             background: $fonts_color;
@@ -1500,7 +1500,7 @@
         &::before{
             content: '';
             position: absolute;
-            background: asset-url('icon/icon-phone.png') no-repeat 0 0;
+            background: asset-url('icon/icon-phone2.png') no-repeat 0 0;
             width: 32px;
             height: 32px;
             display: inline-block;
