@@ -11,7 +11,6 @@
 .services_content{
     & h3{
         font-size: 15px;
-        text-transform: capitalize;
         font-weight: 400;
         margin-bottom: 11px;
         line-height: 14px;
@@ -263,7 +262,6 @@
     & h3{
        font-size: 25px;
         font-weight: 500;
-        text-transform: capitalize; 
          @media #{$tablet-device}{
             font-size: 20px;
             line-height: 20px;

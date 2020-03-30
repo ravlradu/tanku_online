@@ -4,8 +4,8 @@ test:
 
 local:
   service: S3
-  access_key_id: <%= ENV.fetch('AWS_KEY') rescue 'a123' %>
-  secret_access_key: <%= ENV.fetch('AWS_SECRET') rescue 'a123' %>
+  access_key_id: <%= ENV.fetch('AWS_KEY') rescue Rails.application.credentials.dig(:aws, :access_key_id) %>
+  secret_access_key: <%= ENV.fetch('AWS_SECRET') rescue Rails.application.credentials.dig(:aws, :secret_access_key) %>
   region: eu-north-1
   bucket: patria-images
 

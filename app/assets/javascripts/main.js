@@ -33,7 +33,6 @@
     if($slider.length > 0){
         $slider.owlCarousel({
             animateOut: 'fadeOut',
-            autoplay: true,
             loop: true,
             nav: false,
             autoplay: false,
@@ -48,7 +47,6 @@
     if($porductColumn5.length > 0){
         $porductColumn5.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: false,
             nav: true,
             autoplay: false,
@@ -84,7 +82,6 @@
         if($productColumn4.length > 0){
            $productColumn4.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: false,
             nav: true,
             autoplay: false,
@@ -117,7 +114,6 @@
     if($productPageColumn4.length > 0){
         $productPageColumn4.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: false,
             nav: true,
             autoplay: false,
@@ -149,7 +145,6 @@
     if($productColumn3.length > 0){
         $productColumn3.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -177,7 +172,6 @@
     if($product3Column3.length > 0){
         $product3Column3.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -208,7 +202,6 @@
         if($productColumn2.length > 0){
            $productColumn2.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: false,
             autoplay: false,
@@ -235,7 +228,6 @@
        if($smallpColumn2.length > 0){
            $('.smallp_column2').on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -263,7 +255,6 @@
        if($productColumn1.length > 0){
            $('.product_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -291,7 +282,6 @@
        if($deals3Column1.length > 0){
        $('.deals3_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
         $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-        autoplay: true,
 		loop: true,
         nav: true,
         autoplay: false,
@@ -322,7 +312,6 @@
         if($smallp4LeftColumn1.length > 0){
            $('.smallp4_left_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -349,7 +338,6 @@
     var $blogColumn3 = $('.blog_column3');
         if($blogColumn3.length > 0){
         $('.blog_column3').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -378,7 +366,6 @@
         if($brandContainer.length > 0){
          $('.brand_container').on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
-            autoplay: true,
             loop: true,
             nav: false,
             autoplay: false,
@@ -413,7 +400,6 @@
     var $testimonialColumn1 = $('.testimonial_column1');
         if($testimonialColumn1.length > 0){
         $('.testimonial_column1').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: false,
             autoplay: false,
@@ -426,7 +412,6 @@
     var $testimonialTwo = $('.testimonial-two');
         if($testimonialTwo.length > 0){
         $('.testimonial-two').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: false,
             autoplay: false,
@@ -440,7 +425,6 @@
     var $blogThumbActive = $('.blog_thumb_active');
         if($blogThumbActive.length > 0){
         $('.blog_thumb_active').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -455,7 +439,6 @@
      var $singleProductActive = $('.single-product-active');
         if($singleProductActive.length > 0){
         $('.single-product-active').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,
@@ -491,7 +474,6 @@
     var $productNavactive = $('.product_navactive');
         if($productNavactive.length > 0){
         $('.product_navactive').owlCarousel({
-            autoplay: true,
             loop: true,
             nav: true,
             autoplay: false,

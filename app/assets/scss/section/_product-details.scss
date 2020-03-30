@@ -14,7 +14,6 @@
 }
 .product_d_right{
     & h1{
-        text-transform: capitalize;
         line-height: 20px;
         font-size: 22px;
         font-weight: 400;
@@ -120,7 +119,6 @@
                     line-height: 24px;
                     padding: 0 8px;
                     border-radius: 3px;
-                    text-transform: capitalize;
                     display: block;
                     @media #{$large-mobile}{
                        padding: 0 4px;
@@ -212,7 +210,6 @@
         
         & label{
             font-weight: 500;
-            text-transform: capitalize;
             font-size: 14px;
             margin-bottom: 0;
         }
@@ -242,7 +239,6 @@
             background: $secondary_color;
             height: 42px;
             line-height: 42px;
-            text-transform: capitalize;
             min-width: 270px;
             @media #{$desktop-device }{
                min-width: 240px;
@@ -266,7 +262,6 @@
         }
         & h3{
             font-weight: 500;
-            text-transform: capitalize;
             font-size: 18px;
             margin-bottom: 0;
             margin-right: 40px;
@@ -274,7 +269,6 @@
         & label{
             font-size: 15px;
             font-weight: 500;
-            text-transform: capitalize;
         }
         
         & ul{
@@ -324,7 +318,6 @@
         & label{
             font-size: 15px;
             font-weight: 500;
-            text-transform: capitalize;
             margin-right: 15px;
         }
         & .niceselect_option{
@@ -389,7 +382,6 @@
             & a{
                 display: block;
                 float: left;
-                text-transform: capitalize;
                 font-size: 20px;
                 color: #555;
                 font-weight: 500;
@@ -498,7 +490,6 @@
     & h2{
         font-size:18px;
         font-weight: 500;
-        text-transform: capitalize;
         @media #{$large-mobile}{
             font-size: 15px;
         }
@@ -515,7 +506,6 @@
         & h3{
             font-size:14px;
             font-weight: 700;
-            text-transform: capitalize;
         }
     }
 }

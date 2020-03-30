@@ -63,7 +63,6 @@
         font-weight: 500;
         display: inline-block;
         margin-bottom: 0;
-        text-transform: capitalize;
         padding-bottom: 0;
         @media #{$large-mobile}{
             font-size: 22px;
@@ -251,7 +250,6 @@
         font-size: 15px;
         line-height: 15px;
         font-weight: 400;
-        text-transform: capitalize;
         margin-bottom: 16px;
         @media #{$large-mobile}{
             margin-bottom: 14px;
@@ -671,7 +669,6 @@
         & ul{
             & li{
                 & a{
-                    text-transform: capitalize;
                     color: $fonts_color;
                     @media #{$large-mobile}{
                        font-size: 13px;
@@ -1147,7 +1144,6 @@
             }
             & a{
                 font-size: 24px;
-                text-transform: capitalize;
                 padding: 0;
                 border: 0;
                 &.active{
@@ -1257,7 +1253,6 @@
         & ul{
             & li{
                 & a{
-                    text-transform: capitalize;
                     @media #{$tablet-device}{
                         padding: 0 14px;
                         font-size: 14px;

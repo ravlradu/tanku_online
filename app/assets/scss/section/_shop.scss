@@ -11,7 +11,7 @@
 }
 
 .breadcrumbs_area{
-    background: url(../img/bg/banner18.jpg) no-repeat 0 0;
+    background:  asset-url("bg/banner18.jpg") no-repeat 0 0;
     background-size: cover;
    height: 200px;
     display: flex;
@@ -37,7 +37,6 @@
     & ul{
         & li{
             display: inline-block;
-            text-transform: capitalize;
             font-size: 14px;
             margin-right: 3px;
             padding-right: 13px;
@@ -240,7 +239,6 @@
             height: 30px;
             line-height: 30px;
             padding: 0 20px;
-            text-transform: capitalize;
             color: $white;
             background: $fonts_color;
             border: 0;
@@ -260,7 +258,6 @@
     & a{
         margin: 0 5px 12px 0;
         padding: 5px 15px;
-        text-transform: capitalize;
         display: inline-block;
         border: 1px solid $grey_color;
         background: $white;
@@ -604,7 +601,6 @@
                     width: inherit;
                     font-size: 14px;
                     font-weight: 600;
-                    text-transform: capitalize;
                     border-color: #222;
                     &:hover{
                         background: $secondary_color;

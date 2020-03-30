@@ -31,7 +31,6 @@
             & a{
                 font-size: 16px;
                 line-height: 42px;
-                text-transform: capitalize;
                 font-weight: 500;
                 padding: 0 20px;
                 display: inline-block;
@@ -307,7 +306,6 @@
     & h4{
         font-size: 13px; 
         font-weight: 500;
-        text-transform: capitalize;
         line-height: 14px;
         margin-bottom: 5px;
         & a{
@@ -327,7 +325,6 @@
             border-top: 1px solid #ddd;
             & a{
                 padding: 10px 0;
-                text-transform: capitalize;
                 display: inline-block;
                 margin-left: 0;
                 &:hover{

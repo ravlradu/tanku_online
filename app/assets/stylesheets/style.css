@@ -502,7 +502,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_main_menu li a {
   font-size: 14px;
   font-weight: 400;
-  text-transform: capitalize;
   display: block;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -529,7 +528,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .slinky-theme-default a:not(.back) {
   padding: 10px 0;
-  text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
 }
@@ -736,7 +734,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #8CC63F;
 }
 .language_currency > ul > li > a {
-  text-transform: capitalize;
   line-height: 39px;
   font-size: 14px;
   display: inline-block;
@@ -804,7 +801,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .dropdown_currency li a, .dropdown_language li a {
-  text-transform: capitalize;
   display: block;
   font-size: 13px;
   white-space: nowrap;
@@ -904,7 +900,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .dropdown_links li a {
-  text-transform: capitalize;
   display: block;
   font-size: 13px;
   white-space: nowrap;
@@ -1455,7 +1450,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: block;
   font-size: 15px;
   line-height: 50px;
-  text-transform: capitalize;
   font-weight: 500;
   position: relative;
 }
@@ -1489,7 +1483,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 400;
   display: block;
   line-height: 32px;
-  text-transform: capitalize;
 }
 .main_menu nav > ul > li ul.sub_menu li a:hover {
   color: #8CC63F;
@@ -1524,7 +1517,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .mega_menu_inner > li > a {
   font-size: 15px;
   line-height: 24px;
-  text-transform: capitalize;
   font-weight: 500;
   display: block;
   margin-bottom: 12px;
@@ -1540,7 +1532,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 400;
   display: block;
   line-height: 30px;
-  text-transform: capitalize;
 }
 .mega_menu_inner > li ul li a:hover {
   color: #8CC63F;
@@ -1580,7 +1571,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 0;
   display: block;
   line-height: 51px;
-  text-transform: capitalize;
   padding-left: 35px;
   position: relative;
   color: #fff;
@@ -1656,7 +1646,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .categories_menu_toggle > ul > li > a {
   font-size: 14px;
   line-height: 38px;
-  text-transform: capitalize;
   font-weight: 400;
   display: block;
   cursor: pointer;
@@ -1817,13 +1806,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .categories_menu_toggle > ul > li ul.categories_mega_menu > li.menu_item_children > a {
-    text-transform: capitalize;
     font-weight: 400;
   }
 }
 @media only screen and (max-width: 767px) {
   .categories_menu_toggle > ul > li ul.categories_mega_menu > li.menu_item_children > a {
-    text-transform: capitalize;
     font-weight: 400;
   }
 }
@@ -1894,7 +1881,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .categorie_sub_menu li a {
-  text-transform: capitalize;
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -1962,7 +1948,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .categories_menu_toggle ul li.has-sub ul.categorie_sub li a {
-  text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
   padding-left: 30px;
@@ -3233,7 +3218,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 500;
   display: inline-block;
   margin-bottom: 0;
-  text-transform: capitalize;
   padding-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
@@ -3418,7 +3402,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
-  text-transform: capitalize;
   margin-bottom: 16px;
 }
 @media only screen and (max-width: 767px) {
@@ -3844,7 +3827,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .product_header3 .product_tab_btn ul li a {
-  text-transform: capitalize;
   color: #222222;
 }
 @media only screen and (max-width: 767px) {
@@ -4325,7 +4307,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .product_tab_style4 ul li a {
   font-size: 24px;
-  text-transform: capitalize;
   padding: 0;
   border: 0;
 }
@@ -4454,7 +4435,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .product_header4 .product_tab_btn ul li a {
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .product_header4 .product_tab_btn ul li a {
@@ -4649,7 +4629,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .blog_content h4 {
   font-size: 17px;
-  text-transform: capitalize;
   line-height: 18px;
   margin-bottom: 5px;
   font-weight: 500;
@@ -5148,7 +5127,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 20px;
-  text-transform: capitalize;
   font-weight: 500;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5254,7 +5232,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .copyright_area p {
-  text-transform: capitalize;
   line-height: 25px;
   font-size: 14px;
   color: #fff;
@@ -5403,7 +5380,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .breadcrumb_content ul li {
   display: inline-block;
-  text-transform: capitalize;
   font-size: 14px;
   margin-right: 3px;
   padding-right: 13px;
@@ -5592,7 +5568,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   height: 30px;
   line-height: 30px;
   padding: 0 20px;
-  text-transform: capitalize;
   color: #ffffff;
   background: #222222;
   border: 0;
@@ -5608,7 +5583,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .tag_cloud a {
   margin: 0 5px 12px 0;
   padding: 5px 15px;
-  text-transform: capitalize;
   display: inline-block;
   border: 1px solid #ededed;
   background: #ffffff;
@@ -5920,7 +5894,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   width: inherit;
   font-size: 14px;
   font-weight: 600;
-  text-transform: capitalize;
   border-color: #222;
 }
 .list_action_right ul li.add_to_cart a:hover {
@@ -6128,7 +6101,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .product_d_right h1 {
-  text-transform: capitalize;
   line-height: 20px;
   font-size: 22px;
   font-weight: 400;
@@ -6243,7 +6215,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   line-height: 24px;
   padding: 0 8px;
   border-radius: 3px;
-  text-transform: capitalize;
   display: block;
 }
 @media only screen and (max-width: 767px) {
@@ -6336,7 +6307,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .product_variant.quantity label {
   font-weight: 500;
-  text-transform: capitalize;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -6372,7 +6342,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #8CC63F;
   height: 42px;
   line-height: 42px;
-  text-transform: capitalize;
   min-width: 270px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6404,7 +6373,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .product_variant.color h3 {
   font-weight: 500;
-  text-transform: capitalize;
   font-size: 18px;
   margin-bottom: 0;
   margin-right: 40px;
@@ -6412,7 +6380,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .product_variant.color label {
   font-size: 15px;
   font-weight: 500;
-  text-transform: capitalize;
 }
 .product_variant.color ul li {
   display: inline-block;
@@ -6451,7 +6418,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .product_variant.size label {
   font-size: 15px;
   font-weight: 500;
-  text-transform: capitalize;
   margin-right: 15px;
 }
 .product_variant.size .niceselect_option {
@@ -6511,7 +6477,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .product_info_button ul li a {
   display: block;
   float: left;
-  text-transform: capitalize;
   font-size: 20px;
   color: #555;
   font-weight: 500;
@@ -6609,7 +6574,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .reviews_wrapper h2 {
   font-size: 18px;
   font-weight: 500;
-  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   .reviews_wrapper h2 {
@@ -6625,7 +6589,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .reviews_wrapper .product_ratting h3 {
   font-size: 14px;
   font-weight: 700;
-  text-transform: capitalize;
 }
 
 .comment_title {
@@ -7118,7 +7081,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   border-right: 1px solid #ededed;
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize;
   padding: 10px;
   text-align: center;
 }
@@ -7149,7 +7111,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .table_desc .cart_page table tbody tr td.product_name a {
   color: #222222;
-  text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
 }
@@ -7335,7 +7296,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   line-height: 30px;
   font-weight: 500;
   display: inline-block;
-  text-transform: capitalize;
   margin-bottom: 0;
 }
 .checkout_btn a:hover {
@@ -7564,7 +7524,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 15px;
   line-height: 27px;
   padding: 5px 10px;
-  text-transform: capitalize;
   color: #ffffff;
   background: #222222;
   font-weight: 500;
@@ -7597,7 +7556,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 16px;
   line-height: 30px;
   padding: 5px 10px;
-  text-transform: capitalize;
   color: #ffffff;
   background: #8CC63F;
   font-weight: 500;
@@ -7732,7 +7690,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .wishlist_share h4 {
   font-size: 18px;
   font-weight: 500;
-  text-transform: capitalize;
 }
 .wishlist_share ul li {
   display: inline-block;
@@ -7768,7 +7725,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .contact_message h3 {
   font-size: 21px;
-  text-transform: capitalize;
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 25px;
@@ -7835,7 +7791,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   height: 42px;
   line-height: 42px;
   padding: 0 30px;
-  text-transform: capitalize;
   border: none;
   background: #222222;
   color: #ffffff;
@@ -7880,7 +7835,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /* 17. login page css here */
 .account_form h2 {
   font-size: 28px;
-  text-transform: capitalize;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 30px;
@@ -8111,7 +8065,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
-  text-transform: capitalize;
   background: #222222;
   border-radius: 3px;
 }
@@ -8134,13 +8087,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .dashboard_content h3 {
   font-size: 22px;
-  text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 15px;
 }
 .dashboard_content h4 {
   font-size: 20px;
-  text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -8165,7 +8116,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .table-responsive table tbody tr td {
   border-right: 1px solid #ededed;
   font-weight: 500;
-  text-transform: capitalize;
   font-size: 14px;
   text-align: center;
   min-width: 150px;
@@ -8341,7 +8291,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: inline-block;
   font-size: 24px;
   line-height: 24px;
-  text-transform: capitalize;
   font-weight: 400;
   margin-bottom: 21px;
 }
@@ -8372,7 +8321,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .chose_content h3 {
   font-size: 22px;
-  text-transform: capitalize;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 19px;
@@ -8488,7 +8436,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .about_gallery_content h3 {
   font-size: 28px;
-  text-transform: capitalize;
   font-weight: 400;
   line-height: 33px;
   margin-bottom: 12px;
@@ -8635,7 +8582,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 0;
-  text-transform: capitalize;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8757,7 +8703,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .services_content h3 {
   font-size: 15px;
-  text-transform: capitalize;
   font-weight: 400;
   margin-bottom: 11px;
   line-height: 14px;
@@ -9030,7 +8975,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .advantages_content h3 {
   font-size: 25px;
   font-weight: 500;
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .advantages_content h3 {
@@ -9126,7 +9070,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .blog_wrapper .blog_content .btn_more a {
   font-size: 16px;
   line-height: 42px;
-  text-transform: capitalize;
   font-weight: 500;
   padding: 0 20px;
   display: inline-block;
@@ -9394,7 +9337,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .post_info h4 {
   font-size: 13px;
   font-weight: 500;
-  text-transform: capitalize;
   line-height: 14px;
   margin-bottom: 5px;
 }
@@ -9410,7 +9352,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .blog_categories ul li a {
   padding: 10px 0;
-  text-transform: capitalize;
   display: inline-block;
   margin-left: 0;
 }
@@ -9807,7 +9748,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .blog_details .social_sharing p {
   font-size: 13px;
-  text-transform: capitalize;
   margin-right: 20px;
   margin-bottom: 0;
   line-height: 13px;
@@ -10532,7 +10472,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: center;
   cursor: pointer;
   font-size: 13px;
-  text-transform: capitalize;
   padding: 6px 12px;
   background: #222222;
   font-weight: 600;
