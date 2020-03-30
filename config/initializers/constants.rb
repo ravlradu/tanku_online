@@ -1,0 +1,1 @@
+SUMA_MINIMA_BANI = 5000 # trebuie cumparaturi de min 50 lei zice Tanku (alxx)

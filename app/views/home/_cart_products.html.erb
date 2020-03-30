@@ -1,0 +1,23 @@
+<% session[:basket].to_h.each do |prod_id, qty| %>
+  <% product = Product.find(prod_id) %>
+  <tr>
+    <td class="product_remove">
+      <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe,
+                  {action: 'ajax_update_cart', controller: 'home', product_id: product.id, qty: 0},
+                  data: {confirm: 'Sunteți sigur că doriți să scoateți acest produs din coș?'},
+                  remote: true %>
+    </td>
+    <td class="product_thumb">
+      <% if product.image.attached? %>
+        <%= image_tag product.image.variant(resize_to_limit: [50, 50]) %>
+      <% else %>
+        <% image_tag 's-product/product.jpg'%>
+      <% end %>
+    </td>
+    <td class="product_name"><%= product.name %></td>
+    <td class="product-price"><%= price product.price %></td>
+    <td class="product_quantity"><label>Cantitate:</label>
+      <input min="0" max="10000" value="<%= qty %>" type="number" class="qty-input" id="qty-input-<%= product.id %>" data-product-id="<%= product.id %>"></td>
+    <td class="product_total"><%= price product.price * qty %></td>
+  </tr>
+<% end %>

@@ -1,5 +1,51 @@
 <!--header area end-->
 
+<script>
+    function update_cart(product_id, qty) {
+        $.ajax({
+            method: 'GET',
+            url: '<%= url_for action:'ajax_update_cart', controller: 'home' %>',
+            data: {
+                product_id: product_id,
+                qty: qty,
+                authenticity_token: '<%= form_authenticity_token %>'
+            }
+        });
+    }
+
+    $('body').on('change', '.qty-input', function () {
+        var el = $(this);
+
+        var product_id = el.data('product-id');
+        var qty = parseInt(el.val());
+
+        el.prop('disabled', true);
+
+        if (qty > 0) {
+            update_cart(product_id, qty);
+        } else {
+            if (confirm('Sunteți sigur că doriți să scoateți acest produs din coș?')) {
+                update_cart(product_id, 0);
+            } else {
+                console.log('delete canceled');
+                el.val('1');
+                update_cart(product_id, 1)
+            }
+        }
+    });
+
+    $('body').on('change', '#delivery_method', function () {
+        var el = $(this);
+
+        if (el.val() == 'delivery') {
+            $('#address-field').show();
+        } else {
+            $('#address-field').hide();
+        }
+    });
+
+</script>
+
 <!--breadcrumbs area start-->
 <div class="breadcrumbs_area">
   <div class="container">
@@ -31,69 +77,73 @@
     </div>
   <% else %>
     <div class="container">
-      <form action="#">
+      <div class="row">
+        <div class="col-12">
+          <div class="table_desc">
+            <div class="cart_page table-responsive">
+              <table>
+                <thead>
+                <tr>
+                  <th class="product_remove">Șterge</th>
+                  <th class="product_thumb">Imagine</th>
+                  <th class="product_name">Produs</th>
+                  <th class="product-price">Preț</th>
+                  <th class="product_quantity">Cantitate</th>
+                  <th class="product_total">Total</th>
+                </tr>
+                </thead>
+                <tbody id="cart_products">
+                <%= render 'cart_products' %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coupon_area">
         <div class="row">
-          <div class="col-12">
-            <div class="table_desc">
-              <div class="cart_page table-responsive">
-                <table>
-                  <thead>
-                  <tr>
-                    <th class="product_remove">Șterge</th>
-                    <th class="product_thumb">Imagine</th>
-                    <th class="product_name">Produs</th>
-                    <th class="product-price">Preț</th>
-                    <th class="product_quantity">Cantitate</th>
-                    <th class="product_total">Total</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <% session[:basket].to_h.each do |prod_id, qty| %>
-                    <% product = Product.find(prod_id) %>
-                    <tr>
-                      <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                      <td class="product_thumb">
-                        <% if product.image.attached? %>
-                          <%= image_tag product.image.variant(resize_to_limit: [50, 50]) %>
-                        <% else %>
-                          <% image_tag 's-product/product.jpg'%>
-                        <% end %>
-                      </td>
-                      <td class="product_name"><%= product.name %></td>
-                      <td class="product-price"><%= price product.price %></td>
-                      <td class="product_quantity"><label>Cantitate:</label>
-                        <input min="1" max="100" value="<%= qty %>" type="number"></td>
-                      <td class="product_total"><%= price product.price * qty %></td>
-                    </tr>
-                  <% end %>
-
-                  </tbody>
-                </table>
-              </div>
-              <div class="cart_submit">
-                <button type="submit">update cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="coupon_area">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="coupon_code right">
-                <div class="coupon_inner">
-                  <div class="cart_subtotal">
-                    <p>Total</p>
-                    <p class="cart_amount">£215.00</p>
-                  </div>
-                  <div class="checkout_btn">
-                    <a href="#">Proceed to Checkout</a>
-                  </div>
+          <div class="col-lg-12 col-md-12">
+            <div class="coupon_code right">
+              <div class="coupon_inner">
+                <div class="cart_subtotal">
+                  <p>Total</p>
+                  <p class="cart_amount" id="basket_total"><%= price Basket.total_price(session[:basket]) %></p>
                 </div>
+
+                <%= form_tag action: 'send_order', controller: 'public' do %>
+                  <div align="right">
+                    <label>Alege modalitatea de livrare:</label>
+                    <select class='form-control' id="delivery_method" name="delivery_method">
+                      <option value="pickup">Ridicare din magazin</option>
+                      <option value="delivery">Livrare la domiciliu</option>
+                    </select>
+                  </div>
+
+                  <div align="right">
+                    <label>Nume:</label>
+                    <input class='form-control' type="text" name="name" required/>
+                  </div>
+
+                  <div align="right">
+                    <label>Telefon:</label>
+                    <input class='form-control' type="tel" name="phone" pattern="0[0-9]{3}[0-9]{6}" required/>
+                  </div>
+
+                  <div align="right" id="address-field" style="display: none;">
+                    <label>Adresa:</label>
+                    <input class='form-control' type="text" name="address"/>
+                  </div>
+
+                  <div class="checkout_btn">
+                    <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
+                    <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled: true, class: 'btn btn-success'} %>
+                  </div>
+                <% end %>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   <% end %>
 </div>

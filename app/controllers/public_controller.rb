@@ -25,7 +25,7 @@ class PublicController < ApplicationController
   end
 
   def send_order
-    BasketMailer.with(basket: session[:basket]).order_email.deliver_now
+    BasketMailer.with(basket: session[:basket], method: params[:delivery_method], name: params[:name], phone: params[:phone], address: params[:address]).order_email.deliver_now
 
     flash[:notice] = 'Comanda trimisă!'
     redirect_to public_index_path
