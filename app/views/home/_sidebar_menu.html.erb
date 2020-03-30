@@ -1,25 +1,113 @@
-<div class="col-lg-3">
+<div class="col-lg-3 col-md-12">
+                   <!--sidebar widget start-->
+                    <aside class="sidebar_widget">
+                        <div class="widget_inner">
+                            <div class="widget_list widget_categories">
+                              <div class="categories_title">
+                                <h2>Categorii Produse</h2>
+                              </div>
+                                <ul>
+                                    <% @main_categories.each do |category| %>
+                                    <li class="widget_sub_categories sub_categories" >
+                                        <%= link_to category.name, {c:category.id}, id:category.id %>
+                                        <ul class="widget_dropdown_categories dropdown_categories_<%=category.id%>">
+                                            <% category.subcategories.each do |subcategory| %>
+                                              <li>
+                                                <%= link_to subcategory.name, {c:subcategory.id} %>
+                                              </li>
+                                            <% end %>
+                                        </ul>
+                                    </li>
+                                    <% end %>
+                                </ul>
+                            </div>
+                            <!-- <div class="widget_list widget_filter">
+                                <h3>Filter by price</h3>
+                                <form action="#">
+                                    <div id="slider-range"></div>
+                                    <button type="submit">Filter</button>
+                                    <input type="text" name="text" id="amount" />
 
-    <div class="categories_menu categories_three">
-        <div class="categories_title">
-            <h2 class="categori_toggle">Categorii Produse</h2>
-        </div>
-        <div class="categories_menu_toggle">
-            <ul>
-                <% @main_categories.each do |category| %>
-                <li class="menu_item_children"><a href="#"> <%= category.name %><i class="fa fa-angle-right"></i></a>
-                    <ul class="categories_mega_menu">
-                        <li class="menu_item_children">
-                            <ul class="categorie_sub_menu">
-                                <% category.subcategories.each do |subcategory| %>
-                                  <li> <%= link_to subcategory.name, {categorie:subcategory.id} %></li>
-                                <% end %>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <% end %>
-            </ul>
-        </div>
-    </div>
-</div>
+                                </form>
+                            </div>
+                            <div class="widget_list widget_color">
+                                <h3>Select By Color</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Black  <span>(6)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Blue <span>(8)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Brown <span>(10)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Green <span>(6)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pink <span>(4)</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="widget_list widget_color">
+                                <h3>Select By SIze</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">S  <span>(6)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> M <span>(8)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">L <span>(10)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> XL <span>(6)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">XLL <span>(4)</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="widget_list widget_manu">
+                                <h3>Manufacturer</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Brake Parts <span>(6)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accessories <span>(10)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engine Parts <span>(4)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">hermes <span>(10)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">louis vuitton <span>(8)</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="widget_list tags_widget">
+                                <h3>Product tags</h3>
+                                <div class="tag_cloud">
+                                    <a href="#">Men</a>
+                                    <a href="#">Women</a>
+                                    <a href="#">Watches</a>
+                                    <a href="#">Bags</a>
+                                    <a href="#">Dress</a>
+                                    <a href="#">Belt</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#">Shoes</a>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </aside>
+                    <!--sidebar widget end-->
+                </div>

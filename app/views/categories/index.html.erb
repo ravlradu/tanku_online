@@ -2,7 +2,7 @@
 
 <h1>Categorii de produse</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Nume</th>
@@ -26,5 +26,5 @@
 
 <br>
 
-<%= link_to 'Crează o categorie nouă', new_category_path %> |
+<%= link_to 'Crează o categorie nouă', new_category_path, class:"btn btn-primary" %> |
 <%= link_to 'Înapoi la pagina de administrare', admin_private_path %>

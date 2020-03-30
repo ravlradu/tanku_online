@@ -2,7 +2,11 @@
 
 <h1>Produse</h1>
 
-<table>
+
+
+<%= link_to 'Crează produs nou', new_product_path, class:"btn btn-primary" %> |
+<%= link_to 'Înapoi la pagina de administrare', admin_private_path %>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Nume</th>
@@ -11,7 +15,7 @@
       <th>Vizibil</th>
       <th>Preț</th>
       <th>Bucăți disponibile</th>
-      <th colspan="4"></th>
+      <th colspan="4"> Action</th>
     </tr>
   </thead>
 
@@ -29,8 +33,10 @@
         <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
         <td>
           <%= form_with(model: product) do |f| %>
-            <%= f.select :category_id, Category.all.map { |c| [c.name, c.id] } %>
-            <%= f.submit 'Salvează categoria' %>
+            <div class="form-group">
+              <%= f.select :category_id, Category.all.map { |c| [c.name, c.id] },{}, {class:"form-control"} %>
+              <%= f.submit 'Salvează categoria', class:'btn btn-sm btn-info' %>
+            </div>
           <% end %>
         </td>
       </tr>
@@ -39,6 +45,3 @@
 </table>
 
 <br>
-
-<%= link_to 'Crează produs nou', new_product_path %> |
-<%= link_to 'Înapoi la pagina de administrare', admin_private_path %>

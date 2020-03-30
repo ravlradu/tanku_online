@@ -1585,7 +1585,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   position: relative;
   color: #fff;
 }
-.categories_title h2::before {
+.categories_titlex h2::before {
   content: "\f394";
   font-family: "Ionicons";
   color: #fff;
@@ -1597,7 +1597,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   top: 50%;
   transform: translatey(-50%);
 }
-.categories_title h2::after {
+.categories_titlex h2::after {
   content: "\f3d0";
   font-family: "Ionicons";
   color: #fff;

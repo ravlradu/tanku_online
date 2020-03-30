@@ -452,7 +452,7 @@
 }
 .logo{
     & img{
-        max-width: 150px;
+        max-width: 220px;
         @media #{$large-mobile}{
             max-width: 120px;
         }
@@ -1107,32 +1107,7 @@
         padding-left: 35px;
         position: relative;
         color: #fff;
-        &::before{
-            content: "\f394";
-            font-family: "Ionicons";
-            color: #fff;
-            display:block;
-            position: absolute;
-            font-size: 22px;
-            line-height: 0px;
-            left: 0;
-            top: 50%;
-            transform: translatey(-50%);
 
-        }
-        &::after{
-            content: "\f3d0";
-            font-family: "Ionicons";
-            color: #fff;
-            display:block;
-            position: absolute;
-            font-size: 13px;
-            line-height: 0px;
-            right: 17px;
-            top: 50%;
-            transform: translatey(-50%);
-
-        }
         @media #{$tablet-device}{
             line-height: 45px;
             float: inherit;
