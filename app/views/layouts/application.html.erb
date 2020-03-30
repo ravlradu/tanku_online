@@ -15,6 +15,18 @@
       <!-- CSS
       ========================= -->
       <!--modernizr min js here-->
+      <div class="off_canvars_overlay">
+
+      </div>
+      <%= render partial:"offcanvas_menu" %>
+
+      <header>
+          <div class="main_header">
+              <%= render partial: "header_top" %>
+              <%= render partial: "header_middle" %>
+          </div>
+      </header>
+      <!--header area end-->
       <script type="text/javascript">
 
         function addToCart(productId) {
@@ -38,5 +50,11 @@
 
     <%= yield %>
 
+
+
+
+        <%= render partial: "footer_area" %>
+
+        <%= render partial: "modal_area" %>
   </body>
 </html>

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'admin/index'
   get 'admin/private'
   get 'home', to:"home#index"
+  get 'cart', to:"home#cart"
   resources :products
   resources :categories
 
