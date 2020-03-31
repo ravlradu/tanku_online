@@ -24,28 +24,28 @@ c=Category.create name:"FRUCTE SI LEGUME PROASPETE"
 c=Category.create name:"BRUTARIE – PATISERIE"
   Category.create name:"PAINE", parent_id:c.id
   Category.create name:"COFETARIE – PATISERIE", parent_id:c.id
-c=Category.create name:"CARNE SI SEMIPREPARATE CARNE", parent_id:c.id
+c=Category.create name:"CARNE SI SEMIPREPARATE CARNE"
   Category.create name:"CARNE PROASPATA", parent_id:c.id
   Category.create name:"PRODUSE SEMIPREPARATE", parent_id:c.id
-c=Category.create name:"MEZELURI", parent_id:c.id
+c=Category.create name:"MEZELURI"
   Category.create name:"SALAM", parent_id:c.id
   Category.create name:"SUNCA", parent_id:c.id
   Category.create name:"CARNATI", parent_id:c.id
   Category.create name:"BACON", parent_id:c.id
   Category.create name:"CRENVURSTI", parent_id:c.id
   Category.create name:"PARIZER", parent_id:c.id
-c=Category.create name:"CONGELATE", parent_id:c.id
+c=Category.create name:"CONGELATE"
   Category.create name:"CARNE", parent_id:c.id
   Category.create name:"PESTE SI FRUCTE DE MARE", parent_id:c.id
-  Category.create name:"LEGUME SI FRUCTE"
-  Category.create name:"SEMIPREPARATE"
-c=Category.create name:"CONSERVE SI COMPOTURI", parent_id:c.id
+  Category.create name:"LEGUME SI FRUCTE", parent_id:c.id
+  Category.create name:"SEMIPREPARATE", parent_id:c.id
+c=Category.create name:"CONSERVE SI COMPOTURI"
   Category.create name:"CONSERVE CARNE SI PATE", parent_id:c.id
   Category.create name:"CONSERVE PESTE", parent_id:c.id
   Category.create name:"CONSERVE LEGUME SI FRUCTE", parent_id:c.id
   Category.create name:"CONSERVE MURATURI", parent_id:c.id
   Category.create name:"COMPOTURI", parent_id:c.id
-c=Category.create name:"SOSURI SI PASTE DE TOMATE", parent_id:c.id
+c=Category.create name:"SOSURI SI PASTE DE TOMATE"
   Category.create name:"PASTE DE TOMATE SI BULION", parent_id:c.id
   Category.create name:"SOSURI", parent_id:c.id
   Category.create name:"KETCHUP", parent_id:c.id

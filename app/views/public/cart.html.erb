@@ -90,16 +90,20 @@
               <table class="table">
                 <thead>
                 <tr>
-                  <th class="product_remove">Șterge</th>
                   <th class="product_thumb">Imagine</th>
                   <th class="product_name">Produs</th>
                   <th class="product-price">Preț</th>
                   <th class="product_quantity">Cantitate</th>
                   <th class="product_total">Total</th>
+                  <th class="product_remove">Șterge</th>
                 </tr>
                 </thead>
                 <tbody id="cart_products">
                 <%= render 'cart_products' %>
+                <tr>
+                  <td colspan="4" align="right">Total</td>
+                  <td colspan="2" id="basket_total"><%= price Basket.total_price(session[:basket]) %></td>
+                </tr>
                 </tbody>
               </table>
             </div>
@@ -111,43 +115,46 @@
           <div class="col-lg-12 col-md-12">
             <div class="coupon_code right">
               <div class="coupon_inner">
-                <div class="cart_subtotal">
-                  <p>Total</p>
-                  <p class="cart_amount" id="basket_total"><%= price Basket.total_price(session[:basket]) %></p>
+                <div class="row">
+                  <h2><span>Finalizare Comanda </span></h2>
+                </div>
                 </div>
 
                 <%= form_tag action: 'send_order', controller: 'public' do %>
-                  <div class="form-group">
-                    <div align="right">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
                       <label>Alege modalitatea de livrare:</label>
-                      <select class='form-control-sm' id="delivery_method" name="delivery_method">
+                      <select class='form-control' id="delivery_method" name="delivery_method">
                         <option value="pickup">Ridicare din magazin</option>
                         <option value="delivery">Livrare la domiciliu</option>
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div align="right">
-                      <label>Nume:</label>
-                      <input class='form-control-sm' type="text" name="name" required/>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Nume:</label>
+                        <input class='form-control' type="text" name="name" required/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Telefon:</label>
+                        <input class='form-control' type="tel" name="phone" pattern="0[0-9]{3}[0-9]{6}" required/>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div align="right">
-                      <label>Telefon:</label>
-                      <input class='form-control-sm' type="tel" name="phone" pattern="0[0-9]{3}[0-9]{6}" required/>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div align="right" id="address-field" style="display: none;">
-                      <label>Adresa:</label>
-                      <input class='form-control-md' type="text" name="address"/>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <div id="address-field" style="display: none;">
+                        <label>Adresa:</label>
+                        <input class='form-control' type="text" name="address"/>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="checkout_btn">
-                      <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
-                      <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled:(Basket.total_price(session[:basket])< 5000), class: 'btn btn-success'} %>
+                      <% if Basket.total_price(session[:basket]) <  SUMA_MINIMA_BANI%>
+                        <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
+                      <% end %>
+                      <%= button_tag 'Trimite comanda', {id: 'checkout_btn', disabled:(Basket.total_price(session[:basket])< 5000), class: 'btn btn-success'} %>
                     </div>
                   </div>
                 </div>

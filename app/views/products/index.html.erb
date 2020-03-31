@@ -36,7 +36,7 @@
         <td>
           <%= form_with(model: product) do |f| %>
             <div class="form-group">
-              <%= f.select :category_id, Category.all.map { |c| [c.name, c.id] },{}, {class:"form-control"} %>
+              <%= f.select :category_id, Category.all.map { |c| [c.selector_name, c.id] },{}, {class:"form-control"} %>
               <%= f.submit 'Salvează categoria', class:'btn btn-sm btn-info' %>
             </div>
           <% end %>

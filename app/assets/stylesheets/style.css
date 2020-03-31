@@ -7290,7 +7290,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .checkout_btn a {
   background: #8CC63F;
-  color: #ffffff;
+  color: #F58220;
   font-size: 15px;
   padding: 3px 14px;
   line-height: 30px;
@@ -7300,7 +7300,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .checkout_btn a:hover {
   background: #222222;
-  color: #ffffff;
+  color: #F58220;
 }
 
 .coupon_area {

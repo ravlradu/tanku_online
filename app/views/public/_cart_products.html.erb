@@ -1,9 +1,7 @@
 <% session[:basket].to_h.each do |prod_id, qty| %>
   <% product = Product.find(prod_id) %>
   <tr>
-    <td class="product_remove">
-      <a onclick="delete_from_cart(<%= product.id %>)" > <i class="fa fa-trash-o"></i></a>
-    </td>
+
     <td class="product_thumb">
       <% if product.image.attached? %>
         <%= image_tag product.image.variant(resize_to_limit: [50, 50]) %>
@@ -16,5 +14,8 @@
     <td class="product_quantity"><label>Cantitate:</label>
       <input min="0" max="10000" value="<%= qty %>" type="number" class="qty-input" id="qty-input-<%= product.id %>" data-product-id="<%= product.id %>"></td>
     <td class="product_total"><%= price product.price * qty %></td>
+    <td class="product_remove">
+      <a onclick="delete_from_cart(<%= product.id %>)" > <i class="fa fa-trash-o"></i></a>
+    </td>
   </tr>
 <% end %>
