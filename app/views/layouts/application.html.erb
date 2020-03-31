@@ -42,6 +42,13 @@
           }).done(function() {
           });
         }
+
+        function selectCategory(categoryId) {
+          $.ajax({
+            url: "public/index/"+categoryId
+          }).done(function() {
+          });
+        }
       </script>
   </head>
 

@@ -627,12 +627,12 @@
 
     /*---widget sub categories---*/
     $(".sub_categories > a").on("click", function(e) {
+        console.log(this.offsetWidth, e.offsetX);
         if (this.offsetWidth - e.offsetX < 30 ) {
           e.preventDefault();
-          $(this).toggleClass('active');
-          $('.dropdown_categories_'+$(this).attr("id")).slideToggle('medium');
         }
-
+        $(this).toggleClass('active');
+        $('.dropdown_categories_'+$(this).attr("id")).slideToggle('medium');
     });
 
     /*---widget sub categories---*/

@@ -7,30 +7,30 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <%= javascript_pack_tag "application" %>
 </head>
 
 <body>
 
 <p><!-- this should sit in the header (alxx) -->
-  <% if @current_user.nil? %>
-    <%= link_to 'Login', admin_index_path %>
-  <% else %>
-    <%= link_to 'Logout', authentication_logout_path %>
-  <% end %>
+
 </p>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li>
-              <%= link_to "Categorii", categories_path %>
-          </li>
-          <li>
-              <%= link_to "Produse", products_path %>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <% if @current_user %>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li class=<%= params[:controller]=="admin" ? 'active':'' %>> <%= link_to "Home", "/admin/private" %> </li>
+              <li class=<%= params[:controller]=="categories" ? 'active':'' %>>
+                  <%= link_to "Categorii", categories_path %>
+              </li>
+              <li class=<%= params[:controller]=="products" ? 'active':''%>>
+                  <%= link_to "Produse", products_path %>
+              </li>
+              <li><%= link_to 'Logout', authentication_logout_path %></li>
+            </ul>
+          </div>
+        </nav>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>

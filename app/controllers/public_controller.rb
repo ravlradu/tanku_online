@@ -47,6 +47,10 @@ class PublicController < ApplicationController
     else
       @products = Product.where('available_count > 0')
     end
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
   def cart
