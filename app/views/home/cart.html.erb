@@ -81,7 +81,7 @@
         <div class="col-12">
           <div class="table_desc">
             <div class="cart_page table-responsive">
-              <table>
+              <table class="table">
                 <thead>
                 <tr>
                   <th class="product_remove">Șterge</th>
@@ -111,33 +111,40 @@
                 </div>
 
                 <%= form_tag action: 'send_order', controller: 'public' do %>
-                  <div align="right">
-                    <label>Alege modalitatea de livrare:</label>
-                    <select class='form-control' id="delivery_method" name="delivery_method">
-                      <option value="pickup">Ridicare din magazin</option>
-                      <option value="delivery">Livrare la domiciliu</option>
-                    </select>
+                  <div class="form-group">
+                    <div align="right">
+                      <label>Alege modalitatea de livrare:</label>
+                      <select class='form-control-sm' id="delivery_method" name="delivery_method">
+                        <option value="pickup">Ridicare din magazin</option>
+                        <option value="delivery">Livrare la domiciliu</option>
+                      </select>
+                    </div>
                   </div>
-
-                  <div align="right">
-                    <label>Nume:</label>
-                    <input class='form-control' type="text" name="name" required/>
+                  <div class="form-group">
+                    <div align="right">
+                      <label>Nume:</label>
+                      <input class='form-control-sm' type="text" name="name" required/>
+                    </div>
                   </div>
-
-                  <div align="right">
-                    <label>Telefon:</label>
-                    <input class='form-control' type="tel" name="phone" pattern="0[0-9]{3}[0-9]{6}" required/>
+                  <div class="form-group">
+                    <div align="right">
+                      <label>Telefon:</label>
+                      <input class='form-control-sm' type="tel" name="phone" pattern="0[0-9]{3}[0-9]{6}" required/>
+                    </div>
                   </div>
-
-                  <div align="right" id="address-field" style="display: none;">
-                    <label>Adresa:</label>
-                    <input class='form-control' type="text" name="address"/>
+                  <div class="form-group">
+                    <div align="right" id="address-field" style="display: none;">
+                      <label>Adresa:</label>
+                      <input class='form-control-md' type="text" name="address"/>
+                    </div>
                   </div>
-
-                  <div class="checkout_btn">
-                    <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
-                    <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled: true, class: 'btn btn-success'} %>
+                  <div class="form-group">
+                    <div class="checkout_btn">
+                      <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
+                      <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled: true, class: 'btn btn-success'} %>
+                    </div>
                   </div>
+                </div>
                 <% end %>
               </div>
             </div>
