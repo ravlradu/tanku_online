@@ -2,10 +2,7 @@
   <% product = Product.find(prod_id) %>
   <tr>
     <td class="product_remove">
-      <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe,
-                  {action: 'ajax_update_cart', controller: 'home', product_id: product.id, qty: 0},
-                  data: {confirm: 'Sunteți sigur că doriți să scoateți acest produs din coș?'},
-                  remote: true %>
+      <a onclick="delete_from_cart(<%= product.id %>)" > <i class="fa fa-trash-o"></i></a>
     </td>
     <td class="product_thumb">
       <% if product.image.attached? %>

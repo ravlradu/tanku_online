@@ -17,4 +17,4 @@
 <% end %>
 
 $('#qty-input-<%= @product.id %>').prop('disabled', false);
-
+$('#cart').html(' <%= j render partial:'public/cart' %>')

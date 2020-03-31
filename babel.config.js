@@ -57,6 +57,7 @@ module.exports = function(api) {
         '@babel/plugin-transform-runtime',
         {
           helpers: false,
+          allowReturnOutsideFunction: true,
           regenerator: true,
           corejs: false
         }

@@ -1,1 +1,20 @@
-$('#cart').html(' <%= j render partial:'home/cart' %>')
+<% if @product %>
+    var total = parseInt('<%= total = Basket.total_price(session[:basket]) %>');
+    $('#cart_products').html("<%= j render(partial:'cart_products') %>");
+    $('#basket_total').html("<%= j(price(total)) %>");
+
+    if (total < <%= SUMA_MINIMA_BANI %>) {
+        $('#not_enough').show();
+        $('#checkout_btn').prop('disabled', true);
+    } else {
+        $('#not_enough').hide();
+        $('#checkout_btn').prop('disabled', false);
+    }
+
+    console.log('cart updated');
+<% else %>
+    alert('Coșul nu a putut fi actualizat!');
+<% end %>
+
+$('#qty-input-<%= @product.id %>').prop('disabled', false);
+$('#cart').html(' <%= j render partial:'public/cart' %>')

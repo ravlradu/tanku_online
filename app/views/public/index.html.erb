@@ -1,20 +1,9 @@
-<h1>Bine ați venit!</h1>
 
-<% Product.all.each do |product| %>
-
-  <div style="border: 1px solid black; padding: 20px;">
-    <h3><%= product.name %></h3>
-
-    <% c = product.category %>
-    <% if c.parent %>
-      <p>Categorie: <%= c.parent.name %> / subcategorie: <%= c.name %></p>
-    <% else %>
-      <p>Categorie: <%= c.name %></p>
-    <% end %>
-
-    <h4><%= price product.price %></h4>
-
-    <%= link_to 'Adaugă în coș', action: 'add_to_basket', id: product.id, qty: 1 %>
-  </div>
-
-<% end %>
+    <div class="shop_area shop_reverse mt-70 mb-70">
+          <div class="container">
+              <div class="row">
+                <%= render partial:"sidebar_menu" %>
+                <%= render partial: "product_area" %>
+              </div>
+          </div>
+    </div>

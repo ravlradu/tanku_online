@@ -4,13 +4,19 @@
     function update_cart(product_id, qty) {
         $.ajax({
             method: 'GET',
-            url: '<%= url_for action:'ajax_update_cart', controller: 'home' %>',
+            url: '<%= url_for action:'ajax_update_cart', controller: 'public' %>',
             data: {
                 product_id: product_id,
                 qty: qty,
                 authenticity_token: '<%= form_authenticity_token %>'
             }
         });
+    }
+
+    function delete_from_cart(productId) {
+      if (confirm('Sunteți sigur că doriți să scoateți acest produs din coș?')) {
+        removeFromCart(productId);
+      }
     }
 
     $('body').on('change', '.qty-input', function () {
@@ -141,7 +147,7 @@
                   <div class="form-group">
                     <div class="checkout_btn">
                       <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
-                      <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled: true, class: 'btn btn-success'} %>
+                      <%= submit_tag 'Trimite comanda', {id: 'checkout_btn', disabled:(Basket.total_price(session[:basket])< 5000), class: 'btn btn-success'} %>
                     </div>
                   </div>
                 </div>

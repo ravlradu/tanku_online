@@ -12,7 +12,7 @@
                  </div>
                   <div class="cart_info">
                       <a > <%= item[:name] %></a>
-                      <p> <%= item[:quantity] %> x <span> <%= item[:unit_price] %> </span></p>
+                      <p> <%= item[:quantity] %> x <span> <%= price item[:unit_price] %> </span></p>
                   </div>
                   <div class="cart_remove">
                       <a onclick="removeFromCart(<%= item[:id] %>)"><i class="icon-x"></i></a>
@@ -28,7 +28,7 @@
                 </div> -->
                 <div class="cart_total mt-10">
                     <span>total:</span>
-                    <span class="price"> Lei: <%= @basket_data[:total] %></span>
+                    <span class="price"> Lei: <%= price @basket_data[:total] %></span>
                 </div>
             </div>
         </div>

@@ -7,9 +7,8 @@ Rails.application.routes.draw do
   get 'authentication/logout'
   get 'admin/index'
   get 'admin/private'
-  get 'home', to:"home#index"
-  get 'home/ajax_update_cart'
-  get 'cart', to:"home#cart"
+  get 'public/ajax_update_cart'
+  get 'cart', to:"public#cart"
   resources :products
   resources :categories
 

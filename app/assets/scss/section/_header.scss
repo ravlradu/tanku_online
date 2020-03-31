@@ -757,6 +757,7 @@
     &:hover{
         & .mini_cart{
             max-height: 500px;
+						overflow: auto;
             padding: 18px 28px 33px;
             visibility: visible;
              @media #{$tablet-device}{
@@ -914,7 +915,6 @@
             color: $body-color;
         }
     }
-
 }
 
 /*mini cart css end*/
