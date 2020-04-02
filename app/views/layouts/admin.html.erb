@@ -26,6 +26,9 @@
               <li class=<%= params[:controller]=="products" ? 'active':''%>>
                   <%= link_to "Produse", products_path %>
               </li>
+              <li class=<%= (params[:controller]=="admin" && params[:action] == 'orders') ? 'active':''%>>
+                  <%= link_to "Comenzi", controller: 'admin', action: 'orders' %>
+              </li>
               <li><%= link_to 'Logout', authentication_logout_path %></li>
             </ul>
           </div>

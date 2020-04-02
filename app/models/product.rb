@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id              :integer(8)      not null, primary key
+#  name            :string(255)
+#  description     :text(65535)
+#  category_id     :integer(4)
+#  is_visible      :boolean
+#  price           :integer(4)
+#  available_count :integer(4)
+#  created_at      :datetime        not null
+#  updated_at      :datetime        not null
+#  externalid      :string(255)
+#
+
 require 'csv'
 class Product < ApplicationRecord
 
@@ -37,3 +53,4 @@ class Product < ApplicationRecord
   end
 
 end
+

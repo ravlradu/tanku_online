@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'authentication/logout'
   get 'admin/index'
   get 'admin/private'
+  get 'admin/orders'
   get 'public/ajax_update_cart'
   get 'cart', to:"public#cart"
   resources :products

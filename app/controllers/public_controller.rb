@@ -4,7 +4,18 @@ class PublicController < ApplicationController
 
   def add_to_basket
     basket = session[:basket].to_h
-    basket.merge!({params[:id].to_s => basket[params[:id].to_s].to_i + params[:qty].to_i})
+    product = Product.where(id: params[:id]).first
+
+    existing_qty = basket[product.id.to_s].nil? ? 0 : basket[product.id.to_s]["qty"]
+
+    basket.merge!({
+                      product.id.to_s => {
+                          'qty' => existing_qty + params["qty"].to_i,
+                          'name' => product.name,
+                          'thumbnail_url' => product.image_url([83,83])&.service_url,
+                          'price' => product.price
+                      }
+                  })
     session[:basket] = basket
     set_basket_data
     logger.info "\n\n basket data #{@basket_data.inspect}"
@@ -26,15 +37,20 @@ class PublicController < ApplicationController
   end
 
   def send_order
-    session[:basket].to_h.each{|k,v|
-      product = Product.where(id:k).first
-      product.update_attributes available_count:product.available_count.to_i-v.to_i if product
+    session[:basket].to_h.each{|prod_id, details|
+      product = Product.where(id: prod_id).first
+      product.update_attributes available_count:product.available_count.to_i - details['qty'] if product
     }
+
+    Order.create payload: session[:basket],
+                 payload_price: Basket::total_price(session[:basket]),
+                 delivery_type: params[:delivery_method]
+
     session[:basket] = {}
     BasketMailer.with(basket: session[:basket], method: params[:delivery_method], name: params[:name], phone: params[:phone], address: params[:address]).order_email.deliver_now
 
     flash[:notice] = 'Comanda trimisă!'
-    redirect_to public_index_path
+    redirect_to action: 'index'
   end
 
 

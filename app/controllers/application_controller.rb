@@ -32,17 +32,17 @@ class ApplicationController < ActionController::Base
       items:[]
     }
     return unless session[:basket]
-    session[:basket].each do |prod_id, prod_qty|
-      product = Product.where(id:prod_id).first
-      next unless product
-      @basket_data[:items] << { name: product.name,
-                                quantity: prod_qty,
-                                unit_price: product.price,
-                                total_price: (product.price * prod_qty),
-                                image_url: product.image_url([83,83]),
-                                id: product.id
+    session[:basket].each do |prod_id, prod_details|
+      #product = Product.where(id:prod_id).first
+      #next unless product
+      @basket_data[:items] << { name: prod_details['name'],
+                                quantity: prod_details['qty'],
+                                unit_price: prod_details['price'],
+                                total_price: (prod_details['price'] * prod_details['qty']),
+                                image_url: prod_details['thumbnail_url'],
+                                id: prod_id
                               }
-      @basket_data[:total] += product.price * prod_qty
+      @basket_data[:total] += prod_details['price'] * prod_details['qty']
     end
   end
 

@@ -11,4 +11,8 @@ class AdminController < ApplicationController
 
   def private
   end
+
+  def orders
+    @orders = Order.order(created_at: :desc).all
+  end
 end

@@ -1,21 +1,20 @@
-<% session[:basket].to_h.each do |prod_id, qty| %>
-  <% product = Product.find(prod_id) %>
+<% session[:basket].to_h.each do |prod_id, details| %>
   <tr>
 
     <td class="product_thumb">
-      <% if product.image.attached? %>
-        <%= image_tag product.image.variant(resize_to_limit: [50, 50]) %>
+      <% if details['thumbnail_url'] %>
+        <%= image_tag details['thumbnail_url'] %>
       <% else %>
         <% image_tag 's-product/product.jpg'%>
       <% end %>
     </td>
-    <td class="product_name"><%= product.name %></td>
-    <td class="product-price"><%= price product.price %></td>
+    <td class="product_name"><%= details['name'] %></td>
+    <td class="product-price"><%= price details['price'] %></td>
     <td class="product_quantity"><label>Cantitate:</label>
-      <input min="0" max="10000" value="<%= qty %>" type="number" class="qty-input" id="qty-input-<%= product.id %>" data-product-id="<%= product.id %>"></td>
-    <td class="product_total"><%= price product.price * qty %></td>
+      <input min="0" max="10000" value="<%= details['qty'] %>" type="number" class="qty-input" id="qty-input-<%= prod_id %>" data-product-id="<%= prod_id %>"></td>
+    <td class="product_total"><%= price details['price'] * details['qty'] %></td>
     <td class="product_remove">
-      <a onclick="delete_from_cart(<%= product.id %>)" > <i class="fa fa-trash-o"></i></a>
+      <a onclick="delete_from_cart(<%= prod_id %>)" > <i class="fa fa-trash-o"></i></a>
     </td>
   </tr>
 <% end %>

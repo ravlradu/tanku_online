@@ -14,14 +14,14 @@
       </thead>
       <tbody>
       <% total = 0 %>
-      <% session[:basket].each do |prod_id, prod_qty| %>
-        <% prod = Product.find(prod_id) %>
-        <% total += prod.price * prod_qty %>
+      <% session[:basket].each do |prod_id, prod_details| %>
+        <% #prod = Product.find(prod_id) %>
+        <% total += prod_details[:price] * prod_details[:prod_qty] %>
         <tr>
-          <td><%= prod.name %></td>
-          <td><%= prod_qty %></td>
-          <td><%= price prod.price %></td>
-          <td><%= price(prod.price * prod_qty) %></td>
+          <td><%= prod_details[:name] %></td>
+          <td><%= prod_details[:qty] %></td>
+          <td><%= price prod_details[:price] %></td>
+          <td><%= price(prod_details[:price] * prod_details[:prod_qty]) %></td>
         </tr>
       <% end %>
       </tbody>

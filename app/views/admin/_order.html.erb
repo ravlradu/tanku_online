@@ -1,0 +1,32 @@
+<div>
+
+  <ul>
+
+    <li>Făcut la: <%= order.created_at %></li>
+    <li>Tip: <%= Order::TYPES[order.delivery_type] %></li>
+    <li>Printat la: <%= order.printed_at || "încă nu" %></li>
+    <li>Livrat/ridicat la: <%= order.delivered_at || "încă nu" %></li>
+    <li>
+      <table border="1">
+        <thead>
+          <td>Produs</td>
+          <td>Cantitate</td>
+          <td>Preț la momentul comenzii</td>
+          <td>Total</td>
+        </thead>
+        <tbody>
+          <% order.payload.each do |_prod_id, details| %>
+            <tr>
+              <td><%= details['name'] %></td>
+              <td><%= details['qty'] %></td>
+              <td><%= price details['price'] %></td>
+              <td><%= price(details['price'] * details['qty']) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </li>
+    <li>Total: <%= price order.payload_price %></li>
+  </ul>
+
+</div>

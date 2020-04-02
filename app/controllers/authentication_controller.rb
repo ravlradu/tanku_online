@@ -20,6 +20,7 @@ class AuthenticationController < ApplicationController
   def logout
     logger.info "Logging out"
     session[:user_id] = nil
+    session[:basket] = {}
     flash[:notice] = 'Logout.'
     redirect_to admin_index_path
   end

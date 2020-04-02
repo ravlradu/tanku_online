@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id         :integer(8)      not null, primary key
+#  name       :string(255)
+#  is_visible :boolean
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#  parent_id  :integer(4)
+#
+
 class Category < ApplicationRecord
 
   has_many :products
@@ -10,3 +22,4 @@ class Category < ApplicationRecord
   end
 
 end
+
