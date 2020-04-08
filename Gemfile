@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # To see what each model has for attributes
 gem 'nofxx-annotate'
 
+# Keep the session in the db because CookieStore only holds 4k and the shopping cart might get bigger than that
+gem 'activerecord-session_store'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
