@@ -31,16 +31,18 @@ class Product < ApplicationRecord
 
   def self.import_from_csv file_name
     begin
-      CSV.foreach(file_name, {:headers => true, :header_converters => :symbol}) do |row|
+      CSV.foreach(file_name, {:headers => true, :header_converters => :symbol, :col_sep=>";"}) do |row|
 
         attributes = {
           name: row[:descriere],
           price: row[:pret].to_i*100,
-          externalid: row[:barcode],
-          available_count: row[:cantitate]
+          externalid: row[:cod],
+          um: row[:um],
+          available_count: row[:cantitate],
+          is_visible: true
         }
         puts "#{attributes.inspect}"
-        product = Product.where(externalid: row[:barcode]).first
+        product = Product.where(externalid: row[:cod]).first
         if product
           product.update attributes
         else
@@ -53,4 +55,3 @@ class Product < ApplicationRecord
   end
 
 end
-

@@ -9,16 +9,16 @@
             <div class="col-lg-9">
                 <div class=" header_right_info">
                     <div class="col-lg-7 search_container">
-                       <form action="#">
+                         <%= form_with do %>
                            <div class="hover_category">
-                             <%= select_tag :select, options_from_collection_for_select(@main_categories, "id", "name"), include_blank:"Alege categorie produs", class:"select_option", id:"categori1" %>
+                             <%= select_tag :category, options_from_collection_for_select(@main_categories, "id", "name"), include_blank:"Alege categorie produs", class:"select_option", id:"categori1" %>
 
                            </div>
                             <div class="search_box">
-                                <input placeholder="Caută produs..." type="text">
+                                <input placeholder="Caută produs..." type="text" id="search" name="search">
                                  <button type="submit"><span class="lnr lnr-magnifier"></span></button>
                             </div>
-                        </form>
+                         <% end %>
                     </div>
                     <div class="header_account_area col-lg-5">
                         <div class="col-lg-9">

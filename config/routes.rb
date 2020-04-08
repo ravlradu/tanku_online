@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'admin/orders'
   get 'public/ajax_update_cart'
   get 'cart', to:"public#cart"
+  post '/', controller: 'public', action: 'index'
+  get 'products/view', controller:'products', action:'index'
   resources :products
   resources :categories
 

@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  include Pagy::Backend
+
   before_action :get_user
   before_action :check_authentication
   before_action :check_admin
@@ -10,7 +12,25 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    if params[:search]
+      search = ["LOWER(name) like ?", "%#{params[:search].to_s.downcase}%"]
+    else
+      search = "1=1"
+    end
+    if params[:c]
+      if params[:c].to_i==-1
+        ids=[nil]
+      elsif params[:c].empty?
+        @pagy,@products = pagy(Product.where(search),size:[1,2,2,1])
+      else
+        category  = Category.where(id: params[:c]).first
+        ids       = [category.id] + category.subcategories.pluck(:id)
+      end
+      @pagy,@products = pagy(Product.where(search).where(category_id: ids),size:[1,2,2,1])
+    else
+      @pagy,@products = pagy(Product.where(search),size:[1,2,2,1])
+    end
+
   end
 
   # GET /products/1
@@ -49,7 +69,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
-        format.js 
+        format.js
       else
         format.html { render :edit }
         format.json { render json: @product.errors, status: :unprocessable_entity }

@@ -1,3 +1,44 @@
+<script type="text/javascript">
+  function updateCategory(productId,selector) {
+    var selectedIndex = selector.selectedIndex;
+    var categoryId = selector.options[selectedIndex].value;
+    console.log(categoryId);
+    Rails.ajax({
+      type:"PATCH",
+      headers: {
+          'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+        },
+        beforeSend(xhr, options) {
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8')
+        // Workaround: add options.data late to avoid Content-Type header to already being set in stone
+        // https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts/rails-ujs/utils/ajax.coffee#L53
+        options.data = JSON.stringify({ product: {category_id: categoryId} })
+        return true
+      },
+      url: "products/"+productId,
+      contentType: "application/json",
+      dataType: 'script',
+      success: function(data) {},
+      error: function(data) {}
+    });
+  }
+
+  function showByCategory(selector) {
+    var selectedIndex = selector.selectedIndex;
+    var categoryId = selector.options[selectedIndex].value;
+    console.log(categoryId);
+    Rails.ajax({
+      type:"GET",
+
+      url: "products?c="+categoryId,
+      contentType: "application/json",
+      dataType: 'script',
+      success: function(data) {},
+      error: function(data) {}
+    });
+  }
+</script>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Produse</h1>
@@ -6,44 +47,20 @@
 
 <%= link_to 'Crează produs nou', new_product_path, class:"btn btn-primary" %> |
 <%= link_to 'Înapoi la pagina de administrare', admin_private_path %>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Nume</th>
-      <th>Descriere</th>
-      <th>Categorie</th>
-      <th>Vizibil</th>
-      <th>Preț</th>
-      <th>Bucăți disponibile</th>
-      <th colspan="4"> Action</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
-        <td><%= product.name %></td>
-        <td><%= truncate(product.description, length: 20) %></td>
-        <td><%= product.category&.name %></td>
-        <td><%= product.is_visible %></td>
-        <td><%= price product.price %></td>
-        <td><%= product.available_count %></td>
-        <td><%= link_to 'Arată', product %></td>
-        <td><%= link_to 'Modifică', edit_product_path(product) %></td>
-        <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
-        <td>
-          <%= form_with(model: product) do |f| %>
-            <div class="form-group">
-              <%= f.select :category_id, Category.all.map { |c| [c.selector_name, c.id] },{}, {class:"form-control"} %>
-              <%= f.submit 'Salvează categoria', class:'btn btn-sm btn-info' %>
-            </div>
-          <% end %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row">
+  <%= form_with do |f| %>
+    <div class="form-group col-lg-8">
+      <%= f.label "Filtreaza" %>
+      <%= f.select :category_id, [["Fara categorie",-1]] + Category.all.map { |c| [c.selector_name, c.id] } ,{include_blank:"Toate"}, {onchange:"showByCategory(this)",class:"form-control"} %>
+    </div>
+  <% end %>
+
+</div>
+
+<div id="product_list">
+  <%= render partial:'list' %>
+</div>
+
 
 <br>

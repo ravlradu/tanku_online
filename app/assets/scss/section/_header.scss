@@ -535,6 +535,7 @@
         & ul.list{
             max-height: 300px;
             overflow: auto;
+						color: grey;
              @media #{$tablet-device}{
                 max-height: 220px;
             }
@@ -561,7 +562,7 @@
         display: flex;
         border-radius: 30px;
         border: 1px solid $grey_color;
-        background: $body-color;
+        background: "$body-color";
         width: 540px;
         @media #{$desktop-device}{
             width: 481px;

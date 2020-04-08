@@ -49,6 +49,23 @@
           }).done(function() {
           });
         }
+
+        function searchProducts() {
+          var searchTerm = $('#search').val();
+          var categoryId = $('#categori1').options[$('#categori1').selectedIndex];
+          alert(categoryId,searchTerm);
+          if (searchTerm.length > 2) {
+            $.ajax({
+              method: "POST",
+              url: "search",
+              dataType:'script',
+              data: {
+                search: searchTerm
+              }
+            }).done(function() {
+            });
+          }
+        }
       </script>
   </head>
 

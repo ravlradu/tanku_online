@@ -1,0 +1,45 @@
+<p><%== pagy_nav(@pagy) %></p>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nume</th>
+      <th>Descriere</th>
+      <th>Categorie</th>
+      <th>Vizibil</th>
+      <th>UM</th>
+      <th>Preț</th>
+      <th>Cantitate</th>
+      <th colspan="3"> Action</th>
+      <th>
+        Categorie
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
+        <td><%= product.name %></td>
+        <td><%= truncate(product.description, length: 20) %></td>
+        <td><%= product.category&.name %></td>
+        <td><%= product.is_visible.to_s %></td>
+        <td><%= product.um %></td>
+        <td><%= price product.price %></td>
+        <td><%= product.available_count %></td>
+        <td><%= link_to 'Arată', product %></td>
+        <td><%= link_to 'Modifică', edit_product_path(product) %></td>
+        <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
+        <td>
+          <%= form_with(model: product) do |f| %>
+            <div class="form-group">
+              <%= f.select :category_id, Category.all.map { |c| [c.selector_name, c.id] },{include_blank:"Selecteaza categoria"}, {onchange:"updateCategory(#{product.id}, this)",class:"form-control"} %>
+            </div>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>

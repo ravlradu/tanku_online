@@ -1,0 +1,23 @@
+
+<%#
+  This template is i18n-ready: if you don't use i18n, then you can replace the pagy_t
+  calls with the actual strings ("&lsaquo; Prev", "Next &rsaquo;", "&hellip;").
+
+  The link variable is set to a proc that returns the link tag.
+  Usage: link.call( page_number [, text [, extra_attributes_string ]])
+-%>
+<% link = pagy_link_proc(pagy) -%>
+<%#                            -%><ul>
+<% if pagy.prev                -%>  <li class="page prev"><%== link.call(pagy.prev, "<<", 'aria-label="previous"') %></li>
+<% else                        -%>  <li class="page prev disabled"><%== "<<" %></li>
+<% end                         -%>
+<% pagy.series.each do |item| # series example: [1, :gap, 7, 8, "9", 10, 11, :gap, 36] -%>
+<%   if    item.is_a?(Integer) -%>  <li class="page"><%== link.call(item) %></li>
+<%   elsif item.is_a?(String)  -%>  <li class="page current"><%= item %></li>
+<%   elsif item == :gap        -%>  <li class="page gap"><%== pagy_t('pagy.nav.gap') %></li>
+<%   end                       -%>
+<% end                         -%>
+<% if pagy.next                -%>  <li class="page next"><%== link.call(pagy.next, ">>", 'aria-label="next"') %></li>
+<% else                        -%>  <li class="page next disabled"><%== ">>" %></li>
+<% end                         -%>
+<%#                            -%></ul>
