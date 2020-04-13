@@ -35,7 +35,7 @@ class Product < ApplicationRecord
 
         attributes = {
           name: row[:descriere],
-          price: row[:pret].to_i*100,
+          price: (row[:pret].to_f*100).to_i,
           externalid: row[:cod],
           um: row[:um],
           available_count: row[:cantitate],
