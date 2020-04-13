@@ -12,14 +12,13 @@ class PublicController < ApplicationController
                       product.id.to_s => {
                           'qty' => existing_qty + params["qty"].to_i,
                           'name' => product.name,
-                          'thumbnail_url' => product.image_url([83,83]),
+                          'thumbnail_url' => product.cart_image_url([83,83]),
                           'price' => product.price
                       }
                   })
     session[:basket] = basket
     set_basket_data
     logger.info "\n\n basket data #{@basket_data.inspect}"
-    flash[:notice] = "Adăugat în coș"
     respond_to do |format|
       format.js
     end
@@ -32,7 +31,7 @@ class PublicController < ApplicationController
       session[:basket][@product.id.to_s] = {
                             'qty' => @qty,
                             'name' => @product.name,
-                            'thumbnail_url' => @product.image_url([83,83]),
+                            'thumbnail_url' => @product.cart_image_url([83,83]),
                             'price' => @product.price
                             }
       else
