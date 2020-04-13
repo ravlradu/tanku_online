@@ -76,7 +76,7 @@ c=Category.create name:"BAUTURI SI TUTUN"
   Category.create name:"BAUTURI ALCOOLICE", parent_id:c.id
   Category.create name:"BERE, CIDRU", parent_id:c.id
   Category.create name:"TIGARI", parent_id:c.id
-c=Category.create name:"CONDIMENTE", parent_id:c.id
+c=Category.create name:"CONDIMENTE"
   Category.create name:"SARE", parent_id:c.id
   Category.create name:"CONDIMENTE", parent_id:c.id
 c=Category.create name:"COSMETICE SI INGRIJIRE PERSONALA"

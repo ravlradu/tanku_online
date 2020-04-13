@@ -3,6 +3,7 @@
   <thead>
     <tr>
       <th></th>
+      <th>Cod</th>
       <th>Nume</th>
       <th>Descriere</th>
       <th>Categorie</th>
@@ -23,6 +24,7 @@
     <% @products.each do |product| %>
       <tr>
         <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
+        <td> <%= product.externalid %> </td>
         <td><%= product.name %></td>
         <td><%= truncate(product.description, length: 20) %></td>
         <td><%= product.category&.name %></td>
