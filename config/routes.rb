@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'cart', to:"public#cart"
   post '/', controller: 'public', action: 'index'
   get 'products/view', controller:'products', action:'index'
+  get 'products/visibility/:id', to: "products#update_visibility"
   resources :products
   resources :categories
 

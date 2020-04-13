@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   before_action :check_authentication
   before_action :check_admin
 
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :update_visibility]
 
   layout 'admin'
 
@@ -83,6 +83,13 @@ class ProductsController < ApplicationController
     @product.destroy
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  def update_visibility
+    @product.update(is_visible:!@product.is_visible)
+    respond_to do |format|
       format.json { head :no_content }
     end
   end

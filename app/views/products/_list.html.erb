@@ -26,7 +26,11 @@
         <td><%= product.name %></td>
         <td><%= truncate(product.description, length: 20) %></td>
         <td><%= product.category&.name %></td>
-        <td><%= product.is_visible.to_s %></td>
+        <td>
+            <div class="form-group">
+              <%= check_box_tag :is_visible, product.is_visible, product.is_visible,{onchange:"updateVisibility('#{product.id}')"} %>
+            </div>
+        </td>
         <td><%= product.um %></td>
         <td><%= price product.price %></td>
         <td><%= product.promo %></td>
@@ -36,11 +40,9 @@
         <td><%= link_to 'Modifică', edit_product_path(product) %></td>
         <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
         <td>
-          <%= form_with(model: product) do |f| %>
             <div class="form-group">
-              <%= f.select :category_id, Category.all.map { |c| [c.selector_name, c.id] },{include_blank:"Selecteaza categoria"}, {onchange:"updateCategory(#{product.id}, this)",class:"form-control"} %>
+              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(Category.all, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
             </div>
-          <% end %>
         </td>
       </tr>
     <% end %>

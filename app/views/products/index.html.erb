@@ -23,6 +23,20 @@
     });
   }
 
+  function updateVisibility(productId) {
+    Rails.ajax({
+      type:"GET",
+      headers: {
+          'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+        },
+      url: "products/visibility/"+productId,
+      contentType: "application/json",
+      dataType: 'script',
+      success: function(data) {},
+      error: function(data) {}
+    });
+  }
+
   function showByCategory(selector) {
     var selectedIndex = selector.selectedIndex;
     var categoryId = selector.options[selectedIndex].value;
