@@ -90,4 +90,4 @@ c=Category.create name:"CURATENIE SI NEALIMENTARE"
   Category.create name:"DETERGENTI CURATENIE", parent_id:c.id
   Category.create name:"DETERGENTI SI BALSAM RUFE", parent_id:c.id
   Category.create name:"ODORIZANTE", parent_id:c.id
-  Category.create name:" HARTIE IGIENICA SI ROLE DE BUCATARIE", parent_id:c.id
+  Category.create name:"HARTIE IGIENICA SI ROLE DE BUCATARIE", parent_id:c.id

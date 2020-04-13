@@ -38,11 +38,13 @@
                   <i class="fa fa-shopping-cart"></i> View cart
                 <% end %>
             </div> -->
-            <div class="cart_button">
-                <%= link_to("/cart") do%>
-                  <i class="fa fa-sign-in"></i> Checkout
-                <% end %>
-            </div>
+            <% if @basket_data[:total] > 0 %>
+              <div class="cart_button">
+                  <%= link_to("/cart") do%>
+                    <i class="fa fa-sign-in"></i> Finalizare Comandă
+                  <% end %>
+              </div>
+            <% end %>
 
         </div>
     </div>

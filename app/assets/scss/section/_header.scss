@@ -425,9 +425,10 @@
                 margin-right: 0;
             }
             & a{
-                font-size: 16px;
+                font-size: 26px;
+								color: $secondary_color;
                 &:hover{
-                     color: $secondary_color;
+                     color: #8CC63F;
                 }
             }
         }
@@ -531,6 +532,7 @@
         &::after{
             top: 54%;
             right: 13px;
+						color: red;
         }
         & ul.list{
             max-height: 300px;
@@ -544,7 +546,8 @@
             }
 						& li {
 							&:hover {
-								color: #F58220
+								color: #F58220;
+								background-color: #8CC100;
 							}
 						}
         }
@@ -762,6 +765,9 @@
     position: relative;
 		.lnr-cart {
 			color:#8CC63F;
+			&:hover {
+				color:#FC8A35;
+			}
 		}
     &:hover{
         & .mini_cart{
@@ -911,7 +917,8 @@
         border-radius: 3px;
         font-size: 12px;
         font-weight: 500;
-        background: #eef0f1;
+        background: #8CC63F;
+				color: white;
         display: block;
         text-align: center;
         line-height: 20px;
