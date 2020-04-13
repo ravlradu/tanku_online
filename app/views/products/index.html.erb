@@ -51,6 +51,29 @@
       error: function(data) {}
     });
   }
+
+  function filterByCode(selector) {
+    var searchTerm = selector.value;
+    console.log(searchTerm);
+    if (searchTerm.length==0)
+    Rails.ajax({
+      type:"GET",
+      url: "products",
+      contentType: "application/json",
+      dataType: 'script',
+      success: function(data) {},
+      error: function(data) {}
+    });
+    if (searchTerm.length>=1)
+    Rails.ajax({
+      type:"GET",
+      url: "products?code="+searchTerm,
+      contentType: "application/json",
+      dataType: 'script',
+      success: function(data) {},
+      error: function(data) {}
+    });
+  }
 </script>
 
 <p id="notice"><%= notice %></p>
@@ -64,9 +87,13 @@
 
 <div class="row">
   <%= form_with do |f| %>
-    <div class="form-group col-lg-8">
+    <div class="form-group col-lg-7">
       <%= f.label "Filtreaza" %>
       <%= f.select :category_id, [["Fara categorie",-1]] + Category.all.map { |c| [c.selector_name, c.id] } ,{include_blank:"Toate"}, {onchange:"showByCategory(this)",class:"form-control"} %>
+    </div>
+    <div class="form-group col-lg-5">
+      <%= f.label "Cod Produs" %>
+      <%= text_field_tag :code_search,nil, {class:"form-control", onkeyup:'filterByCode(this)'} %>
     </div>
   <% end %>
 

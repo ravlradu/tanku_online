@@ -5450,6 +5450,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .widget_list.widget_categories > ul > li.widget_sub_categories > a {
   position: relative;
 }
+.widget_list.widget_categories > ul > li.widget_sub_categories >  a:hover {
+  background-color: #DBEDC3 important!;
+  color:red;
+}
 .widget_list.widget_categories > ul > li.widget_sub_categories > a::before {
   content: '+';
   cursor: pointer;

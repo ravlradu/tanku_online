@@ -17,18 +17,23 @@ class ProductsController < ApplicationController
     else
       search = "1=1"
     end
+    if params[:code]
+      code_search = ["externalid like ?","#{params[:code].to_s.downcase}%"]
+    else
+      code_search = "1=1"
+    end
     if params[:c]
       if params[:c].to_i==-1
         ids=[nil]
       elsif params[:c].empty?
-        @pagy,@products = pagy(Product.where(search),size:[1,2,2,1])
+        @pagy,@products = pagy(Product.where(search).where(code_search),size:[1,2,2,1])
       else
         category  = Category.where(id: params[:c]).first
         ids       = [category.id] + category.subcategories.pluck(:id)
       end
-      @pagy,@products = pagy(Product.where(search).where(category_id: ids),size:[1,2,2,1])
+      @pagy,@products = pagy(Product.where(search).where(category_id: ids).where(code_search),size:[1,2,2,1])
     else
-      @pagy,@products = pagy(Product.where(search),size:[1,2,2,1])
+      @pagy,@products = pagy(Product.where(search).where(code_search),size:[1,2,2,1])
     end
 
   end
