@@ -2149,10 +2149,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   width: 30px;
   font-size: 15px;
   border-radius: 0;
-  background: inherit;
+  background:  #8CC63F;
 }
 .header_middle2 .search_box button:hover {
-  color: #222222;
+  color: #111111;
 }
 .header_middle2 .header_account_list.register ul li a {
   color: #fff;
@@ -2255,10 +2255,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #FC8A35;
 }
 .color_three .search_box button {
-  background: #FC8A35;
+  background: #8CC63F;
 }
 .color_three .search_box button:hover {
-  background: #222222;
+  background: #FC8A35;
 }
 .color_three .header_account_list.register ul li a:hover {
   color: #FC8A35;
@@ -2343,7 +2343,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #CF1F1F;
 }
 .color_four .search_box button {
-  background: #CF1F1F;
+  background:  #8CC63F;
 }
 .color_four .search_box button:hover {
   background: #222222;
@@ -3369,7 +3369,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 12px;
   height: 20px;
   line-height: 20px;
-  width: 40px;
+  width: 50px;
   text-align: center;
   display: block;
   border-radius: 5px;
@@ -5912,6 +5912,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .list_action_right ul li.add_to_cart a:hover {
   background: #8CC63F;
+  color: #000;
 }
 @media only screen and (max-width: 767px) {
   .list_action_right ul li.add_to_cart a {

@@ -25,8 +25,12 @@ class Product < ApplicationRecord
     (price.to_f/100).round(2)
   end
 
+  def display_old_price
+    (old_price.to_f/100).round(2)
+  end
+
   def image_url(size)
-    image.attached? ? image.variant(resize_to_fill: size) : "product/product1.jpg"
+    image.attached? ? image.variant(resize_to_fill: size)&.service_url : "product/product1.jpg"
   end
 
   def self.import_from_csv file_name

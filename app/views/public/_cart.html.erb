@@ -33,13 +33,15 @@
             </div>
         </div>
         <div class="mini_cart_footer">
-           <div class="cart_button">
+           <!-- <div class="cart_button">
                 <%= link_to("/cart") do%>
                   <i class="fa fa-shopping-cart"></i> View cart
                 <% end %>
-            </div>
+            </div> -->
             <div class="cart_button">
-                <a href="checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
+                <%= link_to("/cart") do%>
+                  <i class="fa fa-sign-in"></i> Checkout
+                <% end %>
             </div>
 
         </div>

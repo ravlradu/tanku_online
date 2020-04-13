@@ -12,7 +12,7 @@ class PublicController < ApplicationController
                       product.id.to_s => {
                           'qty' => existing_qty + params["qty"].to_i,
                           'name' => product.name,
-                          'thumbnail_url' => product.image_url([83,83])&.service_url,
+                          'thumbnail_url' => product.image_url([83,83]),
                           'price' => product.price
                       }
                   })

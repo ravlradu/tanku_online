@@ -498,7 +498,7 @@
     & .select_option{
         border: 0;
 				color: white;
-        background: #F58220;
+        background:  #8CC63F;
         padding-left: 25px;
         padding-right: 35px;
         font-size: 13px;
@@ -542,6 +542,11 @@
             @media #{$large-mobile}{
                 max-height: 220px;
             }
+						& li {
+							&:hover {
+								color: #F58220
+							}
+						}
         }
     }
 }
@@ -645,10 +650,10 @@
         font-size: 20px;
         border-radius: 0 30px 30px 0;
         @include transition(.3s);
-        background: #F58220;
+        background: #8CC63F;
         color: #fff;
         &:hover{
-            background: $fonts_color;
+            background: #F58220;
         }
         @media #{$tablet-device}{
             width: 48px;
@@ -755,6 +760,9 @@
 /*mini cart css here*/
 .mini_cart_wrapper{
     position: relative;
+		.lnr-cart {
+			color:#8CC63F;
+		}
     &:hover{
         & .mini_cart{
             max-height: 500px;
@@ -1077,7 +1085,7 @@
 	position: relative;
 	cursor: pointer;
    height: 51px;
-    background: $secondary_color;
+    background:  #8CC63F;
     border-radius: 10px 10px 0 0;
     padding-left: 20px;
     @media #{$tablet-device}{
@@ -1772,7 +1780,7 @@
         color: $secondary_color3;
     }
     & .search_box button{
-        background: $secondary_color3;
+        background:  #8CC63F;
         &:hover{
             background: $fonts_color;
         }
@@ -1938,9 +1946,9 @@
         color: $secondary_color4;
     }
     & .search_box button{
-        background: $secondary_color4;
+        background:  #8CC63F;
         &:hover{
-            background: $fonts_color;
+            background: $secondary_color;
         }
     }
     & .header_account_list {
