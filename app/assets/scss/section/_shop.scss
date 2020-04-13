@@ -11,7 +11,7 @@
 }
 
 .breadcrumbs_area{
-    background:  asset-url("bg/banner18.jpg") no-repeat 0 0;
+    background:  asset-url("logo/comanda_header.png") no-repeat 0 0;
     background-size: cover;
    height: 200px;
     display: flex;
@@ -136,18 +136,19 @@
                     }
                 }
                 & ul{
-                    padding-left: 30px;
+
                     display: none;
                     & li{
 
                         & a{
                             font-size: 13px;
+                            padding-left: 30px;
                             line-height: 30px;
                             display: block;
                             border-bottom: 1px solid rgba(255,255,255,0.1);
                             &:hover{
-                                color: $secondary_color;
-                                background: #DBEDC3;
+                                color: white;
+                                background: $secondary_color;
                             }
                         }
                     }

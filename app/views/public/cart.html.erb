@@ -54,15 +54,7 @@
 <div class="breadcrumbs_area">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="breadcrumb_content">
-          <h3>Coș de cumpărături</h3>
-          <ul>
-            <li><a href="index.html">acasă</a></li>
-            <li>coș de cumpărături</li>
-          </ul>
-        </div>
-      </div>
+
     </div>
   </div>
 </div>
@@ -70,6 +62,15 @@
 
 <!--shopping cart area start -->
 <div class="shopping_cart_area mt-70">
+  <div class="col-12">
+    <div class="breadcrumb_content">
+      <h3>Coș de cumpărături</h3>
+      <ul>
+        <li><a href="/">acasă</a></li>
+        <li>coș de cumpărături</li>
+      </ul>
+    </div>
+  </div>
   <% if session[:basket].to_h.empty? %>
     <div class="container">
       <div class="row">
@@ -98,10 +99,7 @@
                 </thead>
                 <tbody id="cart_products">
                 <%= render 'cart_products' %>
-                <tr>
-                  <td colspan="4" align="right">Total</td>
-                  <td colspan="2" id="basket_total"><%= price Basket.total_price(session[:basket]) %></td>
-                </tr>
+
                 </tbody>
               </table>
             </div>
@@ -150,8 +148,8 @@
                 </div>
                 <div class="form-group">
                   <div class="checkout_btn">
-                    <% if Basket.total_price(session[:basket]) < SUMA_MINIMA_BANI %>
-                      <span id="not_enough">Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
+                    <% if %>
+                      <span id="not_enough" style=<%= Basket.total_price(session[:basket]) < SUMA_MINIMA_BANI ? "":"display:none;" %>>Suma minimă: <%= price SUMA_MINIMA_BANI %></span>
                     <% end %>
                     <%= button_tag 'Trimite comanda', {id: 'checkout_btn', disabled: (Basket.total_price(session[:basket]) < 5000), class: 'btn btn-success'} %>
                   </div>

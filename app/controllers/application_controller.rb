@@ -35,6 +35,7 @@ class ApplicationController < ActionController::Base
     session[:basket].each do |prod_id, prod_details|
       #product = Product.where(id:prod_id).first
       #next unless product
+      Rails.logger.info "\n #{prod_id} -- #{prod_details}"
       @basket_data[:items] << { name: prod_details['name'],
                                 quantity: prod_details['qty'],
                                 unit_price: prod_details['price'],

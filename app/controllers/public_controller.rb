@@ -25,6 +25,23 @@ class PublicController < ApplicationController
     end
   end
 
+  def ajax_update_cart
+    @product, @qty = Product.where(id: params[:product_id]).first, params[:qty].to_i
+    if @product
+      if @qty > 0
+      session[:basket][@product.id.to_s] = {
+                            'qty' => @qty,
+                            'name' => @product.name,
+                            'thumbnail_url' => @product.image_url([83,83]),
+                            'price' => @product.price
+                            }
+      else
+        session[:basket] = session[:basket].to_h.except(params[:product_id])
+      end
+    end
+    set_basket_data
+  end
+
   def remove_from_basket
     basket = session[:basket].to_h
     session[:basket] = basket.except(params[:id])
@@ -55,7 +72,7 @@ class PublicController < ApplicationController
 
 
   def index
-    session[:basket]={}
+    session[:basket]={} unless session[:basket]
     if params[:search]
       search = ["LOWER(name) like ?", "%#{params[:search].to_s.downcase}%"]
     else
@@ -96,11 +113,7 @@ class PublicController < ApplicationController
     # session[:basket]['1']  = 10
   end
 
-  def ajax_update_cart
-    @product, @qty = Product.where(id: params[:product_id]).first, params[:qty].to_i
-    session[:basket][@product.id.to_s] = @qty if @product
-    set_basket_data
-  end
+
 
   private
 

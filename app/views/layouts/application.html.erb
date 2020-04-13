@@ -22,8 +22,10 @@
 
       <header>
           <div class="main_header">
-              <%= render partial: "header_top" %>
+            <%= render partial: "header_top" %>
+            <% unless params[:action] == 'cart' %>
               <%= render partial: "header_middle" %>
+            <% end %>
           </div>
       </header>
       <!--header area end-->
