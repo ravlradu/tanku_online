@@ -1,67 +1,74 @@
-<%= form_with(model: product, local: true) do |form| %>
-  <% if product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(product.errors.count, "error") %> erori au apărut la salvare:</h2>
+<div class="container">
+  <div class="row">
+    <%= form_with(model: product, local: true) do |form| %>
+      <% if product.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(product.errors.count, "error") %> erori au apărut la salvare:</h2>
 
-      <ul>
-        <% product.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <%= form.label 'Nume' %>
-      <%= form.text_field :name, class:"form-control" %>
-    </div>
+          <ul>
+            <% product.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="col-6">
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <%= form.label 'Nume' %>
+            <%= form.text_field :name, class:"form-control" %>
+          </div>
 
-    <div class="form-group col-md-4">
-      <%= form.label 'Categoria' %>
-      <%= form.select :category_id, Category.all.map { |c| [ c.name, c.id ] },{}, {class:"form-control"} %>
-    </div>
-    <div class="form-group col-md-2">
-      <%= form.label 'Promo' %>
-      <%= form.check_box :promo%>
-    </div>
+            <div class="col-sm-2">
+              <%= form.label 'Preț în bani' %>
+              <%= form.number_field :price, class:"form-control" %>
+            </div>
+            <div class="col-sm-2">
+              <%= form.label 'Preț vechi în bani' %>
+              <%= form.number_field :old_price, class:"form-control" %>
+            </div>
+            <div class="col-sm-2">
+              <%= form.label 'UM' %>
+              <%= form.text_field :um, class:"form-control" %>
+            </div>
+            <div class="col-sm-2">
+            <%= form.label 'Bucăți disponibile' %>
+            <%= form.number_field :available_count, class:"form-control" %>
+            </div>
+
+
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <%= form.label 'Categoria' %>
+            <%= form.select :category_id, Category.all.map { |c| [ c.name, c.id ] },{}, {class:"form-control"} %>
+          </div>
+          <div class="col-sm-6">
+            <%= form.label 'Descriere' %>
+            <%= form.text_area :description, class:"form-control" %>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col-sm-3 form-check">
+          <%= form.label 'Promo' %>
+          <%= form.check_box :promo, class:"form-check"%>
+        </div>
+        <div class="col-sm-3">
+          <%= form.check_box :is_visible, class:"form-check-input" %>
+          <%= form.label 'disponibil spre vânzare', class:"form-check-label" %>
+        </div>
+        <div class="col-sm-6">
+        <%= form.label 'Imagine' %>
+        <%= form.file_field :image, class:"form-control-file" %>
+        </div>
+
+      </div>
+
+      </div>
+      <div class="actions">
+        <%= form.submit 'Salvează', class:'btn btn-info' %>
+      </div>
+    <% end %>
   </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <%= form.label 'Imagine' %>
-      <%= form.file_field :image, class:"form-control-file" %>
-    </div>
-    <div class="form-check col-md-2">
-      <%= form.check_box :is_visible, class:"form-check-input" %>
-      <%= form.label 'disponibil spre vânzare', class:"form-check-label" %>
-    </div>
-
-    <div class="form-group col-md-6">
-      <%= form.label 'Descriere' %>
-      <%= form.text_area :description, class:"form-control" %>
-    </div>
-  </div>
-
-
-
-  <div class="form-row">
-    <div class="form-group col-md-3">
-      <%= form.label 'Preț în bani' %>
-      <%= form.number_field :price, class:"form-control" %>
-    </div>
-
-    <div class="form-group col-md-3">
-      <%= form.label 'Preț vechi în bani' %>
-      <%= form.number_field :old_price, class:"form-control" %>
-    </div>
-
-    <div class="form-group col-md-6">
-      <%= form.label 'Bucăți disponibile' %>
-      <%= form.number_field :available_count, class:"form-control" %>
-    </div>
-  </div>
-
-
-  <div class="actions">
-    <%= form.submit 'Salvează', class:'btn btn-info' %>
-  </div>
-<% end %>

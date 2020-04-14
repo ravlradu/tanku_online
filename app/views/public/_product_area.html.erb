@@ -39,6 +39,9 @@
                       <% if product.promo %>
                         <span class="label_sale">Promo</span>
                       <% end %>
+                      <% if product&.um&.downcase == "kg" %>
+                        <span class="label_new">Preț per KG</span>
+                      <% end %>
                     </div>
                     <div class="action_links">
                         <ul>
@@ -52,9 +55,9 @@
                     <p><a href="#"> <%= product.category&.name %></a></p>
                     <div class="price_box">
                         <span class="current_price">
-                          <font size="6"><%= product.display_price %></font> lei
+                          <font size="6"><%= product.display_price %></font> lei/<%= product.um %>
                           <% if product.promo %>
-                            <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei</span>
+                            <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
                           <% end %>
                         </span>
                     </div>
@@ -63,7 +66,7 @@
                 <h4 class="product_name"><a href="#"><%= product.name %></a></h4>
                 <p><a href="#"><%= product.category&.name %></a></p>
                 <div class="price_box">
-                    <span class="current_price"> <font size="6"><%= product.display_price %></font> lei</span>
+                    <span class="current_price"> <font size="6"><%= product.display_price %></font> lei/<%= product.um %></span>
                     <% if product.promo %>
                       <span class="old_price"><font size="6"><%= product.display_old_price %></font> lei</span>
                     <% end %>
