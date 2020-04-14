@@ -21,4 +21,8 @@ class Category < ApplicationRecord
     parent_id ? "--#{name}":"#{name}"
   end
 
+  def self.selectable
+    Category.where(parent_id:nil).inject([]){|r,c| r << c; r+=c.subcategories}
+  end
+
 end
