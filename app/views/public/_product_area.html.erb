@@ -46,6 +46,9 @@
                     <div class="action_links">
                         <ul>
                             <li class="add_to_cart"><a title="Adaugă în coș" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
+                            <% if product&.um&.downcase == "kg" %>
+                              <li><span class="label_new">+/- 100g</span></li>
+                            <% end %>
                         </ul>
                     </div>
             </div>

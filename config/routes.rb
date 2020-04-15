@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   post '/', controller: 'public', action: 'index'
   get 'products/view', controller:'products', action:'index'
   get 'products/visibility/:id', to: "products#update_visibility"
+
+  post 'products/upload', controller:'products', action:'upload'
   resources :products
   resources :categories
 

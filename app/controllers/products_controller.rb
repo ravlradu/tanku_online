@@ -99,6 +99,13 @@ class ProductsController < ApplicationController
     end
   end
 
+  def upload
+    uploaded_file = params[:csv_file]
+    csv = uploaded_file.read
+    Rails.logger.info "Csv #{csv.inspect}"
+    Product.import_from_csv csv
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

@@ -1,294 +1,512 @@
 cod;descriere;cantitate;um;pret
-1216;Malai derby 1kg;330.00;Buc;2.99
-1230;Gris derby 1kg;223.00;Buc;3.49
-1231;Gris derby 500g;93.00;Buc;1.99
-1304;Pate bucegi porc scandia 300g;100.00;Buc;5.79
-1361;Fulgi ovaz fortin 500g;30.00;Buc;5.99
-1398;Bere ursus premium doza 0.5l;27.00;Buc;3.29
-1415;Faina sup 000 boromir 1kg;296.00;Buc;3.99
-1425;Ulei bunica 1l;176.00;Buc;6.99
-1428;Otet regal 1l;48.00;Buc;3.49
-1434;Otet mere 0.5l;10.00;Buc;1.89
-1461;Sacose MT + eco taxa;3792.00;Buc;1.00
+1216;Malai derby 1kg;328.00;Buc;2.99
+1230;Gris derby 1kg;221.00;Buc;3.49
+1231;Gris derby 500g;88.00;Buc;1.99
+1234;Orez derby 1kg;116.00;Buc;5.99
+1304;Pate bucegi porc scandia 300g;99.00;Buc;5.79
+1361;Fulgi ovaz fortin 500g;29.00;Buc;5.99
+1368;Schnitzel pui papane 640g;7.00;Buc;11.99
+1398;Bere ursus premium doza 0.5l;3.00;Buc;3.29
+1402;Sare iodata gema extra rosie 1kg;23.00;Buc;1.99
+1415;Faina sup 000 boromir 1kg;278.00;Buc;3.99
+1420;Ulei unisol 1l;445.00;Buc;6.99
+1421;Ulei floriol 1l;78.00;Buc;6.99
+1425;Ulei bunica 1l;172.00;Buc;6.99
+1428;Otet regal 1l;46.00;Buc;3.49
+1434;Otet mere 0.5l;9.00;Buc;1.89
+1461;Sacose MT + eco taxa;3652.00;Buc;1.00
 1468;Biscuiti petit beurre 300g;8.00;Buc;4.99
 1470;Biscuiti picnic vanilie 70g;37.00;Buc;1.29
-1495;Fairy pomegran&red 450 -400 ml;38.00;Buc;3.99
-1550;Dr oetker bicarbonat sodiu 50g;111.00;Buc;1.19
-1551;Dr oetker budinca vanilie 40g;169.00;Buc;1.39
-1565;Dr oetker zahar vanilat 8g;922.00;Buc;0.55
-1566;Dr oetker praf copt 10g;174.00;Buc;0.55
-1567;Dr oetker gelatina fina 10g;153.00;Buc;1.49
-1732;Paste fidea monte banato 200g;15.00;Buc;3.49
+1484;Mogyi nuca cocos 100g;8.00;Buc;3.79
+1495;Fairy pomegran&red 450 -400 ml;37.00;Buc;3.99
+1550;Dr oetker bicarbonat sodiu 50g;105.00;Buc;1.19
+1551;Dr oetker budinca vanilie 40g;123.00;Buc;1.39
+1560;Dr oetker glazura caramel 100g;16.00;Buc;2.49
+1561;Dr oetker glazura ciocolata 100g;19.00;Buc;2.69
+1563;Dr oetker crema prajituri vanilie 50g;32.00;Buc;4.39
+1565;Dr oetker zahar vanilat 8g;717.00;Buc;0.55
+1566;Dr oetker praf copt 10g;113.00;Buc;0.55
+1567;Dr oetker gelatina fina 10g;141.00;Buc;1.49
+1597;Dr oetker amidon 200g;3.00;Buc;3.50
+1732;Paste fidea monte banato 200g;14.00;Buc;3.49
 1735;Paste taitei lungi monte banato 200g;21.00;Buc;3.29
 1738;Paste taitei lati monte banato 200g;3.00;Buc;2.99
+1893;Delaco cascaval sofia 450g;2.00;Buc;21.99
 1912;Ekoland ceai fructe padure 350g;13.00;Buc;4.99
-1974;Kinder delice 39g;82.00;Buc;2.15
-2075;Regal pasta tomate 540g;42.00;Buc;6.49
-2113;Fino hartie copt 8m;17.00;Buc;7.99
-2121;Maggi ideea spaghete bolognese49g;32.00;Buc;4.49
-2167;Always ultra normal plus  20buc;28.00;Buc;11.99
+1936;Nescafe 3in1 15g mild;437.00;Buc;0.65
+1948;Delaco cascaval sofia 250g;5.00;Buc;12.50
+1974;Kinder delice 39g;78.00;Buc;2.15
+1985;Pungi bendis 2kg;102.00;Buc;4.49
+1988;Pungi bendis 1kg;56.00;Buc;3.49
+2075;Regal pasta tomate 540g;41.00;Buc;6.49
+2078;Regal ketchup dulce 450g;12.00;Buc;5.49
+2113;Fino hartie copt 8m;16.00;Buc;7.99
+2121;Maggi ideea spaghete bolognese49g;29.00;Buc;4.49
+2127;Maggi secretul gustului gaina 200g;9.00;Buc;6.99
+2128;Maggi secretul gustului gaina 75g;42.00;Buc;2.99
+2167;Always ultra normal plus  20buc;85.00;Buc;11.99
 2174;Dr oetker praf inghetata ciocolata69g;19.00;Buc;2.49
+2187;Dr oetker cacao 50g;36.00;Buc;3.49
 2194;Dr oetker budinca capsuni 40g;32.00;Buc;1.29
-2195;Dr oetker budinca frisca 40g;42.00;Buc;1.39
-2250;Carmin albastru 10oua 5ml;81.00;Buc;0.59
-2607;Fuchs coriandru 50g;5.00;Buc;3.79
-2623;Dr. oetker creioane pt decor 76g;12.00;Buc;12.99
+2195;Dr oetker budinca frisca 40g;39.00;Buc;1.39
+2201;Premio unt 65% 200g;23.00;Buc;7.49
+2250;Carmin albastru 10oua 5ml;68.00;Buc;0.59
+2475;H&s extra volume 400ml;8.00;Buc;16.99
+2607;Fuchs coriandru 50g;4.00;Buc;3.79
+2623;Dr. oetker creioane pt decor 76g;11.00;Buc;12.99
 2647;Cosmin piper negru macinat 17g;52.00;Buc;2.19
-2653;Cosmin scortisoara macinata 15g;46.00;Buc;1.69
-2654;Cosmin patrunjel 8g;33.00;Buc;1.69
-2655;Cosmin marar 8g;17.00;Buc;1.69
-2658;Cosmin busuioc 8g;25.00;Buc;1.69
+2653;Cosmin scortisoara macinata 15g;45.00;Buc;1.69
+2654;Cosmin patrunjel 8g;32.00;Buc;1.69
+2655;Cosmin marar 8g;16.00;Buc;1.69
+2658;Cosmin busuioc 8g;24.00;Buc;1.69
 2659;Cosmin cimbru 8g;34.00;Buc;1.69
 2666;Fuchs gratar 20g;8.00;Buc;2.89
 2667;Fuchs friptura 25g;14.00;Buc;2.99
-2698;Fuchs foi dafin 7.5g;6.00;Buc;2.99
-2722;Chio maxi mix 750g;6.00;Buc;21.99
-2766;Cio piper macinat 50g;25.00;Buc;2.99
-2852;Orez scotti bob cu bob mare 1kg;41.00;Buc;6.49
-2878;Viva cereale cacao balls 250g;17.00;Buc;5.49
-3106;Pepsi 2.5l;15.00;Buc;6.49
-3112;Spring harghita apa min.  2.5l;255.00;Buc;2.49
-3114;Borsec apa plata 2l;497.00;Buc;2.99
-3117;Borsec apa min. 1.5l;604.00;Buc;2.79
-3161;Frutti fresh piersici 2.5l;12.00;Buc;5.29
-3171;Pepsi 2.5l twist lemon;17.00;Buc;6.49
-3174;Dorna apa min 0.5l;165.00;Buc;2.19
-3175;Coca cola 0.5l;935.00;Buc;3.29
+2698;Fuchs foi dafin 7.5g;5.00;Buc;2.99
+2722;Chio maxi mix 750g;4.00;Buc;21.99
+2730;Rolton fidea pui 60g;121.00;Buc;1.59
+2762;Knorr punga magica friptura de pui cu usturoi 28g;6.00;Buc;4.99
+2766;Cio piper macinat 50g;22.00;Buc;2.99
+2780;Knorr delikat gaina 75g;73.00;Buc;2.79
+2852;Orez scotti bob cu bob mare 1kg;39.00;Buc;6.49
+2878;Viva cereale cacao balls 250g;16.00;Buc;5.49
+3106;Pepsi 2.5l;12.00;Buc;6.49
+3112;Spring harghita apa min.  2.5l;250.00;Buc;2.49
+3114;Borsec apa plata 2l;475.00;Buc;2.99
+3117;Borsec apa min. 1.5l;564.00;Buc;2.79
+3161;Frutti fresh piersici 2.5l;9.00;Buc;5.29
+3171;Pepsi 2.5l twist lemon;16.00;Buc;6.49
+3174;Dorna apa min 0.5l;164.00;Buc;2.19
+3175;Coca cola 0.5l;934.00;Buc;3.29
 3199;Domestos atlantic fresh 1000ml;3.00;Buc;14.99
-3262;Zahar derby 1kg;354.00;Buc;3.29
-3366;Cafea amaroy extra 500g;54.00;Buc;15.99
-3384;Cacao schmidt 125g;23.00;Buc;8.99
-3385;Cacao schmidt 250g;21.00;Buc;15.99
+3206;Ornament mozaic 40g;10.00;Buc;0.99
+3253;Ruf praf copt 6x15g;90.00;Set;1.99
+3262;Zahar derby 1kg;324.00;Buc;3.29
+3292;Delma sandvis 500g;20.00;Buc;3.69
+3366;Cafea amaroy extra 500g;50.00;Buc;15.99
+3384;Cacao schmidt 125g;18.00;Buc;8.99
+3385;Cacao schmidt 250g;20.00;Buc;15.99
 3483;Olympia mazare 680g;112.00;Buc;3.99
 3552;Tocana legume olympia 295g;16.00;Buc;3.49
-3595;Compot piersici olympia 720g;166.00;Buc;5.99
-3784;Meggle frisca 1l;21.00;Buc;13.99
-3809;Micro pop unt 100g;7.00;Buc;1.89
-4020;Frisca hulala 200ml;21.00;Buc;4.49
-4433;Albalact smantana  12% 200g;1.00;Buc;3.49
-4434;Danone delicios caise 125g;17.00;Buc;1.39
-4435;Danone delicios capsuni 125g;22.00;Buc;1.39
-4464;Almette verdeata 150g;-2.00;Buc;5.99
-4468;Almette smantana 150g;24.00;Buc;5.99
-4543;Albalact unt de masa  200g;-22.00;Buc;7.99
-4768;Piersici;69.52;kg;15.99
-4769;Pere;259.76;kg;9.49
-4774;Kiwi;47.53;kg;12.49
-4775;Ceapa alba;424.58;Kg;4.99
-4776;Morcov;641.90;kg;3.49
-4777;Portocale;94.65;kg;5.99
-4778;Telina;617.69;kg;4.99
+3595;Compot piersici olympia 720g;165.00;Buc;5.99
+3784;Meggle frisca 1l;229.00;Buc;13.99
+3809;Micro pop unt 100g;4.00;Buc;1.89
+3837;Lame gilette platinum 5/set;0.00;Buc;2.99
+3943;Peak out apa fierbinte 80g;29.00;Buc;2.99
+3944;Peak out apa rece 60g;46.00;Buc;2.99
+4017;Lapte fulga 1l 3.5%;-1.00;Buc;6.79
+4018;Lapte fulga 1l 1.5%;5.00;Buc;5.49
+4020;Frisca hulala 200ml;1.00;Buc;4.49
+4117;Grasa de cotnari div. sort. 750ml;233.00;Buc;12.99
+4282;Angelli lichior cherry 1l;2.00;Buc;28.99
+4314;Spumant dorato demi-secco 750ml;45.00;Buc;10.99
+4420;Lapte zuzu 1l 3.5%;12.00;Buc;6.49
+4421;Lapte zuzu 1l 1.5%;19.00;Buc;5.99
+4433;Albalact smantana  12% 200g;4.00;Buc;3.49
+4434;Danone delicios caise 125g;7.00;Buc;1.39
+4435;Danone delicios capsuni 125g;6.00;Buc;1.39
+4464;Almette verdeata 150g;-4.00;Buc;5.99
+4468;Almette smantana 150g;20.00;Buc;5.99
+4497;Albalact smantana  12% 900g;7.00;Buc;11.99
+4543;Albalact unt de masa  200g;53.00;Buc;7.99
+4558;Salata  icre hering 150g salmar;6.00;Buc;3.49
+4559;Salata icre crap 150g salmar;8.00;Buc;3.49
+4625;Burta vita fideluta horeca 1kg;28.00;Buc;24.99
+4640;Bonito salata icre hering cu ceapa 350g;5.00;Buc;8.99
+4768;Piersici;68.95;kg;15.99
+4769;Pere;258.30;kg;9.49
+4774;Kiwi;45.55;kg;12.49
+4775;Ceapa alba;421.46;Kg;4.99
+4776;Morcov;658.85;kg;3.49
+4777;Portocale;92.24;kg;5.99
+4778;Telina;624.38;kg;4.99
+4818;Maggi ideea spaghete milaneze 55g;26.00;Buc;4.49
+4878;Ajax praf spring 450g;-1.00;Buc;4.99
+4932;Hochland br. top mixtett albastru classico 140g;16.00;Buc;5.99
 4934;Hochland br. topita sunca 140g;15.00;Buc;5.99
-4974;Ardei iute;85.51;Kg;18.49
-4975;Varza;572.20;kg;3.99
-5089;Borsec apa plata 0.5l;1341.00;Buc;1.89
+4974;Ardei iute;87.37;Kg;18.49
+4975;Varza;577.50;kg;3.99
+5012;Ruf zahar vanilat 10x8g;81.00;set;2.99
+5089;Borsec apa plata 0.5l;1339.00;Buc;1.89
 5095;Cozonac nuca talmaciu 900g;0.00;Buc;18.99
 5107;Capsuni;85.28;kg;8.49
-5108;Vinete;220.98;Kg;10.99
+5108;Vinete;221.77;Kg;10.99
 5226;Zewa batiste nazale mentol 4str.;22.00;Buc;1.00
-5325;Barilla spaghete nr5 500g;8.00;Buc;4.99
-5420;Biscuiti picnic cacao 75g;10.00;Buc;1.29
-5543;Ardei gras;197.17;Kg;17.99
-5544;Castraveti fabio;54.72;Kg;7.49
-5545;Banane II;0.22;Kg;6.99
-5561;Diana sapun cream 150g;27.00;Buc;2.79
-5644;Vanish lichid 1l;33.00;Buc;12.99
-5942;Mere rosii;464.34;kg;4.99
+5325;Barilla spaghete nr5 500g;7.00;Buc;4.99
+5343;Otet seineana 1l;68.00;Buc;2.49
+5381;Meggle frisca spray 250 ml;11.00;Buc;8.99
+5420;Biscuiti picnic cacao 75g;9.00;Buc;1.29
+5543;Ardei gras;195.97;Kg;17.99
+5544;Castraveti fabio;52.65;Kg;7.49
+5545;Banane II;2.25;Kg;6.99
+5561;Diana sapun cream 150g;24.00;Buc;2.79
+5644;Vanish lichid 1l;32.00;Buc;12.99
+5740;Delikat bors magic cu smantana 38g;30.00;Buc;2.69
+5929;Dr oetker crema lamaie prajitura 50g;17.00;Buc;3.99
+5933;Knorr cub vita 54g;13.00;Buc;2.29
+5942;Mere rosii;424.54;kg;4.99
 6116;Struguri albi;330.66;kg;22.99
-6228;Clin windows squeeze 500ml;20.00;Buc;3.99
-6591;Ciocolata menaj neagra 500g;107.00;Buc;6.99
+6222;Mogyi nuca cocos 200g;7.00;Buc;7.79
+6228;Clin windows squeeze 500ml;15.00;Buc;3.99
+6566;Salata icre crap cu ceapa negro 150g;-2.00;Buc;5.49
+6591;Ciocolata menaj neagra 500g;100.00;Buc;6.99
 6611;Faina baneasa 000 1kg;1011.00;Buc;3.69
-6964;Grapefruit;200.72;kg;4.99
-7418;Bere timisoreana doza 0.5l;299.00;Buc;2.99
+6784;Gillete blue II plus;83.00;Buc;2.50
+6794;Gillette 2;5.00;Buc;1.50
+6889;Papane nuggets pui 690g;4.00;Buc;12.49
+6964;Grapefruit;197.03;kg;4.99
+7418;Bere timisoreana doza 0.5l;231.00;Buc;2.99
 7470;Ciuperci;244.55;kg;9.79
 7497;Scobitori 500buc;38.00;Buc;3.50
-7531;Mere golden cal I;231.40;Kg;4.99
+7531;Mere golden cal I;202.64;Kg;4.99
 7670;Rodii;23.94;kg;10.99
-7721;Pate vegetal ceapa unicarm 200g;23.00;Buc;2.99
-7727;Pate porc unicarm 200g;114.00;Buc;3.49
+7721;Pate vegetal ceapa unicarm 200g;22.00;Buc;2.99
+7727;Pate porc unicarm 200g;111.00;Buc;3.49
 7734;Carne vita in suc propriu 300g unicarm;19.00;Buc;7.99
-7865;Praj casei vanilie+fulgi 300g;7.00;Buc;7.29
+7865;Praj casei vanilie+fulgi 300g;6.00;Buc;7.29
 8002;Ananas rondele 565g vertis;15.00;Buc;6.49
 8028;Ananas;27.00;buc;9.95
-8182;Fuchs porc 25g;31.00;Buc;2.99
-8183;Fuchs pui 25g;37.00;Buc;3.19
+8093;Salata icre hering ceapa bonito 170g;12.00;Buc;4.99
+8098;Folie aluminiu forever 10m;26.00;Buc;3.99
+8108;Sare de mare grunjoasa 1kg;4.00;Buc;4.49
+8109;Orez prefiert sano vita 1kg;21.00;Buc;9.49
+8182;Fuchs porc 25g;30.00;Buc;2.99
+8183;Fuchs pui 25g;36.00;Buc;3.19
 8190;Fuchs piper negru boabe 30g;4.00;Buc;4.99
-8577;Ardei kapia rosu;125.78;kg;16.99
-8578;Usturoi import china 250g;38.00;Buc;5.99
-8715;Emeka hartie ig. paradis 8/set;8.00;Buc;12.99
+8393;Pate vegetal extra ardei cristim 150g;5.00;Buc;3.19
+8577;Ardei kapia rosu;126.59;kg;16.99
+8578;Usturoi import china 250g;30.00;Buc;5.99
+8715;Emeka hartie ig. paradis 8/set;5.00;Buc;12.99
+8762;Prajitura fina de casa 500g;0.00;Buc;19.50
 8924;Cozonac rahat talmaciu 800g;-2.00;Buc;8.99
 8977;Patrunjel;74.27;kg;5.99
-9277;Patrunjel verde;805.00;buc;1.25
-9332;Rosii cherry;55.98;kg;19.99
-9338;Rosii;184.72;kg;10.99
-9458;Covrigi cu chimen vitosa 200g;19.00;Buc;6.99
-9509;Alcool sanitar mona 0.2l;136.00;Buc;7.99
-9578;Albalact smantana  20% 200g;7.00;Buc;4.49
+9043;Cutite plastic HS  100buc 18 cm;4.00;Buc;9.79
+9234;Ulei presat la rece EDY-VIT 1L;5.00;Buc;16.99
+9277;Patrunjel verde;822.00;buc;1.25
+9332;Rosii cherry;51.74;kg;19.99
+9338;Rosii;192.14;kg;10.99
+9435;Dr oetker crema cremsnit 230g;9.00;Buc;5.99
+9458;Covrigi cu chimen vitosa 200g;2.00;Buc;6.99
+9509;Alcool sanitar mona 0.2l;127.00;Buc;7.99
+9578;Albalact smantana  20% 200g;9.00;Buc;4.49
 9738;Rosii ciorchine;9.14;kg;7.99
-9965;Barilla fusilli 500g;19.00;Buc;4.99
-10045;Ardei gras rosu;133.93;kg;18.99
+9739;Dr oetker glazura lamaie 100g;16.00;Buc;2.49
+9965;Barilla fusilli 500g;15.00;Buc;4.99
+9968;Foi cremes alpin 400g;68.00;Buc;7.49
+9987;Albalact br. topita cu smantana 125g;11.00;Buc;2.39
+10045;Ardei gras rosu;137.73;kg;21.99
 10051;Dovlecei;125.30;kg;8.99
-10226;Prune;105.34;kg;11.99
+10226;Prune;103.70;kg;11.99
+10496;Ciao piersica 2l;5.00;Buc;4.59
+10497;Ciao portocale 2l;6.00;Buc;4.69
+10567;Sano bon blue od. wc 55g;13.00;Buc;6.49
+10618;Knorr cub legume 54g;16.00;Buc;2.19
+10640;Ciao multivitamine 2l;2.00;Buc;4.69
 10647;Servetele okay violet  50buc 2str.;21.00;Buc;5.99
-10666;Coca cola 330ml;100.00;Buc;2.49
-10829;Castraveti cornison;284.90;kg;6.99
+10666;Coca cola 330ml;88.00;Buc;2.49
+10829;Castraveti cornison;282.95;kg;6.99
 10833;Best alune sare 2kg;3.00;Buc;44.99
-11197;H.g. compot visine 700g;8.00;Buc;9.49
-11411;Pudra roscove sano vita 250g;33.00;Buc;3.99
+11197;H.g. compot visine 700g;7.00;Buc;9.49
+11411;Pudra roscove sano vita 250g;31.00;Buc;3.99
 11493;Bere heineken doza 0.5l;-2.00;Buc;3.65
-11545;Carne vita sibiu scandia 300g;16.00;Buc;12.99
+11545;Carne vita sibiu scandia 300g;15.00;Buc;12.99
 11573;Muller crema fructe de padure 125g;4.00;Buc;1.45
-11624;Lenor fresh meadow 1.9l;2.00;Buc;13.99
+11624;Lenor fresh meadow 1.9l;0.00;Buc;13.99
 11688;Bere neumarkt 1l;9.00;Buc;4.79
-11809;Meggle frisca creme patisserie 500ml;6.00;Buc;7.99
-12189;Salata;311.00;Buc;2.49
-12313;Tocana legume 314g alex-star;28.00;Buc;3.49
-12428;Unicarm cascaval penteleu;14.86;Kg;27.99
-12431;Ajax lichid supraf. spring 1L;11.00;Buc;8.99
-12558;Cio piper macinat 100g;40.00;Buc;5.49
-13075;Filtre cafea aro nr4;130.00;Buc;5.99
+11809;Meggle frisca creme patisserie 500ml;91.00;Buc;7.99
+12189;Salata;319.00;Buc;2.49
+12313;Tocana legume 314g alex-star;26.00;Buc;3.49
+12428;Unicarm cascaval penteleu;13.97;Kg;27.99
+12431;Ajax lichid supraf. spring 1L;10.00;Buc;8.99
+12558;Cio piper macinat 100g;37.00;Buc;5.49
+12730;Almette ceapa verde 150g;4.00;Buc;5.99
+12909;Esenta rom fiola 4*2ml;12.00;Buc;2.99
+12910;Esenta vanilie fiola 4*2ml;3.00;Buc;3.99
+13075;Filtre cafea aro nr4;128.00;Buc;5.99
+13125;Dr.oetk esenta lamaie fiola 4*2ml;11.00;Buc;3.99
 13140;Porumb dulce Home gardeb 400g;16.00;Buc;4.29
-13201;Prajitura nelly   700g;11.00;Buc;16.99
-13327;Clear samp. atimatr.par frag 250ml;4.00;Buc;11.99
+13154;Ulei spornic 1l;7.00;Buc;5.99
+13201;Prajitura nelly   700g;9.00;Buc;16.99
+13327;Clear samp. atimatr.par frag 250ml;3.00;Buc;11.99
+13339;Albalact smantana 12% 400g;4.00;Buc;5.99
+13367;Albalact smantana  20% 900g;4.00;Buc;16.99
+13374;Legume mexicane 320g bonanza;25.00;Buc;3.19
+13376;Fasole verde 320g bonanza;2.00;Buc;3.19
+13377;Mazare 320g bonanza;23.00;Buc;3.59
+13531;Knorr delikat legume 75g;101.00;Buc;2.79
 13641;Chec marmorat vitosa 750g;1.00;Buc;18.50
-13711;Ceapa verde legatura;300.00;Buc;1.99
-13842;Carmin vopsea oua 4culori 20ml;40.00;Buc;3.99
-13881;Mustardino borcan extra 280g;20.00;Buc;2.49
-14114;Gogosari otet aro 680g;26.00;Buc;5.99
-14130;Energizant hell doza 250ml;301.00;Buc;2.29
+13711;Ceapa verde legatura;312.00;Buc;1.99
+13769;Always duo night 14buc;18.00;Buc;11.99
+13842;Carmin vopsea oua 4culori 20ml;34.00;Buc;3.99
+13881;Mustardino borcan extra 280g;19.00;Buc;2.49
+13923;H&s classic clean 400ml;14.00;Buc;16.99
+13925;H&s menthol 400ml;10.00;Buc;17.99
+14114;Gogosari otet aro 680g;24.00;Buc;5.99
+14130;Energizant hell doza 250ml;299.00;Buc;2.29
 14289;Paine neagra cu tarate eldi 500g;-2.00;Buc;3.29
-14427;Saratele o`mama 250g;256.00;Buc;8.99
-14659;Schweppes bitter lemon 1.5l;17.00;Buc;6.79
-14769;Orez bob cu bob rotund 1kg;43.00;Buc;6.49
+14301;Zuzu iaurt visine 125g;3.00;Buc;1.39
+14302;Zuzu iaurt caise 125g;0.00;Buc;1.39
+14303;Zuzu iaurt capsuni 125g;-1.00;Buc;1.39
+14386;Nescafe 3 in 1 15g strong;85.00;Buc;0.65
+14427;Saratele o`mama 250g;684.00;Buc;8.99
+14433;Kinder felie de lapte 28g;4.00;Buc;1.69
+14473;Rahat asortat 500g;10.00;Buc;4.49
+14574;Premio unt 80% 200g;20.00;Buc;8.99
+14589;Hochland br. topita smantana family 280g;0.00;Buc;9.79
+14659;Schweppes bitter lemon 1.5l;16.00;Buc;6.79
+14769;Orez bob cu bob rotund 1kg;41.00;Buc;6.49
+14775;Delikat  bors magic cu verdeturi 65g;15.00;Buc;2.69
+14784;Foietaj alpin 800g   cutie;17.00;Buc;9.79
 14785;Hochland telemea vaca 200g;0.00;Buc;7.99
-14901;Oua caserola 6buc;54.00;Buc;3.79
-14905;Oua caserola 10buc;55.00;Buc;6.29
-14913;Muller riso chocolate 200g;6.00;Buc;3.39
-14918;Schweppes mandarin 1.5l;20.00;Buc;6.79
-14951;File salau NLvrac;10.96;Kg;38.99
+14901;Oua caserola 6buc;48.00;Buc;3.79
+14905;Oua caserola 10buc;117.00;Buc;6.29
+14913;Muller riso chocolate 200g;13.00;Buc;3.39
+14918;Schweppes mandarin 1.5l;18.00;Buc;6.79
+14951;File salau NLvrac;4.96;Kg;38.99
+15116;Branza akadia tetra pack  500g;23.00;Buc;12.99
+15245;Prajitura fina de casa 1kg;3.00;Buc;38.99
 15283;Cio boia ardei dulce 100g;12.00;Buc;2.59
 15387;Praz;81.28;Kg;5.99
 15571;Cosmin leustean 6g;20.00;Buc;1.69
+15581;Ulei masline il tempio 500ml;6.00;Buc;11.99
 15749;Cio boia ardei dulce 50g;32.00;Buc;1.49
-15943;Ridichi legatura;42.00;Buc;1.99
-15944;Struguri negri;232.60;Kg;8.99
+15839;Cordon bleu de pui papane 660g;33.00;Buc;13.99
+15909;Pantene pro v extra volum 250ml;14.00;Buc;10.99
+15943;Ridichi legatura;40.00;Buc;1.99
+15944;Struguri negri;233.73;Kg;8.99
+15957;Fino folie aluminiu 30m;42.00;Buc;14.99
+15996;Maggi scrg. gustului  legume 75g;35.00;Buc;2.49
+15998;Maggi scrg. gustului intensavor legume 200g;4.00;Buc;5.79
+16063;Cartofi congelati fantasy 1kg;11.00;Buc;9.49
 16236;Cio soia cuburi 100g;31.00;Buc;1.99
-16237;Cio soia granule 100g;48.00;Buc;1.99
+16237;Cio soia granule 100g;47.00;Buc;1.99
 16238;Cio soia snitele 100g;28.00;Buc;2.19
-16272;Savex urban b-fresh 2kg;19.00;Buc;14.99
-16733;Fares ceai imunitate 30g;10.00;Buc;5.49
+16272;Savex urban b-fresh 2kg;18.00;Buc;14.99
+16375;La dorna lapte 1.5% 1l;3.00;Buc;5.99
+16562;Salam banatean cristim 340g;6.00;Buc;18.99
+16643;Alexandrion 5* 500ml;110.00;Buc;28.99
+16733;Fares ceai imunitate 30g;9.00;Buc;5.49
 16928;Hartie filtre aro 2;15.00;Buc;5.49
-17348;Hochland br. topita mixtet 280g;10.00;Buc;9.79
-17408;Candele pastila P10-25;16.00;Buc;4.99
-17469;Bucovina apa plata 2l;52.00;Buc;2.99
-17672;Br.burduf fine life 400 g;8.00;Buc;7.99
+17144;La dorna frisca neindulcita 32% 1L;15.00;Buc;19.99
+17347;Hochland br. topita sunca 280g;7.00;Buc;9.79
+17348;Hochland br. topita mixtet 280g;8.00;Buc;9.79
+17408;Candele pastila P10-25;15.00;Buc;4.99
+17461;Savo antimucegai 500ml;6.00;Buc;16.99
+17469;Bucovina apa plata 2l;40.00;Buc;2.99
+17510;Aro pahare plactic albe 200cc 25buc;5.00;Buc;2.45
+17672;Br.burduf fine life 400 g;6.00;Buc;7.99
+17674;Raraul lapte praf 26% 500g;1.00;Buc;20.99
 17689;Sureanca  prajitura asortata 500g;5.00;Buc;13.99
-17691;Prajitura foi napolitane 300g;38.00;Buc;4.99
-17693;Batonul copilariei ciocolata 100 g;38.00;Buc;1.99
+17691;Prajitura foi napolitane 300g;37.00;Buc;4.99
+17693;Batonul copilariei ciocolata 100 g;37.00;Buc;1.99
+17909;Raraul branza burduf 300g;6.00;Buc;11.99
+17964;Otet din vin  bistrita  1l;32.00;Buc;2.79
 18094;H. g. porumb dulce 140g;10.00;Buc;2.99
-18113;Bere neumarkt 0.5l;43.00;Buc;2.49
-18175;H. g. ciuperci taiate 750g;410.00;Buc;9.95
-18451;Bonanza amestec legume ciorba vacuta 320g;28.00;Buc;3.49
-18760;Paine alba  1kg SC Oana&Paul SRL;5.00;Buc;4.29
-19382;Bref power activ lemon 50g;9.00;Buc;5.99
-19612;Candela W 02;71.00;Buc;2.99
-19787;Merisor confiat 100g;13.00;Buc;5.99
-20101;Paine cartofi 1kg felii eldi;9.00;Buc;4.99
-20152;Meggle frisca 200ml;21.00;Buc;3.99
-20181;Zuzu iaurt natural 3% 400g;-2.00;Buc;2.59
-20307;Bere ciucas 0.5l doza;70.00;Buc;2.69
+18113;Bere neumarkt 0.5l;18.00;Buc;2.49
+18175;H. g. ciuperci taiate 750g;370.00;Buc;9.95
+18451;Bonanza amestec legume ciorba vacuta 320g;27.00;Buc;3.49
+18744;Hartie copt oti-sw-ho  8m;21.00;Buc;4.99
+18760;Paine alba  1kg SC Oana&Paul SRL;11.00;Buc;4.29
+18807;Dr oetker esenta migdale fiola 4*2ml;26.00;Buc;3.99
+18970;Becel original 400g;25.00;Buc;7.99
+18998;Foietaj alpin  800g;12.00;Buc;8.49
+19217;Delikat bors magic legume 65g;34.00;Buc;2.69
+19273;Salam sasesc 250g;3.00;Buc;12.99
+19382;Bref power activ lemon 50g;5.00;Buc;5.99
+19515;Pampers serv. um. fresh clean 64-52  buc.;19.00;Buc;6.99
+19538;Raraul cascaval dalia 250g;4.00;Buc;12.69
+19612;Candela W 02;65.00;Buc;2.99
+19787;Merisor confiat 100g;9.00;Buc;5.99
+20101;Paine cartofi 1kg felii eldi;10.00;Buc;4.99
+20152;Meggle frisca 200ml;81.00;Buc;3.99
+20181;Zuzu iaurt natural 3% 400g;18.00;Buc;2.59
+20183;Vin craita transilvaniei demidulce 750ml;9.00;Buc;7.99
+20307;Bere ciucas 0.5l doza;60.00;Buc;2.69
+20582;Discret deo multiform 20buc;160.00;Buc;3.99
+20603;Salata icre crap 110g salmar;10.00;Buc;2.79
 20776;Arbella paste melcisori 500g;0.00;Buc;2.99
-20990;Gillette gel cool wave 70ml;13.00;Buc;11.99
-21002;Goji berries 100g;19.00;Buc;8.49
-21180;Mop bumbac 250g;23.00;Buc;4.99
-21200;Fulgi de porumb crocant 250g;10.00;Buc;3.99
-21768;Akadia  400g cutie;23.00;Buc;8.99
-21806;Pur mar 450ml;18.00;Buc;3.79
-21844;Fasole rosie380g;5.00;Buc;4.49
-21919;Granoro linte 400g;22.00;Buc;4.99
-21920;Granoro naut 400g;20.00;Buc;4.99
+20804;Dr. oetker esenta vanilie 38ml;9.00;Buc;4.99
+20889;Dr. oetker rom 38ml;10.00;Buc;4.99
+20990;Gillette gel cool wave 70ml;12.00;Buc;11.99
+21002;Goji berries 100g;17.00;Buc;8.49
+21180;Mop bumbac 250g;22.00;Buc;4.99
+21200;Fulgi de porumb crocant 250g;9.00;Buc;3.99
+21271;Albalact smantana 400g 20%;7.00;Buc;7.39
+21475;Prosop buc. regina love 2role/3str;9.00;Buc;8.99
+21768;Akadia  400g cutie;25.00;Buc;8.99
+21806;Pur mar 450ml;17.00;Buc;3.79
+21844;Fasole rosie380g;4.00;Buc;4.49
+21919;Granoro linte 400g;21.00;Buc;4.99
+21920;Granoro naut 400g;19.00;Buc;4.99
+21927;Dr.oetker esenta lamaie 38ml;18.00;Buc;4.99
+22248;Servetele okay verde inchis 50buc 2str;18.00;Buc;5.99
+22272;Muller iaurt capsuni 500g;3.00;Buc;6.99
+22273;Muller iaurt cirese 500g;1.00;Buc;6.99
 22288;Rosii pasate olimpia 750g;14.00;Buc;6.99
+22310;Coji pentru minieclere 200g;50.00;Buc;10.99
+22338;Cif baie pistol 500ml;43.00;Buc;9.98
+22455;Unt president 82% 200g;34.00;Buc;13.99
 22544;Danone delicios zmeura 125g;16.00;Buc;1.39
+22560;Philadelphia cr. branza simpla  200g;40.00;Buc;10.99
+22658;Filippo ulei m. ex.virgin 250ml;10.00;Buc;9.99
 22740;Fanta madness 330ml;20.00;Buc;2.39
-22956;Bere ciuc radler doza 500ml;59.00;Buc;3.49
+22864;Raraul lapte praf 26% 250g;3.00;Buc;10.99
+22956;Bere ciuc radler doza 500ml;56.00;Buc;3.49
+23036;Sare de mare fina neiodata  500g;15.00;Buc;2.69
 23093;Pate porc aro 100g;144.00;Buc;0.89
-23389;Bere ciucas 2.5 l;11.00;Buc;7.99
-23716;Poiana florilor lapte uht 1.5% 1L;141.00;Buc;3.99
-23851;Sapun palmolive milk&honey-olive 90g;49.00;Buc;2.49
-23863;Bere timisoreana  2.5L;30.00;Buc;8.49
-23884;Lapte uht 1.5% 1L fine life;122.00;Buc;4.49
-23958;Servetele copii pure 64 buc;77.00;Buc;4.99
-24084;Nuga cindrel fructe de padure  50g;35.00;Buc;0.99
-24099;H.g. mazare verde 200g;32.00;Buc;2.99
+23114;Muller iaurt cu piersici si caise 500g;1.00;Buc;6.99
+23189;Muscatel vin de masa demidulce 2l;14.00;Buc;10.99
+23389;Bere ciucas 2.5 l;9.00;Buc;7.99
+23473;Pantene samp repair  250 ml;12.00;Buc;10.99
+23474;Pantene balsam  div. sortim. 200 ml;17.00;Buc;10.99
+23716;Poiana florilor lapte uht 1.5% 1L;111.00;Buc;3.99
+23851;Sapun palmolive milk&honey-olive 90g;48.00;Buc;2.49
+23863;Bere timisoreana  2.5L;20.00;Buc;8.49
+23884;Lapte uht 1.5% 1L fine life;121.00;Buc;4.49
+23958;Servetele copii pure 64 buc;76.00;Buc;4.99
+24084;Nuga cindrel fructe de padure  50g;31.00;Buc;0.99
+24099;H.g. mazare verde 200g;31.00;Buc;2.99
+24231;Orez natur brun panzani 500g;17.00;Buc;6.99
+24232;Ulei fl soarelui aro 1l;468.00;Buc;5.79
 24233;Orez rapid panzani 2x125g;8.00;Buc;3.49
-24384;Bere timisoreana 1L;18.00;Buc;4.69
+24384;Bere timisoreana 1L;15.00;Buc;4.69
+24425;Always ultra night 1/7;47.00;Buc;5.99
 24476;Panzani tagliatele 500g;9.00;Buc;7.99
-24500;Miere poliflora  500g fine food;8.00;Buc;11.99
-24587;Sapun pal black orchid. 90g;19.00;Buc;2.49
-24708;H. g. cocktail fructe trop.425g;9.00;Buc;6.49
+24500;Miere poliflora  500g fine food;7.00;Buc;11.99
+24587;Sapun pal black orchid. 90g;17.00;Buc;2.49
+24708;H. g. cocktail fructe trop.425g;6.00;Buc;6.49
+24728;Edenia nuggets piept pui 300g;0.00;Buc;16.99
+24730;Edenia snitel piept pui 320g;3.00;Buc;18.99
 24743;Elfi batiste 3str premium;108.00;Buc;0.40
-24744;Hartie igienica elfy;254.00;Buc;1.25
-24746;Elfi prosop 2role/set;20.00;Buc;2.99
+24744;Hartie igienica elfy;252.00;Buc;1.25
+24746;Elfi prosop 2role/set;16.00;Buc;2.99
 24747;Elfi servetele 25x25 100buc 1str;17.00;Buc;1.69
+24748;Cio sare de mare iodata 500g;16.00;Buc;1.75
+24801;Dr. crema cafe+brandy 50g;7.00;Buc;3.99
+24928;Univer sos maioneza  420g;1.00;Buc;7.29
 24953;Santal top  fructe rosii 6%1.5L;11.00;Buc;5.99
 24954;Santal top mere verzi 6%1.5L;5.00;Buc;5.99
-25031;Bonanza spanac 320g;71.00;Buc;3.49
+25004;Edenia lasagna bolognese 400g;6.00;Buc;16.99
+25031;Bonanza spanac 320g;70.00;Buc;3.49
 25041;Menta 30g;-1.00;Buc;3.99
 25057;Masline verz rondele  f.f 680g;4.00;Buc;11.99
-25076;Lapte UHT 3.5% fine life 1l;208.00;Buc;4.99
+25076;Lapte UHT 3.5% fine life 1l;199.00;Buc;4.99
 25112;Pastrav eviscerat;9.86;kg;29.99
-25148;Perfex hartie ig peach 3str 10/set;1.00;Buc;9.79
-25734;Edenia vinete coapte 450g;12.00;Buc;11.49
-25773;Crema de unt cu smantana 125g;14.00;Buc;3.99
-25807;Csaladi fidea scurta 400g;63.00;Buc;4.99
+25148;Perfex hartie ig peach 3str 10/set;0.00;Buc;9.79
+25325;Cio nuca cocos 100g;19.00;Buc;2.99
+25332;Johnnie walker red 1L;11.00;Buc;79.00
+25729;Edenia fasole verde  fina 450g;5.00;Buc;5.49
+25734;Edenia vinete coapte 450g;11.00;Buc;11.49
+25773;Crema de unt cu smantana 125g;12.00;Buc;3.99
+25807;Csaladi fidea scurta 400g;62.00;Buc;4.99
 25920;Pufarine aroma fructe 100g aro;28.00;Buc;1.49
-25958;Paine neagra 600g  Eldi;14.00;Buc;3.29
-25997;Mandy hummus 200g;11.00;Buc;3.99
-26160;Toast clasic fine food 600g;18.00;Buc;2.99
-26187;Savonera lux  cu gratar;11.00;Buc;2.49
-26413;Elfi monorola 100 m;26.00;Buc;12.99
-26464;Cio stafide brune 100g;24.00;Buc;2.79
-26638;Barilla sos napoletana 400g;17.00;Buc;11.99
+25958;Paine neagra 600g  Eldi;15.00;Buc;3.29
+25997;Mandy hummus 200g;10.00;Buc;3.99
+26160;Toast clasic fine food 600g;1.00;Buc;2.99
+26167;Fino pungi pt. copt 8/set;11.00;Buc;5.99
+26187;Savonera lux  cu gratar;10.00;Buc;2.49
+26282;Hering azuris 500g;8.00;Buc;5.99
+26413;Elfi monorola 100 m;23.00;Buc;12.99
+26464;Cio stafide brune 100g;21.00;Buc;2.79
+26497;Zuzu iaurt banane 125g;1.00;Buc;1.39
+26634;Barilla farfalle 500g;3.00;Buc;6.99
+26638;Barilla sos napoletana 400g;16.00;Buc;11.99
 26803;Elfi serv.de masa 80 buc. 33x33 1str.;29.00;Buc;2.79
-26916;Cappy pulpy porto 1.5l;62.00;Buc;5.79
-26998;Carnaciori cu fasole aro 300g;60.00;Buc;2.99
+26916;Cappy pulpy porto 1.5l;60.00;Buc;5.79
+26950;Fine food foi dafin 4g;34.00;Buc;0.95
+26998;Carnaciori cu fasole aro 300g;56.00;Buc;2.99
 26999;Costita cu fasole aro 300g;32.00;Buc;2.99
+27026;Danonino iaurt de baut 100g;7.00;Buc;1.79
 27285;Carne de vita 300g rotina;6.00;Buc;4.49
-27378;Croco brezel sare 300g;11.00;Buc;2.99
+27331;Salata icre hering 150g fine;3.00;Buc;2.85
+27378;Croco brezel sare 300g;9.00;Buc;2.99
+27471;Edenia file cod pane 400g;13.00;Buc;28.99
 27527;Mandy iahnie fasole 300g;11.00;Buc;5.49
-27658;Delaco apetito br topita cu smantana 280g;-9.00;Buc;8.99
-27666;Prajitura cr. lamaie fine life 300g;11.00;Buc;7.99
+27658;Delaco apetito br topita cu smantana 280g;-10.00;Buc;8.99
+27666;Prajitura cr. lamaie fine life 300g;6.00;Buc;7.99
+27681;Univer sos remoulade 420g;6.00;Buc;7.99
 27743;Fuchs scortisoara macinata 20g;20.00;Buc;2.99
-28114;H. g. sardine in sos tomat 110g;87.00;Buc;3.99
-28253;Paine cu seminte prajite 300g eldi;15.00;Buc;3.19
+27862;Zuzu iaurt natural bifidus 150g+fulgi porumb;1.00;Buc;2.99
+27925;Zuzu iaurt natural bifidus/cocktail mix 150g;0.00;Buc;3.15
+27985;Edenia cordon bleu de pui 250g;3.00;Buc;15.99
+27987;Edenia snitel de porc 330g;4.00;Buc;16.99
+28020;Meggle lapte condensat 20*10g;-7.00;Buc;3.99
+28033;Halva fl. soare vanilie  f.f.  200g;15.00;Buc;3.49
+28114;H. g. sardine in sos tomat 110g;85.00;Buc;3.99
+28193;Muscatel vin de masa demisec 2l;3.00;Buc;10.99
+28253;Paine cu seminte prajite 300g eldi;18.00;Buc;3.19
+28463;Univer ketchup dulce 470gr;9.00;Buc;4.99
+28464;Univer ketchup iute 470gr;14.00;Buc;5.25
 28508;Baneasa fidea 400g;7.00;Buc;4.99
-28726;Aquatique apa plata 5l;35.00;Buc;5.99
-28879;Muller iaurt 3.5% 125g;6.00;Buc;1.19
+28664;Rama clasic 400g;44.00;Buc;6.49
+28673;Edenia amestec cu porumb 450g;9.00;Buc;7.49
+28726;Aquatique apa plata 5l;34.00;Buc;5.99
+28879;Muller iaurt 3.5% 125g;14.00;Buc;1.19
+29087;Servetele de sezon 3str 20/set;-39.00;Buc;4.99
+29206;Muller reis cirese 200g;8.00;Buc;3.39
+29350;Farfuri doua- trei comp 21 cm 50 buc.;30.00;Buc;11.99
+29351;Lingurite 100 buc/set;17.00;Buc;6.99
 29364;Korab sardine file ulei 170g;7.00;Buc;5.49
-29871;Aqua carpatica apa plata 2L;170.00;Buc;3.49
-29985;HS. smantana 900g 32%;9.00;Buc;17.99
+29837;Heinz sos busuioc si ust.500g;2.00;Buc;12.99
+29839;Heinz sos bolognese 500g;8.00;Buc;12.99
+29871;Aqua carpatica apa plata 2L;161.00;Buc;3.49
+29894;Mascarpone granarolo 250g;81.00;Buc;8.99
+29985;HS. smantana 900g 32%;6.00;Buc;17.99
 30302;Csaladi paste fusilii 1kg;10.00;Buc;5.99
+30306;Elfi chibrite;24.00;Buc;1.49
 30764;Csaladi pene 500g;45.00;Buc;4.49
-31152;Paine alba feliata 700g eldi;-4.00;Buc;3.29
+30950;Edenia aripioare barbeque 400g;9.00;Buc;14.49
+30951;Edenia spanac tocat 450g;-1.00;Buc;5.69
+31152;Paine alba feliata 700g eldi;-2.00;Buc;3.29
+31194;Delma cu unt si sare 500g;28.00;Buc;4.99
 31311;Dona paste spaghete 500g;32.00;Buc;3.99
 31315;Panzani lasagne 500g;18.00;Buc;7.99
+31360;File cod alaska azuris 500g;15.00;Buc;10.49
+31364;Farm frites cartofi crinkle 450g;7.00;Buc;5.79
 31380;Baneasa frunzulite oua 200g;-1.00;Buc;2.69
-31543;Cus cus baneasa 200gr;30.00;Buc;2.99
-31547;Bere ciucas 1l;22.00;Buc;4.79
-31560;Coca cola 1.250ml;325.00;Buc;4.19
-31571;Fanta portocale 1.250l;335.00;Buc;4.19
-32117;Cio zahar pudra 200g;33.00;Buc;2.49
-32791;Ghimbir vrac;25.85;kg;36.99
+31475;Almette rosii si busuioc 150g;4.00;Buc;5.89
+31543;Cus cus baneasa 200gr;27.00;Buc;2.99
+31547;Bere ciucas 1l;21.00;Buc;4.79
+31560;Coca cola 1.250ml;321.00;Buc;4.19
+31571;Fanta portocale 1.250l;330.00;Buc;4.19
+32117;Cio zahar pudra 200g;30.00;Buc;2.49
+32133;Zuzu max iaurt natur 10% 125g;11.00;Buc;2.19
+32287;Raraul branza de vaci fagaras 185g;1.00;Buc;3.79
+32340;Zuzu bifidus iaurt de baut natur 2% 320g;5.00;Buc;3.39
+32356;Raraul branza de vaci fagaras 3% 185g;4.00;Buc;3.79
+32357;Raraul branza de vaci moldovita 185g;3.00;Buc;3.79
+32446;Raraul cascaval rucar 200g;2.00;Buc;9.79
+32447;Raraul cascaval rucar 350g;1.00;Buc;17.99
+32471;Cio sare himalaya granulata iodata 500g;5.00;Buc;4.80
+32595;Zuzu iaurt natural de baut 2% 320g;3.00;Buc;2.69
+32748;Salam de sibiu cristim 100g;1.00;Buc;7.99
+32791;Ghimbir vrac;25.53;kg;36.99
+32823;Susan fine life 250g;0.00;Buc;5.99
+33007;Boia de ardei dulce 100g;9.00;Buc;2.49
 33015;Ciao melci ondulati 400g;4.00;Buc;2.79
-33770;Albalact unt 82% 200g;4.00;Buc;10.99
-33817;Csaladi fidea scurta 200g;41.00;Buc;2.99
-33834;Elfi monorola 50 ml;24.00;Buc;4.99
-33920;Cornite Auria 400gr;13.00;Buc;2.99
+33643;Farfurie17cm 20/set;29.00;Buc;3.99
+33732;Lapte batut Albalact 330g;8.00;Buc;2.49
+33770;Albalact unt 82% 200g;19.00;Buc;10.99
+33771;Albalact chefir 330g;16.00;Buc;2.59
+33817;Csaladi fidea scurta 200g;40.00;Buc;2.99
+33834;Elfi monorola 50 ml;23.00;Buc;4.99
+33880;Poiana fl. cascaval 250gr;24.00;Buc;8.99
+33881;Poiana fl.cascaval 450gr;2.00;Buc;15.99
+33920;Cornite Auria 400gr;11.00;Buc;2.99
+33922;Alpin amestec mexican 320g;48.00;Buc;3.69
+33924;Alpin amest.orez cu ciuperci 320g;23.00;Buc;3.69
+33925;Alpin amest.primavara 320g;20.00;Buc;3.69
+33927;Alpin fasole galbena taiata 320g;13.00;Buc;3.69
+33928;Alpin fasole verde pastai 320gr;25.00;Buc;3.69
+33929;Alpin mazare verde boabe 320g;8.00;Buc;3.69
 33933;Univer hrean de masa 190gr;21.00;Buc;5.79
 33936;Fares aromfruct caps.+fragi 150gr;3.00;Buc;8.89
+34201;Edenia creveti pane+sos 225g;11.00;Buc;28.99
 34234;Caramele cr. lapte si menta 250g;40.00;Buc;5.99
 34249;Mustar clasic olympia 300g;19.00;Buc;2.99
+34304;Burta vita casa gruia 1kg;47.00;Buc;19.99
 34414;Cio patrunjel 20g;5.00;Buc;1.79
+34419;H.g pasta tomate 80g;26.00;Buc;2.39
 34473;Malai aro 1kg;76.00;Buc;2.49
 34603;Salata mozaic 500g;10.00;Buc;10.99
 34616;Avocado;25.00;Buc;5.99
@@ -296,112 +514,255 @@ cod;descriere;cantitate;um;pret
 34709;Rozmarin 30g H.S.;9.00;Buc;4.79
 34710;Rucola 125g;13.00;Buc;4.99
 34757;Rucola 100g;13.00;Buc;4.79
-34796;Raftul bunicii gris 500g;48.00;Buc;3.29
+34796;Raftul bunicii gris 500g;47.00;Buc;3.29
+34958;Edenia fish fingers 250g;12.00;Buc;11.50
+35102;Ace power gel floral 750ml;28.00;Buc;8.99
+35136;Pulpa de rosii cirio 400g;6.00;Buc;5.29
 35179;Cartofi albi;388.76;kg;3.99
-35277;Pate bucegi pui 120g;124.00;Buc;3.79
-35577;Usturoi  500g;23.00;Buc;13.50
+35188;Aro servetele umede pt.mobila 40 buc.;21.00;Buc;3.99
+35225;Aro sos de hrean 190g;22.00;Buc;3.79
+35277;Pate bucegi pui 120g;121.00;Buc;3.79
+35345;Linguri plastic 100 buc/set;4.00;Buc;9.50
+35446;Cio sare iodata pet 200g;9.00;Buc;2.99
+35447;Cio sare iodata pet 500g;13.00;Buc;4.49
+35477;Albalact smantana 25% 300g;7.00;Buc;6.99
+35577;Usturoi  500g;20.00;Buc;13.50
 35622;Iahnie de fasole 300g unicarm;6.00;Buc;3.99
-35769;Dizolvant lac unghii aro 50ml;75.00;Buc;1.85
+35729;Aripioare pui bbq qualiko 1kg;25.00;Buc;25.99
+35769;Dizolvant lac unghii aro 50ml;71.00;Buc;1.85
+35816;File piept pui qualiko 1kg;30.00;Buc;29.99
+36067;Heinz sos soia 150ml;4.00;Buc;12.99
+36125;Branza de burduf calimani 300g;3.00;Buc;8.99
 36127;Crema fagaras monor 175g;8.00;Buc;3.49
-36132;Iaurt  3.5% monor 900g;12.00;Buc;5.99
+36128;Iaurt de baut monor 2%400g pet;5.00;Buc;2.99
+36132;Iaurt  3.5% monor 900g;8.00;Buc;5.99
 36133;Chefir 3.3% monor 400g pet;8.00;Buc;2.99
-36134;kefir 0.1% light monor 500g prt;11.00;Buc;2.49
-36135;Lapte batut monor 2%400g pet;10.00;Buc;2.99
-36143;Br. topita tihuta cu sma.monor 100g;9.00;Buc;1.79
-36301;Crema de branza monor;8.28;kg;16.99
+36134;kefir 0.1% light monor 500g prt;9.00;Buc;2.49
+36135;Lapte batut monor 2%400g pet;4.00;Buc;2.99
+36138;Smantana 16% monor 500g;1.00;Buc;5.49
+36141;Sana 3.6% monor 400g pet;-4.00;Buc;2.99
+36143;Br. topita tihuta cu sma.monor 100g;8.00;Buc;1.79
+36276;Nefta piper macinat 100g;15.00;Buc;4.49
+36301;Crema de branza monor;7.20;kg;16.99
 36349;Unicarm fasole cu costita 300g;20.00;Buc;6.99
+36354;Zuzu iaurt capsuni 400g;1.00;Buc;3.99
 36363;Unicarm fasole cu carnaciori 300g;26.00;Buc;5.99
-36855;Monor lapte 3.5% 1L;4.00;Buc;4.99
-36856;Monor lapte 1.5% 1L;15.00;Buc;4.79
-37066;Monor telemea vrac;39.75;kg;17.99
-37187;Edenia amestec mexican 450g;10.00;Buc;7.99
+36389;Olympia spanac 450g;2.00;Buc;4.79
+36426;Salam casa extra meda 500g;3.00;Buc;11.49
+36427;Salam vara meda 500g;0.00;Buc;12.49
+36428;Salam porc meda 500g;3.00;Buc;12.49
+36608;Unt oldenb.nesarat  82% 200g;259.00;Buc;11.99
+36636;Tortilla wraps 320g;1.00;Buc;8.99
+36780;Tacamuri COD 2 24/set;22.00;Buc;8.99
+36855;Monor lapte 3.5% 1L;2.00;Buc;4.99
+36856;Monor lapte 1.5% 1L;13.00;Buc;4.79
+37066;Monor telemea vrac;37.74;kg;17.99
+37187;Edenia amestec mexican 450g;8.00;Buc;7.99
+37241;Always platinum norm size1;8.00;Buc;5.99
+37348;Cucina d oro crema pt gatit 1l;45.00;Buc;11.99
 37353;Painea maistrului 900g eldi;-1.00;Buc;4.19
-37456;Lavete umede 10/set aro;30.00;Buc;8.99
+37357;Crema pt prajituri unt/cioco 155g;5.00;Buc;6.19
+37385;Bautura vegetala din nuca de cocos 0.4ml;27.00;Buc;4.99
+37421;Fino folie aluminiu 20m;56.00;Buc;11.99
+37456;Lavete umede 10/set aro;29.00;Buc;8.99
+37717;Ed. pizza specialitate 325g;3.00;Buc;10.29
 37767;Bono Prosop hartie 2+1;-2.00;Buc;3.49
-37805;Frisca hulala dop 1L;60.00;Buc;12.99
-37996;Cozonac nuca Turean 900g;9.00;Buc;22.99
+37769;Ulei extravirgin Fl 1l;1.00;Buc;9.19
+37805;Frisca hulala dop 1L;57.00;Buc;12.99
+37825;Zuzu dolce budinca cioco/frisca 170g;5.00;Buc;1.99
+37826;Zuzu dolce budinca valnilie/frisca 170g;7.00;Buc;1.99
+37828;Zuzu dolce mousse cioco 100g;5.00;Buc;2.59
+37952;Monor unt de masa 65%;-1.00;Buc;7.49
+37996;Cozonac nuca Turean 900g;-3.00;Buc;22.99
+38124;Fulga lapte cu cacao 1.5% 200ml;10.00;Buc;2.29
 38256;Hartie ig elfi 10x3 mar orhid.;29.00;Buc;10.99
-38330;Dole ananas bucati in suc 435g;49.00;Buc;5.79
-38348;Fasole alba 570gr HG;14.00;Buc;6.79
-38364;Cucina d oro crema pt gatit 500ml;22.00;Buc;7.99
-38391;Elfi hartie ig 10/set piersica;30.00;Buc;10.99
-38464;Monor lapte 1.5% 1.8l;3.00;Buc;8.49
-38465;Monor lapte 3.5 1.8l;0.00;Buc;9.95
-38481;Dare fark wafers 50g eti;7.00;Buc;1.89
-38487;Prune  uscate fara sam.;11.65;kg;15.99
+38272;Servetele albastre 33x33 st.150 buc;12.00;Buc;12.99
+38330;Dole ananas bucati in suc 435g;47.00;Buc;5.79
+38331;Dole ananas feli in suc 432g;133.00;Buc;5.99
+38333;Heinz ketchup tom 342g;4.00;Buc;4.99
+38348;Fasole alba 570gr HG;12.00;Buc;6.79
+38364;Cucina d oro crema pt gatit 500ml;18.00;Buc;7.99
+38391;Elfi hartie ig 10/set piersica;26.00;Buc;10.99
+38464;Monor lapte 1.5% 1.8l;6.00;Buc;8.49
+38465;Monor lapte 3.5 1.8l;1.00;Buc;9.95
+38481;Dare fark wafers 50g eti;3.00;Buc;1.89
+38487;Prune  uscate fara sam.;9.53;kg;15.99
+38571;Branza maturata nuca 320g Coltesti;7.00;Buc;16.99
+38575;Unt de casa 250g Coltest;12.00;Buc;15.99
 38588;Sly nap.fara zahar vanilie 3x20g;45.00;Buc;3.49
 38590;Persil duo caps lavanda 42 S+pur 750ml+clin 500ml;6.00;Buc;55.00
+38609;Delikat condim.porc 23g;20.00;Buc;2.29
 38633;Dove  roll-on invisi. dry me. 50ml;10.00;Buc;8.99
-38649;Muller crema iaurt capsune 125g;-5.00;Buc;1.49
-38708;Kotanyi amestec pt drob 25g;10.00;Buc;3.39
+38648;Muller crema iaurt cu biscuti 125g;1.00;Buc;1.49
+38649;Muller crema iaurt capsune 125g;0.00;Buc;1.49
+38653;Muller iaurt grecesc 10% 140g;4.00;Buc;1.99
+38666;Edenia cannelloni cu ricotta spanac400g;5.00;Buc;14.99
+38667;Edenia cannelloni vita 400g;3.00;Buc;15.99
+38708;Kotanyi amestec pt drob 25g;9.00;Buc;3.39
+38724;Monor cascaval dalia 300g;2.00;Buc;12.49
+38835;Rasnita paprika iute 65g;5.00;Buc;13.99
+39011;Covrigi branza si chimen 180g alpin;49.00;Buc;4.99
+39123;Heinz mustar clasic 220ml;4.00;Buc;6.59
+39286;Branza pr. rasa granello zanetti 100g;7.00;Buc;6.99
+39552;Zuzu iaurt divin grecesc 10% 150g;7.00;Buc;2.19
 39571;Eco bautura cu sirop agave 1L;7.00;Buc;7.99
-39688;Rio mare salata ton cu cous cous160g;15.00;Buc;12.49
+39688;Rio mare salata ton cu cous cous160g;14.00;Buc;12.49
 39690;Rio mare salata ton cu porumb 160g;15.00;Buc;12.49
-39743;Wellness napolitane cacao 135g;168.00;Buc;3.99
-39744;Wellness napolitane tahini 135g;123.00;Buc;3.99
+39743;Wellness napolitane cacao 135g;165.00;Buc;3.99
+39744;Wellness napolitane tahini 135g;122.00;Buc;3.99
+39813;Salam ardelenesc cristim 280g;1.00;Buc;13.49
+39953;Unt president nesarat 82% 250g;20.00;Buc;17.99
+40011;Vin alb demisec 2LCiumbrud;10.00;Buc;17.99
+40012;Vin alb demidulce  2LCiumbrud;6.00;Buc;17.99
+40013;Vin alb sec  2LCiumbrud;6.00;Buc;17.99
+40015;Vin rosu demidulce  2LCiumbrud;13.00;Buc;17.99
+40017;Vin rose demidulce  2LCiumbrud;9.00;Buc;17.99
+40053;Zuzu iaurt fr padure 400g;2.00;Buc;3.99
 40073;Axion pasta  grapefruit 225g;14.00;Buc;4.49
 40079;Monor cottage 175g;5.00;Buc;3.99
 40080;Mozzarella monor 300g;0.00;Buc;7.99
+40155;Ulei turte de masline 500ml fine life;11.00;Buc;9.89
+40289;Rosii decojite cirio 400g;6.00;Buc;5.79
+40422;Yumos sprey pt haine 500ml;9.00;Buc;21.99
+40442;Vanish wh 100ml;45.00;Buc;2.99
+40474;Spicy sesame 350g;4.00;Buc;18.99
+40475;Tikka masala 350g;6.00;Buc;18.99
+40481;Mozzarella bilute pt. salata 95g;7.00;Buc;3.29
+40622;Rosii pasate cirio 3x200g;10.00;Buc;6.99
+40625;Bautura migdale valsoia 1L;5.00;Buc;11.99
+40626;Bautura nuci valsoia 1L;6.00;Buc;11.99
+40628;Bautura ovaz valsoia 1L;6.00;Buc;10.99
+40629;Bautura soia valsoia 1L;9.00;Buc;10.99
+40630;Desert soia vanilie valsoia 2x115g;2.00;Buc;7.99
+40631;Desert soia cioc. valsoia 2x115g;4.00;Buc;7.99
+40701;Pantene color protect 250ml;6.00;Buc;10.99
+40703;Alpin cornulete cu gem asortat 250g;44.00;Buc;3.99
 40711;Epack saci greem 60L 20 Buc;40.00;Buc;5.99
 40743;Valeriana 100g;2.00;Buc;5.49
 40754;H.g.  fasole galbena taiata 680g;30.00;Buc;6.19
-41213;Olympia pasta hrean borcan 190g;16.00;Buc;3.29
+40806;Crema prajitura +ornament dragobete;25.00;Buc;8.49
+40911;Patrunjel verde 20 g;11.00;Buc;1.39
+40915;Piper negru macinat 17 g;4.00;Buc;1.59
+41033;Hummus pasta din naut cu seminte de dovleac 200 g;38.00;Buc;8.99
+41034;Hummus pasta din naut  200 g;35.00;Buc;8.99
+41035;Hummus pasta din naut cu zacusca  200 g;26.00;Buc;8.99
+41084;Saga mini kijev 250g;8.00;Buc;11.99
+41111;Meda salam banatean feliat100g;2.00;Buc;6.99
+41206;Kit kat mix iaurt cu vanilie 115g;5.00;Buc;3.19
+41208;Nesquik iaurt cu bile ciocolata 120g;3.00;Buc;3.19
+41213;Olympia pasta hrean borcan 190g;12.00;Buc;3.29
+41301;Ace colors 100ml;21.00;Buc;3.99
 41335;Spritati glazura cu lapte FL 400 g;0.00;Buc;7.99
 41463;Pasta de masline 175g;10.00;Buc;5.99
-41587;Muller unt 82% 250g;7.00;Buc;13.99
-41601;Vir balsam fermecator 2L;14.00;Buc;12.99
+41552;Zuzu fit lapte cu vanilie 500ml;1.00;Buc;6.59
+41587;Muller unt 82% 250g;5.00;Buc;13.99
+41601;Vir balsam fermecator 2L;13.00;Buc;12.99
 41670;Vertis sardine sos tomat 215g;19.00;Buc;5.49
 41672;Vertis sardine ulei 215g;20.00;Buc;5.49
+41718;File merluciu 900g azuris;12.00;Buc;15.99
+41728;Cristim salam sinaia 350g;4.00;Buc;19.99
+41739;Rollton baza mancare gust de pui  2/pac 75g;15.00;Buc;2.99
+41858;Sos rosii basilico cirio 420g;3.00;Buc;11.99
+41860;Sos rosii napoletana cirio 420g;3.00;Buc;11.99
+41887;Chiftelute de legume asiatice 48x25g=1.2kg;2.00;Buc;32.99
 41897;Bucovina apa plata 500ml;18.00;Buc;1.99
-42089;Cio zahar vanilat 8g;94.00;Buc;0.39
+41929;Delaco junior crema branza 5x20g;1.00;Buc;8.39
+42037;Poseidon sare marina fina 1Kg;18.00;Buc;4.50
+42089;Cio zahar vanilat 8g;87.00;Buc;0.39
+42120;Farm Frites cartofi cong.450gr;14.00;Buc;4.99
 42191;Kandia alune/biscuiti 50% 80g;92.00;Buc;4.29
-42272;Muller kefir cremos 150g;18.00;Buc;2.39
+42272;Muller kefir cremos 150g;20.00;Buc;2.39
 42279;Persil gel sensitive 20s 1L;1.00;Buc;19.99
 42280;Persil gel color 20s 1L;6.00;Buc;19.99
-42303;Hochland almette 250 g;20.00;Buc;8.99
+42303;Hochland almette 250 g;8.00;Buc;8.99
+42314;Bautura cocos  si  migdale valsoia 1L;6.00;Buc;11.99
+42316;Heinz porumb dulce 400g;13.00;Buc;4.99
+42320;Dalfour gem caise 284g;4.00;Buc;14.99
+42321;Dalfour gem capsuni 284g;3.00;Buc;14.99
+42322;Dalfour gem cirese negre 284g;4.00;Buc;14.99
+42323;Templum ulei  masline extra virgin 1L;3.00;Buc;31.99
+42324;Tempio masline estra virgin 500 ml;6.00;Buc;16.99
+42328;Cirio pasta rosii 500ml;12.00;Buc;5.99
+42336;Trunchi merlan 1 kg;11.00;Buc;20.99
+42339;Delikat scortisoara macinata 15 g;17.00;Buc;2.79
 42349;Colgate natural extracts 75 ml;11.00;Buc;9.79
 42366;Valencia franzela alba feliata 300gr;3.00;Buc;1.70
-42367;Valencia pita de casa 500g;-3.00;Buc;3.49
+42367;Valencia pita de casa 500g;1.00;Buc;3.49
 42368;Valencia franzela alba 500g;1.00;Buc;3.69
 42369;Valencia paine Dambovita 500g;3.00;Buc;2.79
-42370;Valencia paine alba feliata 900g;-115.00;Buc;5.49
-42371;Valencia paine secara feliata 700g;0.00;Buc;5.69
+42370;Valencia paine alba feliata 900g;-114.00;Buc;5.49
+42371;Valencia paine secara feliata 700g;4.00;Buc;5.69
 42372;Valencia paine neagra 600g;1.00;Buc;3.99
 42374;Valencia baton mac2*80g;1.00;Buc;1.59
-42376;Valencia cornulete cu rahat 300g;6.00;Buc;6.49
-42377;Valencia branzoaica 100g;4.00;Buc;2.79
+42376;Valencia cornulete cu rahat 300g;2.00;Buc;6.49
+42377;Valencia branzoaica 100g;1.00;Buc;2.79
 42385;Valencia saleuri 160gr;5.00;Buc;5.79
-42386;Valencia covrigei cu chimen 250g;3.00;Buc;6.99
-42387;Valencia fursecuri 300g;5.00;Buc;7.49
-42388;Valencia covrigei cu chimen si cascaval 250g;-2.00;Buc;6.99
+42386;Valencia covrigei cu chimen 250g;9.00;Buc;6.99
+42387;Valencia fursecuri 300g;4.00;Buc;7.49
+42388;Valencia covrigei cu chimen si cascaval 250g;2.00;Buc;6.99
 42395;Valencia placinta cu mere 150g;0.00;Buc;3.49
 42396;Valencia ochi de pisica 300g;3.00;Buc;8.49
+42427;Orez camolino fine life 900g;28.00;Buc;5.99
+42429;Misa folie copt 6m;12.00;Buc;2.99
 42441;Salam biscuiti 400g;20.00;Buc;6.99
-42481;Valencia paine alba fel.800g;5.00;Buc;3.99
+42468;Gillette mach3 start aparat/spuma;3.00;Buc;33.99
+42481;Valencia paine alba fel.800g;4.00;Buc;3.99
 42484;Valencia prajituri asortate 0.5 kg;1.00;Buc;18.99
+42494;Sano det. vase lavanda 500 ml;5.00;Buc;5.99
+42546;Pirifan sare ierburi prov. 180g;3.00;Buc;13.99
+42566;Prajitura fina de casa 2- 0.800 kg;0.00;Buc;36.99
+42614;Hummus pasta din naut picanta  200 g;29.00;Buc;8.99
 42615;Hummus pasta din naut cu ciuperci  200 g;34.00;Buc;8.99
-42620;Ana ciocolata menaj alba 200g;11.00;Buc;2.99
-42674;Valencia covrigei cu susun 250g;4.00;Buc;6.99
+42620;Ana ciocolata menaj alba 200g;9.00;Buc;2.99
+42663;Prajitura fina de casa 2- 350 g;1.00;Buc;15.99
+42674;Valencia covrigei cu susun 250g;8.00;Buc;6.99
+42675;Edenia amestec cu conopida550g;17.00;Buc;7.99
 42693;Pomelo rosu;3.45;kg;7.49
 42708;Baneasa pesmet 500g;6.00;Buc;3.99
 42709;Det.Clever color 1.95 kg;29.00;Buc;13.99
 42710;Balsam Clever div sort. 2l;10.00;Buc;13.99
+42742;Kotanyi curcuma 50 g;5.00;Buc;7.99
+42797;Aviko cartofi in coaja taiati felii pati paris 600g;3.00;Buc;5.69
+42821;Edenia ienle calamar 500g;9.00;Buc;24.99
+42884;Univer pasta tomate 70g;23.00;Buc;1.39
+42938;Campofrio salam  sinaia 350g;3.00;Buc;15.99
 42944;Prosop bumbac  div. culori 30x50;8.00;Buc;5.99
-42949;Lurpak unt sarat 200;118.00;Buc;9.79
+42949;Lurpak unt sarat 200;112.00;Buc;9.79
 42952;Sano vita pasta veg.din bob cu rosii si ceapa 100g;14.00;Buc;2.99
 42981;Fanta orange zero 500 ml;10.00;Buc;2.99
-43018;Nap. spirale cu cr.lamaie 104 g pan food;66.00;Buc;1.89
-43021;Carmin kit sidef retro 20g;8.00;Buc;10.19
+43010;Muller iaurt grecesc fructe 140gr;1.00;Buc;2.39
+43012;Muller iaurt grecesc ananas140g;2.00;Buc;2.39
+43014;Muller iaurt grecesc afine 140g;1.00;Buc;2.39
+43018;Nap. spirale cu cr.lamaie 104 g pan food;58.00;Buc;1.89
+43021;Carmin kit sidef retro 20g;6.00;Buc;10.19
+43024;Branza top. smant. Coltesti 125g;17.00;Buc;2.49
+43026;Branza maturata chilli 320g Coltesti;8.00;Buc;16.99
+43027;Branza maturata cimbrisor 320g Coltesti;8.00;Buc;16.99
+43028;Branza maturata ardei 320g Coltesti;8.00;Buc;16.99
 43040;Brilli saci menaj 240l 10/set;15.00;Buc;10.49
-43071;Misavan burete canelat color 3/set;134.00;Buc;2.99
-43072;Misavan burete canelat maxi albastru 1buc;89.00;Buc;1.79
+43042;Misavan farfurii desert mixt auriu 12/set;5.00;Buc;4.99
+43045;Misavan farfurii desert rosii 12/set;5.00;Buc;4.99
+43051;Misavan baie 4in1 750ml;2.00;Buc;13.49
+43065;Misavan tablete bazin albastru 2x50g;14.00;Buc;5.19
+43066;Misavan tablete bazin verde 2x50g;3.00;Buc;5.19
+43071;Misavan burete canelat color 3/set;131.00;Buc;2.99
+43072;Misavan burete canelat maxi albastru 1buc;85.00;Buc;1.79
 43078;Misavan spalator spiralat inx 1/set;57.00;Buc;1.79
 43081;Misavan pahare mixt rosu 200ml 12/set;13.00;Buc;2.79
 43084;Misavan pahare vernil 200ml 12/set;12.00;Buc;2.79
-43149;Misavan monorola 100m;13.00;Buc;12.99
-43152;Baneasa conchiglie fara ou 1kg;8.00;Buc;4.99
-43159;Valencia paine neagra cu fulgi 0.8kg;1.00;Buc;4.89
-43168;Lactima br top triunghi sunca 140gr;14.00;Buc;4.99
+43106;Drojdie pakmaya proaspata 500g;29.00;Buc;5.99
+43139;Ulei de masline exv. coricelli 1L;3.00;Buc;39.00
+43140;Unt dulce 82% zanetti 250g;33.00;Buc;10.99
+43143;Alpin aluat pizza 400g;10.00;Buc;4.49
+43145;Philadelphia crema branza 300g;27.00;Buc;15.49
+43149;Misavan monorola 100m;12.00;Buc;12.99
+43152;Baneasa conchiglie fara ou 1kg;7.00;Buc;4.99
+43159;Valencia paine neagra cu fulgi 0.8kg;2.00;Buc;4.89
+43168;Lactima br top triunghi sunca 140gr;12.00;Buc;4.99
+43169;Lactima br topita haga 100g;8.00;Buc;4.19
+43172;Macromex cascaval pane 1 kg;13.00;Buc;29.99
+43173;Edenia musaca 400g;4.00;Buc;23.99
+43174;Hummus pasta din naut cu ceapa caramelizata 200g;32.00;Buc;8.99
 43176;Baneasa paste fainoase  750g;55.00;Buc;5.99
 43177;Csaladi gartine 200gr;17.00;Buc;2.39
 43181;Malai extra gold titan  1kg;188.00;Buc;3.49
