@@ -43,7 +43,7 @@
         <td><%= link_to 'Șterge', product, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
         <td>
             <div class="form-group">
-              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(Category.selectable, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
+              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(@categories, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
             </div>
         </td>
       </tr>

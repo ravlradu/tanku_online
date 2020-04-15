@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    @categories = Category.selectable
     if params[:search]
       search = ["LOWER(name) like ?", "%#{params[:search].to_s.downcase}%"]
     else
@@ -101,9 +102,10 @@ class ProductsController < ApplicationController
 
   def upload
     uploaded_file = params[:csv_file]
-    csv = uploaded_file.read
+    csv = File.open("/tmp/#{uploaded_file.original_filename}", "wb"){|f| f.write uploaded_file.read}
     Rails.logger.info "Csv #{csv.inspect}"
-    Product.import_from_csv csv
+    Product.import_from_csv "/tmp/#{uploaded_file.original_filename}"
+    redirect_to action:'index' and return
   end
 
   private
