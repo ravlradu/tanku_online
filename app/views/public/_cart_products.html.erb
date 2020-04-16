@@ -3,7 +3,7 @@
 
     <td class="product_thumb">
       <% if details['thumbnail_url'] %>
-        <%= image_tag details['thumbnail_url'] %>
+        <%= image_tag details['thumbnail_url'], size:"83x83" %>
       <% else %>
         <% image_tag 's-product/product.jpg'%>
       <% end %>

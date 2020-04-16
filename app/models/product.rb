@@ -30,11 +30,11 @@ class Product < ApplicationRecord
   end
 
   def image_url(size)
-    image.attached? ? image.variant(resize_to_fill: size) : "product/product1.jpg"
+    image.attached? ? image.variant(resize_to_fill: size) : "product/product_default.png"
   end
 
   def cart_image_url(size)
-    image.attached? ? image.variant(resize_to_fill: size) : "s-product/product.jpg"
+    image.attached? ? image.variant(resize_to_fill: size) : "product/product_default.png"
   end
 
   def self.import_from_csv file_name
