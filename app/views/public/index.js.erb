@@ -1,2 +1,5 @@
 $('#produse').html(' <%= j render partial:'public/product_area' %>')
 activateGrid();
+if (selectedViewMode) {
+  setViewMode(selectedViewMode);
+}
