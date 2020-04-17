@@ -29,6 +29,10 @@ class Product < ApplicationRecord
     (old_price.to_f/100).round(2)
   end
 
+  def display_per_kg_price
+    ((price.to_f/100)/coeficient).round(2) rescue nil
+  end
+
   def image_url(size)
     image.attached? ? image.variant(resize_to_fill: size) : "product/product_default.png"
   end
@@ -47,6 +51,8 @@ class Product < ApplicationRecord
           externalid: row[:cod],
           um: row[:um],
           available_count: row[:cantitate],
+          coeficient:row[:coeficient],
+          cantaribil:row[:cantaribil]
           is_visible: true
         }
         puts "#{attributes.inspect}"

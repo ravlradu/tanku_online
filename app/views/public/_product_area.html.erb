@@ -39,17 +39,16 @@
                       <% if product.promo %>
                         <span class="label_sale">Promo</span>
                       <% end %>
-                      <% if product&.um&.downcase == "kg" %>
-                        <span class="label_new">Preț per KG</span>
+                      <% if product.cantaribil %>
+                        <span class="label_new">Cântăribil</span>
                       <% end %>
                     </div>
                     <div class="action_links">
                         <ul>
-                            <li class="add_to_cart"><a title="Adaugă în coș" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
-                            <% if product&.um&.downcase == "kg" %>
-                              <li><span class="label_new">+/- 100g</span></li>
-                            <% end %>
+                            <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
                         </ul>
+
+
                     </div>
             </div>
 
@@ -59,6 +58,9 @@
                     <div class="price_box">
                         <span class="current_price">
                           <font size="6"><%= product.display_price %></font> lei/<%= product.um %>
+                          <% if !product.cantaribil && product.display_per_kg_price%>
+                            <sup><font size="1">(<%= product.display_per_kg_price %> lei/kg)</font> </sup>
+                          <% end %>
                           <% if product.promo %>
                             <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
                           <% end %>
@@ -81,7 +83,7 @@
                 </div>
                 <div class="action_links list_action_right">
                     <ul>
-                        <li class="add_to_cart"><a onclick="addToCart(<%= product.id %>)" title="Adaugă în coș">Adaugă în coș</a></li>
+                        <li class="add_to_cart"><a onclick="addToCart(<%= product.id %>)" title="Adaugă în coș">Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%></a></li>
                         </ul>
                 </div>
             </div>

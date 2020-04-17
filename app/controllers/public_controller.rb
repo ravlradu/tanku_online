@@ -5,12 +5,14 @@ class PublicController < ApplicationController
   def add_to_basket
     basket = session[:basket].to_h
     product = Product.where(id: params[:id]).first
+    logger.info "Product"
+    qty = product.cantaribil ? params["qty"].to_f * product.buying_step : params["qty"].to_i
 
     existing_qty = basket[product.id.to_s].nil? ? 0 : basket[product.id.to_s]["qty"]
 
     basket.merge!({
                       product.id.to_s => {
-                          'qty' => existing_qty + params["qty"].to_i,
+                          'qty' => existing_qty + qty,
                           'name' => product.name,
                           'thumbnail_url' => product.cart_image_url([83,83]),
                           'price' => product.price
@@ -71,7 +73,7 @@ class PublicController < ApplicationController
 
 
   def index
-    session[:basket]={} unless session[:basket]
+    session[:basket]={} #unless session[:basket]
     if params[:search]
       search = ["LOWER(name) like ?", "%#{params[:search].to_s.downcase}%"]
     else
