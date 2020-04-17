@@ -52,7 +52,7 @@ class Product < ApplicationRecord
           um: row[:um],
           available_count: row[:cantitate],
           coeficient:row[:coeficient],
-          cantaribil:row[:cantaribil]
+          cantaribil:row[:cantaribil],
           is_visible: true
         }
         puts "#{attributes.inspect}"
