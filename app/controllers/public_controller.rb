@@ -57,7 +57,7 @@ class PublicController < ApplicationController
   def send_order
     session[:basket].to_h.each{|prod_id, details|
       product = Product.where(id: prod_id).first
-      product.update_attributes available_count:product.available_count.to_i - details['qty'] if product
+      product.update_attributes available_count:product.available_count.to_f - details['qty'] if product
     }
 
     Order.create payload: session[:basket],
@@ -65,7 +65,11 @@ class PublicController < ApplicationController
                  delivery_type: params[:delivery_method]
 
     session[:basket] = {}
-    BasketMailer.with(basket: session[:basket], method: params[:delivery_method], name: params[:name], phone: params[:phone], address: params[:address]).order_email.deliver_now
+    begin
+      BasketMailer.with(basket: session[:basket], method: params[:delivery_method], name: params[:name], phone: params[:phone], address: params[:address]).order_email.deliver_now
+    rescue Exception => e
+      Rails.logger.error "\n Error is #{e.inspect}"
+    end
 
     flash[:notice] = 'Comanda trimisă!'
     redirect_to action: 'index'

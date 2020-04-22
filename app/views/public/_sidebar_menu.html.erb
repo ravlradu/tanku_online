@@ -6,24 +6,24 @@
                               <div class="categories_title">
                                 <h2>Categorii Produse</h2>
                               </div>
-                                <ul>
-                                    <% @main_categories.each do |category| %>
-                                    <li class="widget_sub_categories sub_categories" >
-                                        <a onclick="selectCategory(<%= category.id %>)" id="<%= category.id %>">
-                                          <%= category.name%>
-                                        </a>
-                                        <ul class="widget_dropdown_categories dropdown_categories_<%=category.id%>">
-                                            <% category.subcategories.each do |subcategory| %>
-                                              <li>
-                                                <a onclick="selectCategory(<%= subcategory.id %>)">
-                                                  <%= subcategory.name%>
-                                                </a>
-                                              </li>
-                                            <% end %>
-                                        </ul>
-                                    </li>
-                                    <% end %>
-                                </ul>
+                              <ul>
+                                  <% @main_categories.each do |category| %>
+                                  <li class="widget_sub_categories sub_categories" >
+                                      <a onclick="selectCategory(<%= category.id %>)" id="<%= category.id %>">
+                                        <%= category.name%>
+                                      </a>
+                                      <ul class="widget_dropdown_categories dropdown_categories_<%=category.id%>">
+                                          <% category.subcategories.each do |subcategory| %>
+                                            <li>
+                                              <a onclick="selectCategory(<%= subcategory.id %>)">
+                                                <%= subcategory.name%>
+                                              </a>
+                                            </li>
+                                          <% end %>
+                                      </ul>
+                                  </li>
+                                  <% end %>
+                              </ul>
                             </div>
                         </div>
                     </aside>
