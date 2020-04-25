@@ -122,6 +122,10 @@
                             top: 50%;
                             transform: translatey(-50%);
                         }
+                        &.selected {
+                            color: white;
+                            background: $secondary_color;
+                        }
                         &.active{
                             &::before{
                                 content: '-';

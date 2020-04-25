@@ -46,6 +46,9 @@
                     <div class="action_links">
                         <ul>
                             <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
+                            <!-- <li>
+                              <span> <button type="button" name="button">-</button> 1 <button type="button" name="button">+</button></span>
+                            </li> -->
                         </ul>
 
 
@@ -59,11 +62,15 @@
                         <span class="current_price">
                           <font size="6"><%= product.display_price %></font> lei/<%= product.um %>
                           <% if !product.cantaribil && product.display_per_kg_price%>
-                            <sup><font size="1">(<%= product.display_per_kg_price %> lei/kg)</font> </sup>
+                            <p>
+                              <sup><font size="1">(<%= product.display_per_kg_price %> lei/kg)</font> </sup>
+                            </p>
                           <% end %>
                           <% if product.promo %>
                             <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
                           <% end %>
+
+
                         </span>
                     </div>
                 </div>
@@ -83,8 +90,11 @@
                 </div>
                 <div class="action_links list_action_right">
                     <ul>
-                        <li class="add_to_cart"><a onclick="addToCart(<%= product.id %>)" title="Adaugă în coș">Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%></a></li>
-                        </ul>
+                        <li class="add_to_cart">
+                          <a onclick="addToCart(<%= product.id %>)" title="Adaugă în coș">Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>
+                          </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -33,7 +33,7 @@
 
         function addToCart(productId) {
           $.ajax({
-            url: "public/add_to_basket/"+productId+"/1"
+            url: "/public/add_to_basket/"+productId+"/1"
           }).done(function() {
           });
         }
@@ -46,9 +46,13 @@
         }
 
         function selectCategory(categoryId) {
+          $('.widget_dropdown_categories:visible').hide();
           $.ajax({
             url: "/shop/"+categoryId
           }).done(function() {
+            $('.widget_sub_categories a.active').removeClass('active');
+            $('.widget_sub_categories a.selected').removeClass('selected');
+            $('#' + categoryId + '').addClass('selected');
           });
         }
 

@@ -9,10 +9,10 @@
                               <ul>
                                   <% @main_categories.each do |category| %>
                                   <li class="widget_sub_categories sub_categories" >
-                                      <a onclick="selectCategory(<%= category.id %>)" id="<%= category.id %>" class="<%=category.id == @selected_category.id ? 'active':''  %>">
+                                      <a onclick="selectCategory(<%= category.id %>)" id="<%= category.id %>" class="<%= params[:c].to_i == category.id ? 'selected' : category.id == @selected_category.id ? 'active':''  %>">
                                         <%= category.name%>
                                       </a>
-                                      <ul class="widget_dropdown_categories dropdown_categories_<%=category.id%>" style= "<%= category.id == @selected_category.id ? 'display:block;':'dispaly:none' %>">
+                                      <ul class="widget_dropdown_categories dropdown_categories_<%=category.id%>" style= "<%= category.id == @selected_category.id ? 'display:block;':'display:none' %>">
                                           <% category.subcategories.each do |subcategory| %>
                                             <li>
                                                 <%= link_to subcategory.name, "/shop/#{subcategory.id}", class:params[:c].to_i == subcategory.id ? 'selected':''%>
