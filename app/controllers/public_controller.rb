@@ -76,7 +76,7 @@ class PublicController < ApplicationController
   end
 
 
-  def index
+  def shop
     session[:basket]={} #unless session[:basket]
     if params[:search]
       search = ["LOWER(name) like ?", "%#{params[:search].to_s.downcase}%"]
@@ -86,6 +86,7 @@ class PublicController < ApplicationController
     if params[:c]
       category  = Category.where(id: params[:c]).first
       ids       = [category.id] + category.subcategories.pluck(:id)
+      @selected_category = category.parent_id ? category.parent : category
       @pagy,@products = pagy(Product.where(search).where(is_visible:true,category_id: ids).where('available_count > 0'),size:[1,2,2,1])
     else
       @pagy,@products = pagy(Product.where(search).where(is_visible:true).where('available_count > 0'),size:[1,2,2,1])
@@ -95,6 +96,10 @@ class PublicController < ApplicationController
       format.js
       format.html
     end
+  end
+
+  def index
+    @promo_products  = Product.limit(10).offset(rand(345))
   end
 
   def search

@@ -1153,12 +1153,12 @@
         &  > li{
             position: relative;
             & > a{
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 38px;
                 font-weight: 400;
                 display: block;
                 cursor: pointer;
-                padding: 0 20px 0 30px;
+                padding: 0 20px 0 20px;
                  @media #{$desktop-device}{
                     line-height: 38px;
                 }

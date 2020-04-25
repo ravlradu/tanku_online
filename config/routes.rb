@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'public/index/:c', controller: 'public', action: 'index'
+  get 'public/index'
+  get 'shop/:c', controller: 'public', action: 'shop'
   get 'public/add_to_basket/:id/:qty', controller: 'public', action: 'add_to_basket'
   get 'public/remove_from_basket/:id', controller: 'public', action: 'remove_from_basket'
   post 'public/send_order'

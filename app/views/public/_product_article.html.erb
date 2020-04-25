@@ -1,0 +1,27 @@
+<article class="single_product">
+    <figure>
+        <div class="product_thumb">
+            <a class="primary_img" href="product-details.html"><%=image_tag product.image_url([262,262])%></a>
+            <a class="secondary_img" href="product-details.html"><%=image_tag product.image_url([262,262])%></a>
+            <div class="label_product">
+                <span class="label_sale">Sale</span>
+                <span class="label_new">New</span>
+            </div>
+            <div class="action_links">
+                <ul>
+                    <li class="add_to_cart"><a href="cart.html" title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <figcaption class="product_content">
+          <h4 class="product_name"><a href="#"><%= product.name %></a></h4>
+          <p><a href="#"><%= product.category&.name %></a></p>
+          <div class="price_box">
+              <span class="current_price"> <font size="6"><%= product.display_price %></font> lei/<%= product.um %></span>
+              <% if product.promo %>
+                <span class="old_price"><font size="6"><%= product.display_old_price %></font> lei</span>
+              <% end %>
+          </div>
+        </figcaption>
+    </figure>
+</article>

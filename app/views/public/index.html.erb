@@ -1,11 +1,234 @@
-
-    <div class="shop_area shop_reverse mt-70 mb-70">
-          <div class="container">
-              <div class="row">
-                <%= render partial:"sidebar_menu" %>
-                <div class="col-lg-9 col-md-12" id="produse">
-                  <%= render partial: "product_area" %>
-                </div>
+<div class="header_bottom">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-3">
+              <div class="categories_menu categories_three">
+                  <div class="categories_title">
+                      <h2 class="categori_toggle">Categorii Produse</h2>
+                  </div>
+                  <div class="categories_menu_toggle">
+                      <ul>
+                        <% @main_categories.each do |category| %>
+                          <li class="menu_item_children"><a href="#"> <%= category.name %><i class="fa fa-angle-right"></i></a>
+                              <ul class="categories_mega_menu">
+                                    <li class="menu_item_children"><a href="#"></a>
+                                        <ul class="categorie_sub_menu">
+                                          <% category.subcategories.each do |subcategory| %>
+                                            <li>
+                                              <%=link_to subcategory.name, "shop/#{subcategory.id}" %>
+                                            </li>
+                                          <% end %>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                          <% end %>
+                      </ul>
+                  </div>
               </div>
           </div>
+          <div class="col-lg-6">
+              <!--main menu start-->
+
+              <!--main menu end-->
+          </div>
+          <div class="col-lg-3">
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<%= render partial:"home_slider" %>
+
+<!--shipping area start-->
+<div class="shipping_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                      <%= image_tag("about/shipping5.jpg") %>
+                    </div>
+                    <div class="shipping_content">
+                        <h3>Free Shipping</h3>
+                        <p>Free shipping on all US order or order above $200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping col_2">
+                    <div class="shipping_icone">
+                        <%= image_tag("about/shipping6.jpg") %>
+                    </div>
+                    <div class="shipping_content">
+                        <h3>Support 24/7</h3>
+                        <p>Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping col_3">
+                    <div class="shipping_icone">
+                        <%= image_tag("about/shipping7.jpg") %>
+                    </div>
+                    <div class="shipping_content">
+                        <h3>30 Days Return</h3>
+                        <p>Simply return it within 30 days for an exchange</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping col_4">
+                    <div class="shipping_icone">
+                        <%= image_tag("about/shipping8.jpg") %>
+                    </div>
+                    <div class="shipping_content">
+                        <h3>100% Payment Secure</h3>
+                        <p>We ensure secure payment with PEV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+        <!--shipping area end-->
+
+        <!--product area start-->
+        <div class="product_area color_three mb-64">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product_header product_header3">
+                            <div class="section_title">
+                               <h2>Produse Promo</h2>
+                            </div>
+                            <div class="product_tab_btn">
+                                <ul class="nav" role="tablist">
+                                    <li>
+                                        <a class="active" data-toggle="tab" href="#plant1" role="tab" aria-controls="plant1" aria-selected="true">
+                                           Vegetables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#plant2" role="tab" aria-controls="plant2" aria-selected="false">
+                                            Fruits
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#plant3" role="tab" aria-controls="plant3" aria-selected="false">
+                                            Salads
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_container">
+                   <div class="row">
+                       <div class="col-12">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="plant1" role="tabpanel">
+                                    <div class="product_carousel product_column5 owl-carousel">
+                                        <% @promo_products.each do |product| %>
+                                          <%= render partial:"product_article", locals:{product:product} %>
+                                        <% end %>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="plant2" role="tabpanel">
+                                  <div class="product_carousel product_column5 owl-carousel">
+                                      <% @promo_products.each do |product| %>
+                                        <%= render partial:"product_article", locals:{product:product} %>
+                                      <% end %>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="plant3" role="tabpanel">
+                                  <div class="product_carousel product_column5 owl-carousel">
+                                      <% @promo_products.each do |product| %>
+                                        <%= render partial:"product_article", locals:{product:product} %>
+                                      <% end %>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product area end-->
+
+        <!--banner area start-->
+        <div class="banner_area banner3_col2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single_banner">
+                            <div class="banner_thumb">
+                                <a href="shop.html"><%=image_tag("bg/banner10.jpg")%></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single_banner">
+                            <div class="banner_thumb">
+                                <a href="shop.html"><%=image_tag("bg/banner11.jpg")%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--banner area end-->
+
+        <!--home three bg area start-->
+        <div class="home3_bg_area color_three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                       <div class="productbg_right_left">
+                            <div class="deals_prodict_three">
+                                <div class="deals_title">
+                                    <h2>Deals Of The Weeks</h2>
+                                </div>
+                                <div class="deals_prodict_inner3">
+                                    <div class="product_carousel deals3_column1 owl-carousel">
+                                          <% @promo_products.each do |product| %>
+                                            <%= render partial:"product_article", locals:{product:product} %>
+                                          <% end %>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner_thumb">
+                                <a href="shop.html">
+                                  <%= image_tag("bg/banner12.jpg") %>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="productbg_right_side">
+                            <div class="small_product_inner3">
+                                <div class="section_title">
+                                   <h2>Best Sellers</h2>
+                                </div>
+                                <div class="small_product_area product_carousel smallp_column2 owl-carousel">
+                                    <%= render partial:'promoted' %>
+                                </div>
+                            </div>
+                            <div class="product_conatiner3">
+                                <div class="section_title">
+                                   <h2>New Products</h2>
+                                </div>
+                                <div class="small_product_area product_carousel product3_column3 owl-carousel">
+                                    <%= render partial:'promoted' %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--home three bg area end-->

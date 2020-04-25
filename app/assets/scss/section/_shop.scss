@@ -150,6 +150,10 @@
                                 color: white;
                                 background: $secondary_color;
                             }
+                            &.selected {
+                                color: white;
+                                background: $secondary_color;
+                            }
                         }
                     }
                 }
