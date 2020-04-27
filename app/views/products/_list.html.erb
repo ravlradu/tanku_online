@@ -6,7 +6,7 @@
       <th>Cod</th>
       <th>Nume</th>
       <th>Descriere</th>
-      <th>Categorie</th>
+      <th class="w-25">Categorie</th>
       <th>Vizibil</th>
       <th>UM</th>
       <th>Preț</th>
@@ -17,21 +17,22 @@
       <th>Preț Vechi</th>
       <th>Cantitate</th>
       <th colspan="3"> Action</th>
-      <th>
-        Categorie
-      </th>
     </tr>
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
+      <tr class="d-flex">
         <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
         <td> <%= product.externalid %> </td>
         <td><%= product.name %></td>
         <td><%= truncate(product.description, length: 20) %></td>
-        <td><%= product.category&.name %></td>
-        <td>
+        <td class="col-md-4">
+            <div class="form-group">
+              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(@categories, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
+            </div>
+        </td>
+        <td >
             <div class="form-group">
               <%= check_box_tag :is_visible, product.is_visible, product.is_visible,{onchange:"updateVisibility('#{product.id}')"} %>
             </div>
@@ -59,11 +60,7 @@
             <span class="glyphicon glyphicon-trash"></span>
           <% end %>
         </td>
-        <td>
-            <div class="form-group">
-              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(@categories, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
-            </div>
-        </td>
+
       </tr>
     <% end %>
   </tbody>
