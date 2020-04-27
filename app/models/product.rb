@@ -30,7 +30,7 @@ class Product < ApplicationRecord
   end
 
   def display_per_kg_price
-    ((price.to_f/100)/coeficient).round(2) rescue nil
+    coeficient.zero? ? nil : ((price.to_f/100)/coeficient).round(2)
   end
 
   def image_url(size)
@@ -51,9 +51,10 @@ class Product < ApplicationRecord
           externalid: row[:cod],
           um: row[:um],
           available_count: row[:cantitate],
-          coeficient:row[:coeficient],
-          cantaribil:row[:cantaribil],
-          is_visible: true
+          coeficient: row[:coeficient],
+          cantaribil: row[:cantaribil],
+          is_visible: true,
+          um_name: row[:um_content]
         }
         puts "#{attributes.inspect}"
         product = Product.where(externalid: row[:cod]).first

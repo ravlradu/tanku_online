@@ -61,9 +61,9 @@
                     <div class="price_box">
                         <span class="current_price">
                           <font size="6"><%= product.display_price %></font> lei/<%= product.um %>
-                          <% if !product.cantaribil && product.display_per_kg_price%>
+                          <% if !product.coeficient.zero?%>
                             <p>
-                              <sup><font size="1">(<%= product.display_per_kg_price %> lei/kg)</font> </sup>
+                              <sup><font size="1">(<%= product.display_per_kg_price %> lei/<%= product.um_name %>)</font> </sup>
                             </p>
                           <% end %>
                           <% if product.promo %>
