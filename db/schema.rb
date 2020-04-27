@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_085007) do
     t.boolean "cantaribil"
     t.float "coeficient"
     t.float "buying_step"
+    t.string "um_content"
   end
 
   create_table "sessions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|

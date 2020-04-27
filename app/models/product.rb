@@ -54,7 +54,7 @@ class Product < ApplicationRecord
           coeficient: row[:coeficient],
           cantaribil: row[:cantaribil],
           is_visible: true,
-          um_name: row[:um_content]
+          um_content: row[:um_content]
         }
         puts "#{attributes.inspect}"
         product = Product.where(externalid: row[:cod]).first
