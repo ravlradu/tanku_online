@@ -10,7 +10,7 @@
                       <ul>
                         <% @main_categories.each do |category| %>
                           <li class="menu_item_children"><a href="#"> <%= category.name %><i class="fa fa-angle-right"></i></a>
-                              <ul class="categories_mega_menu">
+                              <ul class="categories_mega_menu categories_mega_menu_half">
                                     <li class="menu_item_children"><a href="#"></a>
                                         <ul class="categorie_sub_menu">
                                           <% category.subcategories.each do |subcategory| %>
@@ -222,7 +222,7 @@
                                 <div class="section_title">
                                    <h2>New Products</h2>
                                 </div>
-                                <div class="small_product_area product_carousel product3_column3 owl-carousel">
+                                <div class="small_product_area product_carousel smallp_column2 owl-carousel">
                                     <%= render partial:'promoted' %>
                                 </div>
                             </div>

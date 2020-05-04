@@ -1413,6 +1413,17 @@
 
 }
 
+.categories_menu_toggle ul li ul.categories_mega_menu.categories_mega_menu_half {
+	width: 250px;
+    @media #{$large-mobile}{
+        width: 100%;
+    }
+    @media #{$tablet-device}{
+        width: 100%;
+    }
+
+}
+
 .categorie_sub {
 	opacity: 0;
 	z-index: 999;
