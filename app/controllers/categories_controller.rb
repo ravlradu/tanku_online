@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.order(:position).all
   end
 
   # GET /categories/1
@@ -66,6 +66,14 @@ class CategoriesController < ApplicationController
       format.html { redirect_to categories_url, notice: 'Category was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def set_order
+    ordered_ids = params[:ordered_ids].map(&:to_i)
+    Category.where(id:ordered_ids).each do |c|
+      c.update position: ordered_ids.index(c.id)+1
+    end
+    @categories = Category.order(:position).all
   end
 
   private

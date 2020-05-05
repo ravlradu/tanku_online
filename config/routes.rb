@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post 'products/upload', controller:'products', action:'upload'
   resources :products
   resources :categories
+  post 'categories/set_order', controller: 'categories', action: 'set_order'
 
   root 'public#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

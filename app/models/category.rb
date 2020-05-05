@@ -11,6 +11,8 @@
 #
 
 class Category < ApplicationRecord
+  include RailsSortable::Model
+  set_sortable :position 
 
   has_many :products
 

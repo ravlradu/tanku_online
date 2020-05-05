@@ -6,6 +6,11 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require ("dragula")
+
+import dragula from "dragula";
+global.dragula = dragula;
+
 import Rails from '@rails/ujs';
 global.Rails = Rails;
 // Uncomment to copy all static images under ../images to the output folder and reference

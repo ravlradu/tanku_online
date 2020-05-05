@@ -56,3 +56,5 @@ gem 'dotenv-rails'
 gem 'sprockets', '3.7.2'
 
 gem 'pagy'
+
+gem 'rails_sortable'

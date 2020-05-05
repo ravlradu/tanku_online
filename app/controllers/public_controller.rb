@@ -129,6 +129,6 @@ class PublicController < ApplicationController
 
   def set_data
     set_basket_data
-    @main_categories = Category.where(parent_id: nil)
+    @main_categories = Category.where(parent_id: nil).order(:position)
   end
 end

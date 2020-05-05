@@ -1,0 +1,9 @@
+<% @categories.where(parent_id: nil).each_with_index do |category| %>
+  <tr id="<%= category.id %>">
+    <td><%= category.name %></td>
+    <td><%= category.position %></td>
+    <td><%= link_to 'Arată', category %></td>
+    <td><%= link_to 'Modifică', edit_category_path(category) %></td>
+    <td><%= link_to 'Șterge', category, method: :delete, data: { confirm: 'Ești sigur?' } %></td>
+  </tr>
+<% end %>
