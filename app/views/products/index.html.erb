@@ -108,25 +108,25 @@
 
 <h1>Produse</h1>
 
+<div class="mb-20">
+    <%= link_to 'Crează produs nou', new_product_path, class:"btn btn-primary" %>
+    <a onclick="displayImport();" class="btn btn-primary">Import produse</a>
 
+    <div class="panel panel-default" id="import" style="display:none;">
+      <div class="panel-heading">Import</div>
+      <div class="panel-body">
+        <div class="row">
+          <%= form_tag('/products/upload',{multipart:true}) do  %>
+              <div class="col-sm-6">
+                <%= label_tag 'Fisier CSV' %>
+                <%= file_field_tag :csv_file, class:"form-control-file" %>
+                <%= submit_tag "Import", class:"btn btn-primary" %>
+              </div>
 
-<%= link_to 'Crează produs nou', new_product_path, class:"btn btn-primary" %>
-<a onclick="displayImport();" class="btn btn-primary">Import produse</a>
-
-<div class="panel panel-default" id="import" style="display:none;">
-  <div class="panel-heading">Import</div>
-  <div class="panel-body">
-    <div class="row">
-      <%= form_tag('/products/upload',{multipart:true}) do  %>
-          <div class="col-sm-6">
-            <%= label_tag 'Fisier CSV' %>
-            <%= file_field_tag :csv_file, class:"form-control-file" %>
-            <%= submit_tag "Import", class:"btn btn-primary" %>
-          </div>
-
-      <% end %>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
 </div>
 
 <div class="panel panel-default">

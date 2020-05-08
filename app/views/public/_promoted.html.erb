@@ -1,9 +1,19 @@
-<% @promo_products[0,1].each do |product| %>
-  <div class="product_items">
-      <%= render partial:"product_article", locals:{product:product} %>
-  </div>
-<% end %>
+<%# @promo_products[0,1].each do |product| %>
+  <!-- <div class="product_items">
+      <%#= render partial:"product_article", locals:{product:product} %>
+  </div> -->
+<%# end %>
 
+<%# @promo_products[0,1].in_groups_of(2, false).each do |products| %>
+<% @promo_products.in_groups_of(2, false).each do |products| %>
+    <div class="product_items">
+         <% products.each do |product| %>
+            <%= render partial:"product_article_wide", locals:{product:product} %>
+        <% end %>
+    </div>
+  <% end %>
+
+<!--
 <div class="product_items">
     <article class="single_product">
         <figure>
@@ -56,3 +66,4 @@
         </figure>
     </article>
 </div>
+-->

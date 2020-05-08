@@ -1,8 +1,9 @@
-<h1>Modificarea unui produs</h1>
+<div class="admin-wrapper">
+    <h1>Modificarea unui produs</h1>
 
-<%= render 'form', product: @product %>
+    <%= render 'form', product: @product %>
 
-<%= link_to 'Arată produsul', @product %> |
-<%= link_to 'Înapoi la lista de produse', products_path %> |
-<%= link_to 'Înapoi la pagina de administrare', admin_private_path %>
-
+    <%= link_to 'Arată produsul', @product %> |
+    <%= link_to 'Înapoi la lista de produse', products_path %> |
+    <%= link_to 'Înapoi la pagina de administrare', admin_private_path %>
+</div>

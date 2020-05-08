@@ -49,6 +49,14 @@ function activateGrid() {
     $(window).on('load', function () {
         dataBackgroundImage();
 
+        // LP: superscript price decimals
+        $('.js-price-sup').each(function () {
+            var $this = $(this),
+                $val = $this.text(),
+                dec_pos = $val.indexOf('.');
+            $this.html($val.substring(0, dec_pos) + '<sup>' + $val.substring(dec_pos + 1) + '</sup>');
+        });
+
 
     /*---stickey menu---*/
     $(window).on('scroll',function() {

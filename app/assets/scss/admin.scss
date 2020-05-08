@@ -1,16 +1,46 @@
+.admin-wrapper {
+    padding-bottom: 40px;
+}
+.resp-img-box {
+    img {
+        max-width: 100%;
+    }
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+// products table
+
+.products-wrapper {
+   overflow-x: auto;
+   white-space: nowrap;
+   margin-bottom: 3rem;
+}
+.products-table {
+    white-space: normal;
+    margin-bottom: 0;
+    min-width: 1200px;
+}
+.product-actions {
+    a {
+        margin: 0 5px;
+    }
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
 
 td, th {
-	background: #e2e2e2;
-  border-width: 0;
-	border-bottom: 1px solid #B8B8B8;
-	font-weight: normal !important;
-  padding: 15px;
-	text-align: left;
-	vertical-align: middle;
+    background: #fff;
+    border-width: 0;
+    border-bottom: 1px solid #B8B8B8;
+    font-weight: normal !important;
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 tr {
@@ -42,6 +72,24 @@ tr {
     td, th {
       background: #4C1A2E;
     }
+  }
+  .w-120 {
+      width: 120px;
+  }
+  .w-100 {
+      width: 100px;
+  }
+  .w-150 {
+      width: 150px;
+  }
+  .w-300 {
+      width: 300px;
+  }
+  .w-250 {
+      width: 250px;
+  }
+  .small {
+      font-size: 12px;
   }
 }
 

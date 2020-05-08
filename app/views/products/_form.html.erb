@@ -1,11 +1,16 @@
 <div class="container-fluid">
 
-
-  <div class="row">
-    <div class="col-lg-2">
-      <%= image_tag @product.image_url([90, 90]) %>
-    </div>
     <%= form_with(model: product, local: true) do |form| %>
+
+  <div class="row mb-20">
+    <div class="col-lg-2">
+      <div class="resp-img-box mb-20"><%= image_tag @product.image_url([90, 90]) %></div>
+      <div class="form-group">
+            <%= form.label 'Imagine' %>
+            <%= form.file_field :image, class:"form-control-file" %>
+      </div>
+    </div>
+    <div class="col-lg-10">
       <% if product.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(product.errors.count, "error") %> erori au apărut la salvare:</h2>
@@ -18,83 +23,102 @@
         </div>
       <% end %>
 
-      <div class="col-lg-10">
         <div class="form-group row">
-          <div class="col-sm-3">
-            <%= form.label 'Nume' %>
-            <%= form.text_field :name, class:"form-control" %>
-          </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <%= form.label 'Nume' %>
+                    <%= form.text_field :name, class:"form-control" %>
+                </div>
+                <div class="form-group">
+                      <%= form.label 'Categoria' %>
+                      <%= form.select :category_id, Category.all.map { |c| [ c.name, c.id ] },{}, {class:"form-control"} %>
+                </div>
+                <div class="form-group">
+                    <%= form.label 'Descriere' %>
+                    <%= form.text_area :description, class:"form-control" %>
+                </div>
 
-            <div class="col-sm-2">
-              <%= form.label 'Preț în bani' %>
-              <%= form.number_field :price, class:"form-control" %>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group form-check">
+                          <%= form.check_box :is_visible, class:"form-check-input" %>
+                          <%= form.label 'disponibil spre vânzare', class:"form-check-label" %>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group form-check">
+                          <%= form.check_box :cantaribil, class:"form-check-input" %>
+                          <%= form.label 'Cântăribil', class:"form-check-label" %>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group form-check">
+                              <%= form.label 'Promo' %>
+                              <%= form.check_box :promo, class:"form-check"%>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-sm-2">
-              <%= form.label 'Preț vechi în bani' %>
-              <%= form.number_field :old_price, class:"form-control" %>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <%= form.label 'Preț în bani' %>
+                            <%= form.number_field :price, class:"form-control" %>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <%= form.label 'Preț vechi în bani' %>
+                            <%= form.number_field :old_price, class:"form-control" %>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <%= form.label 'UM' %>
+                            <%= form.text_field :um, class:"form-control" %>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <%= form.label 'UM content' %>
+                            <%= form.text_field :um_content, class:"form-control" %>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <%= form.label 'Stoc' %>
+                            <%= form.number_field :available_count, class:"form-control" %>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <%= form.label 'Coeficient' %>
+                            <%= form.number_field :coeficient, step:0.001,class:"form-control" %>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <%= form.label 'Buying step(kg)' %>
+                            <%= form.number_field :buying_step, step:0.1,class:"form-control" %>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-1">
-              <%= form.label 'UM' %>
-              <%= form.text_field :um, class:"form-control" %>
-            </div>
-            <div class="col-sm-2">
-              <%= form.label 'UM content' %>
-              <%= form.text_field :um_content, class:"form-control" %>
-            </div>
-            <div class="col-sm-2">
-            <%= form.label 'Stoc' %>
-            <%= form.number_field :available_count, class:"form-control" %>
-            </div>
-
-
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-6">
-            <%= form.label 'Categoria' %>
-            <%= form.select :category_id, Category.all.map { |c| [ c.name, c.id ] },{}, {class:"form-control"} %>
-          </div>
-          <div class="col-sm-6">
-            <%= form.label 'Descriere' %>
-            <%= form.text_area :description, class:"form-control" %>
-          </div>
-
-        </div>
-        <div class="form-group row">
-        <div class="col-sm-2 form-check">
-          <%= form.label 'Promo' %>
-          <%= form.check_box :promo, class:"form-check"%>
-        </div>
-        <div class="col-sm-2 form-check">
-          <%= form.check_box :is_visible, class:"form-check-input" %>
-          <%= form.label 'disponibil spre vânzare', class:"form-check-label" %>
-        </div>
-        <div class="col-sm-2 form-check">
-          <%= form.check_box :cantaribil, class:"form-check-input" %>
-          <%= form.label 'Cântăribil', class:"form-check-label" %>
-        </div>
-        <div class="col-sm-6">
-          <%= form.label 'Imagine' %>
-          <%= form.file_field :image, class:"form-control-file" %>
-        </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-3">
-            <%= form.label 'Coeficient' %>
-            <%= form.number_field :coeficient, step:0.001,class:"form-control" %>
-          </div>
-          <div class="col-sm-3">
-            <%= form.label 'Buying step(kg)' %>
-            <%= form.number_field :buying_step, step:0.1,class:"form-control" %>
-          </div>
         </div>
 
-        <div class="form-group row">
-          <div class="col-sm-3">
-            <%= form.submit 'Salvează', class:'btn btn-info' %>
-          </div>
-        </div>
-      </div>
+        <%= form.submit 'Salvează', class:'btn btn-info' %>
 
+        </div>
+
+</div>
   <% end %>
-  </div>
+
 </div>

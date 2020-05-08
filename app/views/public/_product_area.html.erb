@@ -43,35 +43,45 @@
                         <span class="label_new">Cântăribil</span>
                       <% end %>
                     </div>
-                    <div class="action_links">
+                    <div class="action_links mb-20">
                         <ul>
-                            <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
-                            <!-- <li>
-                              <span> <button type="button" name="button">-</button> 1 <button type="button" name="button">+</button></span>
-                            </li> -->
+                            <!-- <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li> -->
+                            <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="showProductQty(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
                         </ul>
-
-
                     </div>
+
+                    <div id="cart_qty_<%= product.id %>" class="cart_qty" style="display:none">
+                        <p class="js-feedback feedback" style="display:none">Produs adaugat in cos!</p>
+                        <div class="inner js-cart-actions">
+                            <span class="js-cancel-cart cancel-cart">x</span>
+                            <span class="qty-icon js-choose-qty js-inc">+</span>
+                            <span class="qty-icon js-choose-qty js-dec">-</span>
+                            <span class="current-qty"><span id="js-qty-value">1</span></span>
+                            <a class="qty-buy-link" title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a>
+                        </div>
+                    </div>
+
             </div>
 
             <div class="product_content grid_content">
+
+
                     <h4 class="product_name"><a href="#"> <%= product.name %></a></h4>
                     <p><a href="#"> <%= product.category&.name %></a></p>
                     <div class="price_box">
-                        <span class="current_price">
-                          <font size="6"><%= product.display_price %></font> lei/<%= product.um %>
-                          <% if product.coeficient && !product.coeficient.zero?%>
-                            <p>
-                              <sup><font size="1" style="color:black;">(<%= product.display_per_kg_price %> lei/<%= product.um_content %>)</font> </sup>
-                            </p>
-                          <% end %>
-                          <% if product.promo %>
-                            <span class="old_price" ><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
-                          <% end %>
-
-
-                        </span>
+                        <div class="price_bg">
+                            <span class="current_price">
+                              <span class="price-value current_price">
+                                  <%= product.display_price %> lei/<%= product.um %>
+                                  <% if product.coeficient && !product.coeficient.zero?%>
+                                      <sup><font size="1" style="color:black;">(<%= product.display_per_kg_price %> lei/<%= product.um_content %>)</font> </sup>
+                                  <% end %>
+                                </span>
+                            </span>
+                        </div>
+                        <% if product.promo %>
+                          <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
+                        <% end %>
                     </div>
                 </div>
             <div class="product_content list_content">

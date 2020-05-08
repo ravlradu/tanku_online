@@ -1,69 +1,69 @@
 <p><%== pagy_nav(@pagy) %></p>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Cod</th>
-      <th>Nume</th>
-      <th>Descriere</th>
-      <th class="w-25">Categorie</th>
-      <th>Vizibil</th>
-      <th>UM</th>
-      <th>Preț</th>
-      <th>Pas</th>
-      <th>Promo</th>
-      <th>Cantaribil</th>
-      <th>Coeficient</th>
-      <th>Preț Vechi</th>
-      <th>Cantitate</th>
-      <th colspan="3"> Action</th>
-    </tr>
-  </thead>
+<div class="products-wrapper">
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr class="d-flex">
-        <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
-        <td> <%= product.externalid %> </td>
-        <td><%= product.name %></td>
-        <td><%= truncate(product.description, length: 20) %></td>
-        <td class="col-md-4">
-            <div class="form-group">
-              <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(@categories, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
-            </div>
-        </td>
-        <td >
-            <div class="form-group">
-              <%= check_box_tag :is_visible, product.is_visible, product.is_visible,{onchange:"updateVisibility('#{product.id}')"} %>
-            </div>
-        </td>
-        <td><%= product.um %></td>
-        <td><%= price product.price %></td>
-        <td><%= price product.buying_step %></td>
-        <td><%= product.promo %></td>
-        <td><%= product.cantaribil %></td>
-        <td><%= product.coeficient %></td>
-        <td><%= product.old_price ? (price product.old_price):'' %></td>
-        <td><%= product.available_count %></td>
-        <td>
-          <%= link_to product do %>
-          <span class="glyphicon glyphicon-eye-open"></span>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to edit_product_path(product) do%>
-            <span class="glyphicon glyphicon-pencil"></span>
-          <%end%>
-        </td>
-        <td>
-          <%= link_to product, method: :delete, data: { confirm: 'Ești sigur?' } do%>
-            <span class="glyphicon glyphicon-trash"></span>
-          <% end %>
-        </td>
+    <table class="table table-hover products-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="w-100">Cod</th>
+          <th class="w-120">Nume</th>
+          <th class="w-120">Descriere</th>
+          <th class="w-250">Categorie</th>
+          <th class="text-center">Vizibil</th>
+          <th class="text-center">UM</th>
+          <th class="text-center">Preț</th>
+          <th class="text-center">Pas</th>
+          <th class="text-center">Promo</th>
+          <th class="w-100 text-center">Cantaribil</th>
+          <th class="w-100 text-center">Coeficient</th>
+          <th class="text-center">Preț Vechi</th>
+          <th class="w-100 text-center">Cantitate</th>
+          <th class="w-150 text-center"> Action</th>
+        </tr>
+      </thead>
 
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @products.each do |product| %>
+          <tr class="d-flex">
+            <td> <%= image_tag product.image_url([50,50]), size:"50x50" %> </td>
+            <td class="small"> <%= product.externalid %> </td>
+            <td><%= product.name %></td>
+            <td><%= truncate(product.description, length: 20) %></td>
+            <td>
+                <div class="form-group">
+                  <%= select_tag "category_id_#{product.id}", options_from_collection_for_select(@categories, "id", "selector_name", product.category_id) ,{include_blank:"Selecteaza categoria",onchange:"updateCategory(#{product.id}, this)",class:"form-control col-lg-10"} %>
+                </div>
+            </td>
+            <td  class="text-center">
+                <div class="form-group">
+                  <%= check_box_tag :is_visible, product.is_visible, product.is_visible,{onchange:"updateVisibility('#{product.id}')"} %>
+                </div>
+            </td>
+            <td class="text-center"><%= product.um %></td>
+            <td class="text-center"><%= price product.price %></td>
+            <td class="text-center"><%= price product.buying_step %></td>
+            <td class="text-center"><%= product.promo %></td>
+            <td class="text-center"><%= product.cantaribil %></td>
+            <td class="text-center"><%= product.coeficient %></td>
+            <td class="text-center"><%= product.old_price ? (price product.old_price):'' %></td>
+            <td class="text-center"><%= product.available_count %></td>
+            <td class="text-center product-actions">
+              <%= link_to product do %>
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <% end %>
+
+              <%= link_to edit_product_path(product) do%>
+                <span class="glyphicon glyphicon-pencil"></span>
+              <%end%>
+              <%= link_to product, method: :delete, data: { confirm: 'Ești sigur?' } do%>
+                <span class="glyphicon glyphicon-trash"></span>
+              <% end %>
+            </td>
+
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>
 
 <p><%== pagy_nav(@pagy) %></p>

@@ -273,12 +273,101 @@
     }
 }
 
-
+.cart_qty {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	transform: translateX(-50%);
+	.feedback {
+		margin-top: 20px;
+	}
+	.inner {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.cancel-cart {
+		position: absolute;
+		top: 0;
+		right: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		padding: 1px 3px;
+		&:hover {
+			color: #ccc;
+		}
+	}
+}
+.qty-icon {
+	width: 20px;
+	height: 20px;
+	background: #8CC63F;
+	border-radius: 10px;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	line-height: 20px;
+	font-size: 16px;
+	&:hover {
+		background: $secondary_color;
+	}
+	margin: 0 3px;
+}
+.current-qty {
+	font-size: 22px;
+	color: $secondary_color;
+	margin: 0 5px;
+}
+.qty-buy-link {
+	font-size: 22px;
+}
 .price_box{
     margin-top: 12px;
     @media #{$large-mobile}{
         margin-top: 9px;
     }
+	.price_box_no_bg {
+		width: 150px;
+		display: inline-block;
+		text-align: center;
+	}
+	.price_bg {
+		background: asset-url('product/price-bg.png') no-repeat top left;
+		color: #fff!important;
+		background-size: 150px 76px;
+		width: 150px;
+		height: 38px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 20px;
+		margin-bottom: 5px;
+		&:hover {
+			background-position: 0 -38px;
+		}
+		.current_price,
+		.old_price {
+			color: #fff!important;
+			line-height: 38px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.price-value {
+			margin-right: 3px;
+		}
+	}
+	.price_bg_left {
+		margin-left: 0;
+	}
+
     & span{
         line-height: 16px;
         &.old_price{
@@ -289,12 +378,14 @@
         }
         &.current_price{
             font-weight: 500;
-            font-size: 17px;
             color: $secondary_color;
             @media #{$large-mobile}{
                 font-size: 13px;
             }
         }
+		.price-value {
+			font-size: 26px;
+		}
 
 
     }

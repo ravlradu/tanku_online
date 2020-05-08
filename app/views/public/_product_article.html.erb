@@ -17,9 +17,11 @@
           <h4 class="product_name"><a href="#"><%= product.name %></a></h4>
           <p><a href="#"><%= product.category&.name %></a></p>
           <div class="price_box">
-              <span class="current_price"> <font size="6"><%= product.display_price %></font> lei/<%= product.um %></span>
+                <div class="price_bg mb-10">
+                    <span class="current_price"><span class="price-value js-price-sup"><%= product.display_price %></span> lei/<%= product.um %></span>
+                </div>
               <% if product.promo %>
-                <span class="old_price"><font size="6"><%= product.display_old_price %></font> lei</span>
+                <span class="old_price price_box_no_bg"><span class="price-value js-price-sup"><%= product.display_old_price %></span> lei</span>
               <% end %>
           </div>
         </figcaption>
