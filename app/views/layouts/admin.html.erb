@@ -30,6 +30,9 @@
               <li class=<%= (params[:controller]=="admin" && params[:action] == 'orders') ? 'active':''%>>
                   <%= link_to "Comenzi", controller: 'admin', action: 'orders' %>
               </li>
+              <li class=<%= (params[:controller]=="slider_images") ? 'active':''%>>
+                  <%= link_to "Sliders", controller: 'slider_images', action: 'index' %>
+              </li>
               <li><%= link_to 'Logout', authentication_logout_path %></li>
             </ul>
           </div>

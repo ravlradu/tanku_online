@@ -1,0 +1,13 @@
+<div class="price_box">
+    <div class="price_bg mb-10">
+        <span class="current_price">
+              <span class="price-value js-price-sup"><%= product.display_price %></span> lei/<%= product.um %>
+              <% if product.coeficient && !product.coeficient.zero?%>
+                  <sup><font size="1" style="color:black;">(<%= product.display_per_kg_price %> lei/<%= product.um_content %>)</font> </sup>
+              <% end %>
+        </span>
+    </div>
+    <% if product.promo %>
+      <span class="old_price"><font size="5"><%= product.display_old_price %></font> lei/<%= product.um %></span>
+    <% end %>
+</div>

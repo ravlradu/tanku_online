@@ -1,0 +1,52 @@
+<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
+    <div class="single_product">
+        <div class="product_thumb">
+                <a class="primary_img" href="#"><%=image_tag product.image_url([262,262])%></a>
+                <a class="secondary_img" href="#"><%=image_tag product.image_url([262,262])%></a>
+                <div class="label_product">
+                  <% if product.promo %>
+                    <span class="label_sale">Promo</span>
+                  <% end %>
+                  <% if product.cantaribil %>
+                    <span class="label_new">Cântăribil</span>
+                  <% end %>
+                </div>
+                <%= render partial:'add_to_cart', locals:{product:product} %>
+
+        </div>
+
+        <div class="product_content grid_content">
+
+
+                <h4 class="product_name"><a href="#"> <%= product.name %></a></h4>
+                <p><a href="#"> <%= product.category&.name %></a></p>
+
+
+                <%= render partial:'price_box', locals:{product:product} %>
+
+            </div>
+        <div class="product_content list_content">
+            <h4 class="product_name"><a href="#"><%= product.name %></a></h4>
+            <p><a href="#"><%= product.category&.name %></a></p>
+            <div class="price_box">
+                <span class="current_price"> <font size="6"><%= product.display_price %></font> lei/<%= product.um %></span>
+                <% if product.promo %>
+                  <span class="old_price"><font size="6"><%= product.display_old_price %></font> lei</span>
+                <% end %>
+            </div>
+            <div class="product_desc">
+                <p>
+                  <%= product.description %>
+                </p>
+            </div>
+            <div class="action_links list_action_right">
+                <ul>
+                    <li class="add_to_cart">
+                      <a onclick="addToCart(<%= product.id %>)" title="Adaugă în coș">Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

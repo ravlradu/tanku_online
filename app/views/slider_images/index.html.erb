@@ -1,0 +1,74 @@
+<script type="text/javascript">
+  function setDragula() {
+    var container = document.getElementById('container');
+    var rows = container.children;
+    var currentOrder = Array.from(rows).map((r)=>r.id);
+    // forEach method from https://toddmotto.com/ditch-the-array-foreach-call-nodelist-hack/
+    var nodeListForEach = function (array, callback, scope) {
+      for (var i = 0; i < array.length; i++) {
+    		callback.call(scope, i, array[i]);
+      }
+    };
+
+    var sortableTable = dragula([container]);
+
+    sortableTable.on('drop', function(el, target, source, sibling) {
+      console.log(el.dataset.rowPosition, target, source, sibling.dataset.rowPosition);
+      var newOrder = Array.from(rows).map((r)=>r.id);
+      if (newOrder!=currentOrder) {
+        Rails.ajax({
+          type:"POST",
+          headers: {
+              'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+            },
+            beforeSend(xhr, options) {
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8')
+            // Workaround: add options.data late to avoid Content-Type header to already being set in stone
+            // https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts/rails-ujs/utils/ajax.coffee#L53
+            options.data = JSON.stringify({ ordered_ids: newOrder})
+            return true
+          },
+          url: "categories/set_order",
+          contentType: "application/json",
+          dataType: 'script',
+          success: function(data) {},
+          error: function(data) {}
+        });
+      }
+    });
+  }
+  $(document).ready( function() {
+    setDragula();
+  });
+</script>
+<p id="notice"><%= notice %></p>
+
+<h1>Slidere</h1>
+<div class="row">
+  <% @slider_images.each do |slider| %>
+      <div class="col-sm-4">
+          <div class="card">
+            <%= image_tag slider.image.variant(resize_to_fill:[400,230]),class:"card-img-top" %>
+            <div class="card-body">
+              <p class="card-text"> </p>
+              <div align="middle">
+                <%= link_to edit_slider_image_path(slider) do%>
+                  <span class="glyphicon glyphicon-pencil"></span>
+                <%end%>
+                <%= link_to slider, method: :delete, data: { confirm: 'Ești sigur?' } do%>
+                  <span class="glyphicon glyphicon-trash"></span>
+                <% end %>
+              </div>
+
+            </div>
+        </div>
+      </div>
+  <%end %>
+</div>
+
+
+
+
+<br>
+<%= link_to 'New Slider', action:'new', class:'btn btn-default' if @slider_images.size<3%>
+<%= link_to 'Înapoi la pagina de administrare', admin_private_path %>

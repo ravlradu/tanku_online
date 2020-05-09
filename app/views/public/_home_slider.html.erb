@@ -4,7 +4,8 @@
         <div class="row">
             <div class="col-lg-9 offset-lg-3">
                 <div class="slider_area owl-carousel">
-                    <div class="single_slider d-flex align-items-center" data-bgimg="<%= image_path('slider/slider7.jpg') %>">
+                    <% SliderImage.all.each do |slider| %>
+                    <div class="single_slider d-flex align-items-center" data-bgimg="<%= url_for slider.image %>">
                         <div class="slider_content slider_c_three">
                             <h1>Vegetables 100% Organic</h1>
                             <p>
@@ -13,24 +14,7 @@
                             <a href="shop.html">Read more </a>
                         </div>
                     </div>
-                    <div class="single_slider d-flex align-items-center" data-bgimg="<%= image_path('slider/slider8.jpg') %>">
-                        <div class="slider_content slider_c_three">
-                            <h1>Organic & Fresh Lemon</h1>
-                            <p>
-                           Healthy fruits tropical paradise
-                             </p>
-                            <a href="shop.html">Read more </a>
-                        </div>
-                    </div>
-                    <div class="single_slider d-flex align-items-center" data-bgimg="<%= image_path('slider/slider9.jpg') %>">
-                        <div class="slider_content slider_c_three">
-                            <h1>Fresh Banana 100% Natural</h1>
-                            <p>
-                           Healthy fruits tropical paradise
-                             </p>
-                            <a href="shop.html">Read more </a>
-                        </div>
-                    </div>
+                    <% end %>
                 </div>
             </div>
         </div>

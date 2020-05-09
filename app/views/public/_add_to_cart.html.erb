@@ -1,0 +1,19 @@
+<div class="action_links mb-20">
+    <ul>
+        <!-- <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li> -->
+        <li class="add_to_cart"><a title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="showProductQty(<%= product.id %>)"><span class="lnr lnr-cart"></span></a></li>
+    </ul>
+</div>
+
+<div id="cart_qty_<%= product.id %>" class="cart_qty" style="display:none">
+    <p class="js-feedback feedback" style="display:none">Produs adaugat in cos!</p>
+    <div class="inner js-cart-actions">
+        <span class="js-cancel-cart cancel-cart">x</span>
+        <span class="qty-icon js-choose-qty js-dec">-</span>
+        <span class="current-qty"><span id="js-qty-value">1</span></span>
+        <span class="qty-icon js-choose-qty js-inc">+</span>
+
+
+        <a class="qty-buy-link" title="Adaugă în coș <%= product.cantaribil ? "#{product.buying_step} kg" : ''%>" onclick="addToCart(<%= product.id %>)"><span class="lnr lnr-cart"></span></a>
+    </div>
+</div>

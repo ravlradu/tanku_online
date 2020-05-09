@@ -1,0 +1,16 @@
+<%= form_with(model: @slider_image,local:true) do |form| %>
+
+  <div class="field">
+    <%= form.label 'Nume' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="form-group">
+        <%= form.label 'Imagine' %>
+        <%= form.file_field :image, class:"form-control-file" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Salvează' %>
+  </div>
+<% end %>

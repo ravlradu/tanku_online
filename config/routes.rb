@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   post 'products/upload', controller:'products', action:'upload'
   resources :products
   resources :categories
+  resources :slider_images
+
   post 'categories/set_order', controller: 'categories', action: 'set_order'
 
   root 'public#index'
