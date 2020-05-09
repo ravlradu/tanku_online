@@ -12,7 +12,7 @@
                  </div>
                   <div class="cart_info">
                       <a > <%= item[:name] %></a>
-                      <p> <%= item[:quantity] %> x <span> <%= price item[:unit_price] %> </span></p>
+                      <p> <%= item[:quantity].round(2) %> x <span> <%= price item[:unit_price] %> </span></p>
                   </div>
                   <div class="cart_remove">
                       <a onclick="removeFromCart(<%= item[:id] %>)"><i class="icon-x"></i></a>
